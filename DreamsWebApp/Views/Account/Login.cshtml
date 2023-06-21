@@ -1,0 +1,89 @@
+﻿@model LoginVM
+@{
+    Layout = null;
+    <link rel="shortcut icon" type="image/x-icon" href="~/assets/img/favicon.svg">
+    <link rel="stylesheet" href="~/assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="~/assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="~/assets/plugins/fontawesome/css/all.min.css">
+
+    <link rel="stylesheet" href="~/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/assets/css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="~/assets/plugins/slick/slick.css">
+    <link rel="stylesheet" href="~/assets/plugins/slick/slick-theme.css">
+
+    <link rel="stylesheet" href="~/assets/plugins/select2/css/select2.min.css">
+
+    <link rel="stylesheet" href="~/assets/plugins/aos/aos.css">
+    <link rel="stylesheet" href="~/assets/css/style.css">
+}
+<div class="main-wrapper log-wrap">
+    <div class="row">
+         <div class="col-md-6 login-bg">
+             <div class="owl-carousel login-slide owl-theme">
+                 <div class="welcome-login">
+                    <div class="login-banner">
+                         <img src="~/assets/img/login-img.png" class="img-fluid" alt="Logo">
+                    </div>
+                    <div class="mentor-course text-center">
+                        <h2>Welcome to <br>DreamsLMS Courses.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                </div>
+             </div>
+         </div>
+         <div class="col-md-6 login-wrap-bg">
+            <div class="login-wrapper">
+                <div class="loginbox">
+                     <div class="w-100">
+                        <div class="img-logo">
+                            <img src="~/assets/img/logo.svg" class="img-fluid" alt="Logo">
+                            <div class="back-home">
+                                 <a asp-action="Index" asp-controller="Home">Back to Home</a>
+                            </div>
+                        </div>
+                        <h1>Sign into Your Account</h1>
+                        <form method="post">
+                            <div class="text-danger" asp-validation-summary="ModelOnly"></div>
+                            <div class="form-group">
+                                <label class="form-control-label" asp-for="UserName"></label>
+                                <input asp-for="UserName" class="form-control" placeholder="Enter your username">
+                                <span asp-validation-for="UserName" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-control-label" asp-for="Password"></label>
+                                <div class="pass-group">
+                                    <input asp-for="Password" class="form-control pass-input" placeholder="Enter your password">
+                                    <span class="feather-eye toggle-password"></span>
+                                </div>
+                            </div>
+                            <div class="forgot">
+                                 <span><a class="forgot-link" href="forgot-password.html">Forgot Password ?</a></span>
+                            </div>
+                            <div class="remember-me">
+                                <label class="custom_check mr-2 mb-0 d-inline-flex remember-me"> Remember me
+                                    <input type="checkbox" name="radio">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-start" type="submit">Sign In</button>
+                            </div>
+                        </form>
+                     </div>
+                </div>
+                <div class="google-bg text-center">
+                    <span><a href="#">Or sign in with</a></span>
+                    <div class="sign-google">
+                        <ul>
+                            <li><a href="#"><img src="~/assets/img/net-icon-01.png" class="img-fluid" alt="Logo"> Sign In using Google</a></li>
+                            <li><a href="#"><img src="~/assets/img/net-icon-02.png" class="img-fluid" alt="Logo">Sign In using Facebook</a></li>
+                        </ul>
+                    </div>
+                    <p class="mb-0">New User ? <a href="register.html">Create an Account</a></p>
+                 </div>
+            </div>
+         </div>
+    </div>
+</div>

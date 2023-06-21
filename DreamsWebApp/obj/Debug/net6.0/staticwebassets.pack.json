@@ -1,0 +1,2541 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\DreamsWebApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\DreamsWebApp.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\ajax\\app-profile.html",
+      "PackagePath": "staticwebassets\\admin\\ajax\\app-profile.html"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\ajax\\contacts.html",
+      "PackagePath": "staticwebassets\\admin\\ajax\\contacts.html"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\ajax\\images\\profile\\small\\pic1.html",
+      "PackagePath": "staticwebassets\\admin\\ajax\\images\\profile\\small\\pic1.html"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\ajax\\images\\profile\\small\\pic4.html",
+      "PackagePath": "staticwebassets\\admin\\ajax\\images\\profile\\small\\pic4.html"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\ajax\\message-content.html",
+      "PackagePath": "staticwebassets\\admin\\ajax\\message-content.html"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\ajax\\message.html",
+      "PackagePath": "staticwebassets\\admin\\ajax\\message.html"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\ajax\\recentactivity.html",
+      "PackagePath": "staticwebassets\\admin\\ajax\\recentactivity.html"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\css\\style.css",
+      "PackagePath": "staticwebassets\\admin\\css\\style.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\avasta\\css\\style.css",
+      "PackagePath": "staticwebassets\\admin\\icons\\avasta\\css\\style.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\avasta\\fonts\\avasta.eot",
+      "PackagePath": "staticwebassets\\admin\\icons\\avasta\\fonts\\avasta.eot"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\avasta\\fonts\\avasta.svg",
+      "PackagePath": "staticwebassets\\admin\\icons\\avasta\\fonts\\avasta.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\avasta\\fonts\\avasta.ttf",
+      "PackagePath": "staticwebassets\\admin\\icons\\avasta\\fonts\\avasta.ttf"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\avasta\\fonts\\avasta.woff",
+      "PackagePath": "staticwebassets\\admin\\icons\\avasta\\fonts\\avasta.woff"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\avasta\\fonts\\avasta.woff2",
+      "PackagePath": "staticwebassets\\admin\\icons\\avasta\\fonts\\avasta.woff2"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\bootstrap-icons\\font\\bootstrap-icons.css",
+      "PackagePath": "staticwebassets\\admin\\icons\\bootstrap-icons\\font\\bootstrap-icons.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\bootstrap-icons\\font\\fonts\\bootstrap-iconse36a.woff",
+      "PackagePath": "staticwebassets\\admin\\icons\\bootstrap-icons\\font\\fonts\\bootstrap-iconse36a.woff"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\bootstrap-icons\\font\\fonts\\bootstrap-iconse36a.woff2",
+      "PackagePath": "staticwebassets\\admin\\icons\\bootstrap-icons\\font\\fonts\\bootstrap-iconse36a.woff2"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\flaticon-1\\font\\flaticon-1.css",
+      "PackagePath": "staticwebassets\\admin\\icons\\flaticon-1\\font\\flaticon-1.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\flaticon-1\\font\\flaticon-1882d.eot",
+      "PackagePath": "staticwebassets\\admin\\icons\\flaticon-1\\font\\flaticon-1882d.eot"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\flaticon-1\\font\\flaticon-1882d.svg",
+      "PackagePath": "staticwebassets\\admin\\icons\\flaticon-1\\font\\flaticon-1882d.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\flaticon-1\\font\\flaticon-1882d.ttf",
+      "PackagePath": "staticwebassets\\admin\\icons\\flaticon-1\\font\\flaticon-1882d.ttf"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\flaticon-1\\font\\flaticon-1882d.woff",
+      "PackagePath": "staticwebassets\\admin\\icons\\flaticon-1\\font\\flaticon-1882d.woff"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\flaticon-1\\font\\flaticon-1882d.woff2",
+      "PackagePath": "staticwebassets\\admin\\icons\\flaticon-1\\font\\flaticon-1882d.woff2"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\flaticon\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\admin\\icons\\flaticon\\Flaticon.eot"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\flaticon\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\admin\\icons\\flaticon\\Flaticon.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\flaticon\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\admin\\icons\\flaticon\\Flaticon.ttf"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\flaticon\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\admin\\icons\\flaticon\\Flaticon.woff"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\flaticon\\Flaticond41d.eot",
+      "PackagePath": "staticwebassets\\admin\\icons\\flaticon\\Flaticond41d.eot"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\flaticon\\flaticon.css",
+      "PackagePath": "staticwebassets\\admin\\icons\\flaticon\\flaticon.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\fontawesome\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\admin\\icons\\fontawesome\\css\\all.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\fontawesome\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\admin\\icons\\fontawesome\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\fontawesome\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\admin\\icons\\fontawesome\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\fontawesome\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\admin\\icons\\fontawesome\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\fontawesome\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\admin\\icons\\fontawesome\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\fontawesome\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\admin\\icons\\fontawesome\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\fontawesome\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\admin\\icons\\fontawesome\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\fontawesome\\webfonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\admin\\icons\\fontawesome\\webfonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\fontawesome\\webfonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\admin\\icons\\fontawesome\\webfonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\icomoon\\fonts\\icomoon.eot",
+      "PackagePath": "staticwebassets\\admin\\icons\\icomoon\\fonts\\icomoon.eot"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\icomoon\\fonts\\icomoon.svg",
+      "PackagePath": "staticwebassets\\admin\\icons\\icomoon\\fonts\\icomoon.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\icomoon\\fonts\\icomoon.svg.readme",
+      "PackagePath": "staticwebassets\\admin\\icons\\icomoon\\fonts\\icomoon.svg.readme"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\icomoon\\fonts\\icomoon.ttf",
+      "PackagePath": "staticwebassets\\admin\\icons\\icomoon\\fonts\\icomoon.ttf"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\icomoon\\fonts\\icomoon.woff",
+      "PackagePath": "staticwebassets\\admin\\icons\\icomoon\\fonts\\icomoon.woff"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\icomoon\\icomoon.css",
+      "PackagePath": "staticwebassets\\admin\\icons\\icomoon\\icomoon.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\line-awesome\\css\\line-awesome.min.css",
+      "PackagePath": "staticwebassets\\admin\\icons\\line-awesome\\css\\line-awesome.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\line-awesome\\fonts\\la-brands-400.eot",
+      "PackagePath": "staticwebassets\\admin\\icons\\line-awesome\\fonts\\la-brands-400.eot"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\line-awesome\\fonts\\la-brands-400.svg",
+      "PackagePath": "staticwebassets\\admin\\icons\\line-awesome\\fonts\\la-brands-400.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\line-awesome\\fonts\\la-brands-400.ttf",
+      "PackagePath": "staticwebassets\\admin\\icons\\line-awesome\\fonts\\la-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\line-awesome\\fonts\\la-brands-400.woff",
+      "PackagePath": "staticwebassets\\admin\\icons\\line-awesome\\fonts\\la-brands-400.woff"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\line-awesome\\fonts\\la-brands-400.woff2",
+      "PackagePath": "staticwebassets\\admin\\icons\\line-awesome\\fonts\\la-brands-400.woff2"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\line-awesome\\fonts\\la-brands-400d41d.eot",
+      "PackagePath": "staticwebassets\\admin\\icons\\line-awesome\\fonts\\la-brands-400d41d.eot"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\line-awesome\\fonts\\la-regular-400.eot",
+      "PackagePath": "staticwebassets\\admin\\icons\\line-awesome\\fonts\\la-regular-400.eot"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\line-awesome\\fonts\\la-regular-400.svg",
+      "PackagePath": "staticwebassets\\admin\\icons\\line-awesome\\fonts\\la-regular-400.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\line-awesome\\fonts\\la-regular-400.ttf",
+      "PackagePath": "staticwebassets\\admin\\icons\\line-awesome\\fonts\\la-regular-400.ttf"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\line-awesome\\fonts\\la-regular-400.woff",
+      "PackagePath": "staticwebassets\\admin\\icons\\line-awesome\\fonts\\la-regular-400.woff"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\line-awesome\\fonts\\la-regular-400.woff2",
+      "PackagePath": "staticwebassets\\admin\\icons\\line-awesome\\fonts\\la-regular-400.woff2"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\line-awesome\\fonts\\la-regular-400d41d.eot",
+      "PackagePath": "staticwebassets\\admin\\icons\\line-awesome\\fonts\\la-regular-400d41d.eot"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\line-awesome\\fonts\\la-solid-900.eot",
+      "PackagePath": "staticwebassets\\admin\\icons\\line-awesome\\fonts\\la-solid-900.eot"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\line-awesome\\fonts\\la-solid-900.svg",
+      "PackagePath": "staticwebassets\\admin\\icons\\line-awesome\\fonts\\la-solid-900.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\line-awesome\\fonts\\la-solid-900.ttf",
+      "PackagePath": "staticwebassets\\admin\\icons\\line-awesome\\fonts\\la-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\line-awesome\\fonts\\la-solid-900.woff",
+      "PackagePath": "staticwebassets\\admin\\icons\\line-awesome\\fonts\\la-solid-900.woff"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\line-awesome\\fonts\\la-solid-900.woff2",
+      "PackagePath": "staticwebassets\\admin\\icons\\line-awesome\\fonts\\la-solid-900.woff2"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\line-awesome\\fonts\\la-solid-900d41d.eot",
+      "PackagePath": "staticwebassets\\admin\\icons\\line-awesome\\fonts\\la-solid-900d41d.eot"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\material-design-iconic-font\\css\\materialdesignicons.min.css",
+      "PackagePath": "staticwebassets\\admin\\icons\\material-design-iconic-font\\css\\materialdesignicons.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont683c.eot",
+      "PackagePath": "staticwebassets\\admin\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont683c.eot"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont683c.svg",
+      "PackagePath": "staticwebassets\\admin\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont683c.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont683c.ttf",
+      "PackagePath": "staticwebassets\\admin\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont683c.ttf"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont683c.woff",
+      "PackagePath": "staticwebassets\\admin\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont683c.woff"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont683c.woff2",
+      "PackagePath": "staticwebassets\\admin\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfont683c.woff2"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfontd41d.eot",
+      "PackagePath": "staticwebassets\\admin\\icons\\material-design-iconic-font\\fonts\\materialdesignicons-webfontd41d.eot"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\simple-line-icons\\css\\simple-line-icons.css",
+      "PackagePath": "staticwebassets\\admin\\icons\\simple-line-icons\\css\\simple-line-icons.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\simple-line-icons\\fonts\\Simple-Line-Icons4c824c82.eot",
+      "PackagePath": "staticwebassets\\admin\\icons\\simple-line-icons\\fonts\\Simple-Line-Icons4c824c82.eot"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\simple-line-icons\\fonts\\Simple-Line-Icons4c824c82.svg",
+      "PackagePath": "staticwebassets\\admin\\icons\\simple-line-icons\\fonts\\Simple-Line-Icons4c824c82.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\simple-line-icons\\fonts\\Simple-Line-Icons4c824c82.ttf",
+      "PackagePath": "staticwebassets\\admin\\icons\\simple-line-icons\\fonts\\Simple-Line-Icons4c824c82.ttf"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\simple-line-icons\\fonts\\Simple-Line-Icons4c824c82.woff",
+      "PackagePath": "staticwebassets\\admin\\icons\\simple-line-icons\\fonts\\Simple-Line-Icons4c824c82.woff"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\simple-line-icons\\fonts\\Simple-Line-Icons4c824c82.woff2",
+      "PackagePath": "staticwebassets\\admin\\icons\\simple-line-icons\\fonts\\Simple-Line-Icons4c824c82.woff2"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\simple-line-icons\\fonts\\Simple-Line-Iconsd41dd41d.eot",
+      "PackagePath": "staticwebassets\\admin\\icons\\simple-line-icons\\fonts\\Simple-Line-Iconsd41dd41d.eot"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\themify-icons\\css\\themify-icons.css",
+      "PackagePath": "staticwebassets\\admin\\icons\\themify-icons\\css\\themify-icons.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\themify-icons\\fonts\\themify.ttf",
+      "PackagePath": "staticwebassets\\admin\\icons\\themify-icons\\fonts\\themify.ttf"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\themify-icons\\fonts\\themify.woff",
+      "PackagePath": "staticwebassets\\admin\\icons\\themify-icons\\fonts\\themify.woff"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\themify-icons\\fonts\\themify9f249f24.eot",
+      "PackagePath": "staticwebassets\\admin\\icons\\themify-icons\\fonts\\themify9f249f24.eot"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\themify-icons\\fonts\\themify9f249f24.svg",
+      "PackagePath": "staticwebassets\\admin\\icons\\themify-icons\\fonts\\themify9f249f24.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\icons\\themify-icons\\fonts\\themifyd41dd41d.eot",
+      "PackagePath": "staticwebassets\\admin\\icons\\themify-icons\\fonts\\themifyd41dd41d.eot"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\1.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\1.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\activity-img\\pic1.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\activity-img\\pic1.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\activity-img\\pic2.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\activity-img\\pic2.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\activity-img\\pic3.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\activity-img\\pic3.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\activity-img\\pic4.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\activity-img\\pic4.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\avatar\\1.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\avatar\\1.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\avatar\\1.png",
+      "PackagePath": "staticwebassets\\admin\\images\\avatar\\1.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\avatar\\10.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\avatar\\10.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\avatar\\2.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\avatar\\2.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\avatar\\2.png",
+      "PackagePath": "staticwebassets\\admin\\images\\avatar\\2.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\avatar\\3.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\avatar\\3.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\avatar\\3.png",
+      "PackagePath": "staticwebassets\\admin\\images\\avatar\\3.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\avatar\\4.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\avatar\\4.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\avatar\\5.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\avatar\\5.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\avatar\\5.png",
+      "PackagePath": "staticwebassets\\admin\\images\\avatar\\5.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\avatar\\8.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\avatar\\8.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\avatar\\9.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\avatar\\9.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\background\\pic-2.png",
+      "PackagePath": "staticwebassets\\admin\\images\\background\\pic-2.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\background\\pic3.png",
+      "PackagePath": "staticwebassets\\admin\\images\\background\\pic3.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\background\\pic4.png",
+      "PackagePath": "staticwebassets\\admin\\images\\background\\pic4.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\background\\pic5.png",
+      "PackagePath": "staticwebassets\\admin\\images\\background\\pic5.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\big\\img1.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\big\\img1.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\big\\img2.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\big\\img2.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\big\\img3.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\big\\img3.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\big\\img4.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\big\\img4.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\big\\img5.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\big\\img5.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\big\\img6.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\big\\img6.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\big\\img7.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\big\\img7.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\big\\img8.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\big\\img8.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\big\\pic1.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\big\\pic1.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\big\\pic2.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\big\\pic2.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\big\\pic3.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\big\\pic3.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\big\\pic4.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\big\\pic4.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\big\\pic5.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\big\\pic5.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\big\\pic6.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\big\\pic6.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\big\\pic7.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\big\\pic7.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\big\\pic8.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\big\\pic8.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\big\\pic9.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\big\\pic9.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\big\\rainbow.gif",
+      "PackagePath": "staticwebassets\\admin\\images\\big\\rainbow.gif"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\body\\12.html",
+      "PackagePath": "staticwebassets\\admin\\images\\body\\12.html"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\card\\1.png",
+      "PackagePath": "staticwebassets\\admin\\images\\card\\1.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\card\\2.png",
+      "PackagePath": "staticwebassets\\admin\\images\\card\\2.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\card\\3.png",
+      "PackagePath": "staticwebassets\\admin\\images\\card\\3.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\circle.svg",
+      "PackagePath": "staticwebassets\\admin\\images\\circle.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\contacts\\1.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\contacts\\1.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\contacts\\10.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\contacts\\10.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\contacts\\11.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\contacts\\11.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\contacts\\12.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\contacts\\12.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\contacts\\2.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\contacts\\2.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\contacts\\3.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\contacts\\3.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\contacts\\4.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\contacts\\4.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\contacts\\5.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\contacts\\5.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\contacts\\6.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\contacts\\6.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\contacts\\7.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\contacts\\7.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\contacts\\8.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\contacts\\8.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\contacts\\9.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\contacts\\9.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\contacts\\pic-333.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\contacts\\pic-333.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\contacts\\pic444.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\contacts\\pic444.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\contacts\\pic555.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\contacts\\pic555.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\contacts\\pic666.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\contacts\\pic666.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\coures\\1.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\coures\\1.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\coures\\2.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\coures\\2.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\coures\\3.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\coures\\3.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\coures\\4.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\coures\\4.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\coures\\5.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\coures\\5.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\coures\\6.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\coures\\6.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\coures\\7.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\coures\\7.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\coures\\8.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\coures\\8.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\coures\\9.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\coures\\9.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\coures\\9.png",
+      "PackagePath": "staticwebassets\\admin\\images\\coures\\9.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\favicon.png",
+      "PackagePath": "staticwebassets\\admin\\images\\favicon.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\food\\pic1.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\food\\pic1.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\food\\pic2.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\food\\pic2.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\food\\pic3.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\food\\pic3.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\food\\pic4.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\food\\pic4.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\food\\pic5.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\food\\pic5.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\food\\pic6.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\food\\pic6.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\like.png",
+      "PackagePath": "staticwebassets\\admin\\images\\like.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\logo-full.png",
+      "PackagePath": "staticwebassets\\admin\\images\\logo-full.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\logo-white.png",
+      "PackagePath": "staticwebassets\\admin\\images\\logo-white.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\media-1.png",
+      "PackagePath": "staticwebassets\\admin\\images\\media-1.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\media-2.png",
+      "PackagePath": "staticwebassets\\admin\\images\\media-2.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\media-3.png",
+      "PackagePath": "staticwebassets\\admin\\images\\media-3.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\media-4.png",
+      "PackagePath": "staticwebassets\\admin\\images\\media-4.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\no-img-avatar.png",
+      "PackagePath": "staticwebassets\\admin\\images\\no-img-avatar.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\pattern\\pattern5.png",
+      "PackagePath": "staticwebassets\\admin\\images\\pattern\\pattern5.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\product\\1.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\product\\1.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\product\\2.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\product\\2.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\product\\3.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\product\\3.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\product\\4.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\product\\4.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\product\\5.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\product\\5.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\product\\6.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\product\\6.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\product\\7.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\product\\7.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\profile.svg",
+      "PackagePath": "staticwebassets\\admin\\images\\profile.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\profile\\1.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\profile\\1.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\profile\\12.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\profile\\12.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\profile\\14.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\profile\\14.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\profile\\18.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\profile\\18.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\profile\\19.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\profile\\19.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\profile\\2.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\profile\\2.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\profile\\3.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\profile\\3.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\profile\\4.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\profile\\4.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\profile\\5.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\profile\\5.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\profile\\6.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\profile\\6.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\profile\\7.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\profile\\7.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\profile\\8.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\profile\\8.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\profile\\9.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\profile\\9.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\profile\\cover.html",
+      "PackagePath": "staticwebassets\\admin\\images\\profile\\cover.html"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\profile\\pic2.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\profile\\pic2.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\profile\\profile.png",
+      "PackagePath": "staticwebassets\\admin\\images\\profile\\profile.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\profile\\small\\pic1.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\profile\\small\\pic1.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\profile\\small\\pic10.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\profile\\small\\pic10.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\profile\\small\\pic2.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\profile\\small\\pic2.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\profile\\small\\pic3.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\profile\\small\\pic3.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\profile\\small\\pic4.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\profile\\small\\pic4.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\profile\\small\\pic5.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\profile\\small\\pic5.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\profile\\small\\pic6.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\profile\\small\\pic6.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\profile\\small\\pic7.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\profile\\small\\pic7.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\profile\\small\\pic8.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\profile\\small\\pic8.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\profile\\small\\pic9.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\profile\\small\\pic9.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\qr.png",
+      "PackagePath": "staticwebassets\\admin\\images\\qr.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\quotes.svg",
+      "PackagePath": "staticwebassets\\admin\\images\\quotes.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\student-bg-Recovered.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\student-bg-Recovered.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\student-bg.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\student-bg.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\svg\\cd-arrow.html",
+      "PackagePath": "staticwebassets\\admin\\images\\svg\\cd-arrow.html"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\svg\\check.html",
+      "PackagePath": "staticwebassets\\admin\\images\\svg\\check.html"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\svg\\email.svg",
+      "PackagePath": "staticwebassets\\admin\\images\\svg\\email.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\svg\\location.svg",
+      "PackagePath": "staticwebassets\\admin\\images\\svg\\location.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\svg\\phone.svg",
+      "PackagePath": "staticwebassets\\admin\\images\\svg\\phone.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\svg\\student.svg",
+      "PackagePath": "staticwebassets\\admin\\images\\svg\\student.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\tab\\1.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\tab\\1.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\tab\\2.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\tab\\2.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\tab\\3.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\tab\\3.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\tab\\4.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\tab\\4.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\trans\\1.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\trans\\1.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\trans\\10.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\trans\\10.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\trans\\2.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\trans\\2.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\trans\\3.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\trans\\3.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\trans\\4.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\trans\\4.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\trans\\5.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\trans\\5.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\trans\\6.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\trans\\6.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\trans\\7.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\trans\\7.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\trans\\8.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\trans\\8.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\trans\\9.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\trans\\9.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\images\\user.jpg",
+      "PackagePath": "staticwebassets\\admin\\images\\user.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\calendar-2.js",
+      "PackagePath": "staticwebassets\\admin\\js\\calendar-2.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\calendar.js",
+      "PackagePath": "staticwebassets\\admin\\js\\calendar.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\custom.min.js",
+      "PackagePath": "staticwebassets\\admin\\js\\custom.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\dashboard\\dashboard-1.js",
+      "PackagePath": "staticwebassets\\admin\\js\\dashboard\\dashboard-1.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\dashboard\\dashboard-2.js",
+      "PackagePath": "staticwebassets\\admin\\js\\dashboard\\dashboard-2.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\demo.js",
+      "PackagePath": "staticwebassets\\admin\\js\\demo.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\dlabnav-init.js",
+      "PackagePath": "staticwebassets\\admin\\js\\dlabnav-init.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\highlight.min.js",
+      "PackagePath": "staticwebassets\\admin\\js\\highlight.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\plugins-init\\bs-daterange-picker-init.js",
+      "PackagePath": "staticwebassets\\admin\\js\\plugins-init\\bs-daterange-picker-init.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\plugins-init\\chartist-init.js",
+      "PackagePath": "staticwebassets\\admin\\js\\plugins-init\\chartist-init.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\plugins-init\\chartjs-init.js",
+      "PackagePath": "staticwebassets\\admin\\js\\plugins-init\\chartjs-init.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\plugins-init\\clock-picker-init.js",
+      "PackagePath": "staticwebassets\\admin\\js\\plugins-init\\clock-picker-init.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\plugins-init\\datatables.init.js",
+      "PackagePath": "staticwebassets\\admin\\js\\plugins-init\\datatables.init.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\plugins-init\\flot-init.js",
+      "PackagePath": "staticwebassets\\admin\\js\\plugins-init\\flot-init.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\plugins-init\\jquery-asColorPicker.init.js",
+      "PackagePath": "staticwebassets\\admin\\js\\plugins-init\\jquery-asColorPicker.init.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\plugins-init\\jquery.validate-init.js",
+      "PackagePath": "staticwebassets\\admin\\js\\plugins-init\\jquery.validate-init.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\plugins-init\\jqvmap-init.js",
+      "PackagePath": "staticwebassets\\admin\\js\\plugins-init\\jqvmap-init.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\plugins-init\\material-date-picker-init.js",
+      "PackagePath": "staticwebassets\\admin\\js\\plugins-init\\material-date-picker-init.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\plugins-init\\morris-init.js",
+      "PackagePath": "staticwebassets\\admin\\js\\plugins-init\\morris-init.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\plugins-init\\nestable-init.js",
+      "PackagePath": "staticwebassets\\admin\\js\\plugins-init\\nestable-init.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\plugins-init\\nouislider-init.js",
+      "PackagePath": "staticwebassets\\admin\\js\\plugins-init\\nouislider-init.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\plugins-init\\pickadate-init.js",
+      "PackagePath": "staticwebassets\\admin\\js\\plugins-init\\pickadate-init.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\plugins-init\\piety-init.js",
+      "PackagePath": "staticwebassets\\admin\\js\\plugins-init\\piety-init.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\plugins-init\\select2-init.js",
+      "PackagePath": "staticwebassets\\admin\\js\\plugins-init\\select2-init.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\plugins-init\\sparkline-init.js",
+      "PackagePath": "staticwebassets\\admin\\js\\plugins-init\\sparkline-init.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\plugins-init\\sweetalert.init.js",
+      "PackagePath": "staticwebassets\\admin\\js\\plugins-init\\sweetalert.init.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\plugins-init\\toastr-init.js",
+      "PackagePath": "staticwebassets\\admin\\js\\plugins-init\\toastr-init.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\plugins-init\\widgets-script-init.js",
+      "PackagePath": "staticwebassets\\admin\\js\\plugins-init\\widgets-script-init.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\js\\styleSwitcher.js",
+      "PackagePath": "staticwebassets\\admin\\js\\styleSwitcher.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\animate\\animate.min.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\animate\\animate.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\aos\\css\\aos.min.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\aos\\css\\aos.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\apexchart\\apexchart.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\apexchart\\apexchart.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\bootstrap-datepicker-master\\css\\bootstrap-datepicker.min.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\bootstrap-datepicker-master\\css\\bootstrap-datepicker.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\bootstrap-datepicker-master\\js\\bootstrap-datepicker.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\bootstrap-datepicker-master\\js\\bootstrap-datepicker.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\bootstrap-daterangepicker\\daterangepicker.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\bootstrap-daterangepicker\\daterangepicker.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\bootstrap-daterangepicker\\daterangepicker.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\bootstrap-daterangepicker\\daterangepicker.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\bootstrap-datetimepicker\\css\\bootstrap-datetimepicker.min.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\bootstrap-datetimepicker\\css\\bootstrap-datetimepicker.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\bootstrap-datetimepicker\\js\\moment.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\bootstrap-datetimepicker\\js\\moment.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\bootstrap-material-datetimepicker\\css\\bootstrap-material-datetimepicker.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\bootstrap-material-datetimepicker\\css\\bootstrap-material-datetimepicker.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\bootstrap-material-datetimepicker\\js\\bootstrap-material-datetimepicker.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\bootstrap-material-datetimepicker\\js\\bootstrap-material-datetimepicker.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\bootstrap-select-country\\css\\bootstrap-select-country.min.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\bootstrap-select-country\\css\\bootstrap-select-country.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\bootstrap-select-country\\css\\images\\flags16.png",
+      "PackagePath": "staticwebassets\\admin\\vendor\\bootstrap-select-country\\css\\images\\flags16.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\bootstrap-select-country\\js\\bootstrap-select-country.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\bootstrap-select-country\\js\\bootstrap-select-country.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\bootstrap-select\\dist\\css\\bootstrap-select.min.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\bootstrap-select\\dist\\css\\bootstrap-select.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\bootstrap-select\\dist\\js\\bootstrap-select.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\bootstrap-select\\dist\\js\\bootstrap-select.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\chart.js\\Chart.bundle.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\chart.js\\Chart.bundle.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\chartist-plugin-tooltips\\js\\chartist-plugin-tooltip.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\chartist-plugin-tooltips\\js\\chartist-plugin-tooltip.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\chartist\\css\\chartist.min.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\chartist\\css\\chartist.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\chartist\\js\\chartist.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\chartist\\js\\chartist.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\ckeditor\\ckeditor.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\ckeditor\\ckeditor.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\clockpicker\\css\\bootstrap-clockpicker.min.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\clockpicker\\css\\bootstrap-clockpicker.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\clockpicker\\js\\bootstrap-clockpicker.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\clockpicker\\js\\bootstrap-clockpicker.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\datatables\\css\\jquery.dataTables.min.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\datatables\\css\\jquery.dataTables.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\datatables\\images\\sort_asc.png",
+      "PackagePath": "staticwebassets\\admin\\vendor\\datatables\\images\\sort_asc.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\datatables\\images\\sort_asc_disabled.png",
+      "PackagePath": "staticwebassets\\admin\\vendor\\datatables\\images\\sort_asc_disabled.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\datatables\\images\\sort_both.png",
+      "PackagePath": "staticwebassets\\admin\\vendor\\datatables\\images\\sort_both.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\datatables\\images\\sort_desc.png",
+      "PackagePath": "staticwebassets\\admin\\vendor\\datatables\\images\\sort_desc.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\datatables\\images\\sort_desc_disabled.png",
+      "PackagePath": "staticwebassets\\admin\\vendor\\datatables\\images\\sort_desc_disabled.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\datatables\\js\\jquery.dataTables.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\datatables\\js\\jquery.dataTables.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\datepicker\\css\\bootstrap-datepicker.min.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\datepicker\\css\\bootstrap-datepicker.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\datepicker\\js\\bootstrap-datepicker.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\datepicker\\js\\bootstrap-datepicker.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\dropzone\\dist\\dropzone.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\dropzone\\dist\\dropzone.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\dropzone\\dist\\dropzone.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\dropzone\\dist\\dropzone.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\flot-spline\\jquery.flot.spline.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\flot-spline\\jquery.flot.spline.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\flot\\jquery.flot.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\flot\\jquery.flot.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\flot\\jquery.flot.pie.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\flot\\jquery.flot.pie.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\flot\\jquery.flot.resize.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\flot\\jquery.flot.resize.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\fullcalendar-5.11.0\\lib\\main.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\fullcalendar-5.11.0\\lib\\main.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\fullcalendar-5.11.0\\lib\\main.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\fullcalendar-5.11.0\\lib\\main.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\global\\global.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\global\\global.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\highlightjs\\highlight.pack.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\highlightjs\\highlight.pack.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\jquery-asColorPicker\\css\\asColorPicker.min.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\jquery-asColorPicker\\css\\asColorPicker.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\jquery-asColorPicker\\images\\alpha.png",
+      "PackagePath": "staticwebassets\\admin\\vendor\\jquery-asColorPicker\\images\\alpha.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\jquery-asColorPicker\\images\\hue.png",
+      "PackagePath": "staticwebassets\\admin\\vendor\\jquery-asColorPicker\\images\\hue.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\jquery-asColorPicker\\images\\saturation.png",
+      "PackagePath": "staticwebassets\\admin\\vendor\\jquery-asColorPicker\\images\\saturation.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\jquery-asColorPicker\\images\\transparent.png",
+      "PackagePath": "staticwebassets\\admin\\vendor\\jquery-asColorPicker\\images\\transparent.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\jquery-asColorPicker\\js\\jquery-asColorPicker.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\jquery-asColorPicker\\js\\jquery-asColorPicker.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\jquery-asColor\\jquery-asColor.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\jquery-asColor\\jquery-asColor.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\jquery-asGradient\\jquery-asGradient.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\jquery-asGradient\\jquery-asGradient.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\jquery-nice-select\\css\\nice-select.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\jquery-nice-select\\css\\nice-select.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\jquery-nice-select\\js\\jquery.nice-select.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\jquery-nice-select\\js\\jquery.nice-select.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\jquery-smartwizard\\dist\\css\\smart_wizard.min.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\jquery-smartwizard\\dist\\css\\smart_wizard.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\jquery-smartwizard\\dist\\js\\jquery.smartWizard.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\jquery-smartwizard\\dist\\js\\jquery.smartWizard.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\jquery-sparkline\\jquery.sparkline.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\jquery-sparkline\\jquery.sparkline.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\jquery-steps\\build\\jquery.steps.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\jquery-steps\\build\\jquery.steps.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\jquery-validation\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\jquery-validation\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\jqvmap\\css\\jqvmap.min.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\jqvmap\\css\\jqvmap.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\jqvmap\\js\\jquery.vmap.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\jqvmap\\js\\jquery.vmap.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\jqvmap\\js\\jquery.vmap.usa.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\jqvmap\\js\\jquery.vmap.usa.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\jqvmap\\js\\jquery.vmap.world.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\jqvmap\\js\\jquery.vmap.world.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\lightgallery\\css\\lightgallery.min.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\lightgallery\\css\\lightgallery.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\lightgallery\\fonts\\lgd41d.eot",
+      "PackagePath": "staticwebassets\\admin\\vendor\\lightgallery\\fonts\\lgd41d.eot"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\lightgallery\\fonts\\lgd641.eot",
+      "PackagePath": "staticwebassets\\admin\\vendor\\lightgallery\\fonts\\lgd641.eot"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\lightgallery\\fonts\\lgd641.svg",
+      "PackagePath": "staticwebassets\\admin\\vendor\\lightgallery\\fonts\\lgd641.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\lightgallery\\fonts\\lgd641.ttf",
+      "PackagePath": "staticwebassets\\admin\\vendor\\lightgallery\\fonts\\lgd641.ttf"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\lightgallery\\fonts\\lgd641.woff",
+      "PackagePath": "staticwebassets\\admin\\vendor\\lightgallery\\fonts\\lgd641.woff"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\lightgallery\\img\\loading.gif",
+      "PackagePath": "staticwebassets\\admin\\vendor\\lightgallery\\img\\loading.gif"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\lightgallery\\img\\video-play.png",
+      "PackagePath": "staticwebassets\\admin\\vendor\\lightgallery\\img\\video-play.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\lightgallery\\img\\vimeo-play.png",
+      "PackagePath": "staticwebassets\\admin\\vendor\\lightgallery\\img\\vimeo-play.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\lightgallery\\img\\youtube-play.png",
+      "PackagePath": "staticwebassets\\admin\\vendor\\lightgallery\\img\\youtube-play.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\lightgallery\\js\\lightgallery-all.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\lightgallery\\js\\lightgallery-all.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\metismenu\\css\\metisMenu.min.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\metismenu\\css\\metisMenu.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\moment\\moment.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\moment\\moment.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\morris\\morris.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\morris\\morris.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\nestable2\\css\\jquery.nestable.min.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\nestable2\\css\\jquery.nestable.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\nestable2\\js\\jquery.nestable.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\nestable2\\js\\jquery.nestable.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\nouislider\\nouislider.min.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\nouislider\\nouislider.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\nouislider\\nouislider.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\nouislider\\nouislider.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\peity\\jquery.peity.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\peity\\jquery.peity.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\perfect-scrollbar\\css\\perfect-scrollbar.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\perfect-scrollbar\\css\\perfect-scrollbar.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\pickadate\\picker.date.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\pickadate\\picker.date.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\pickadate\\picker.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\pickadate\\picker.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\pickadate\\picker.time.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\pickadate\\picker.time.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\pickadate\\themes\\default.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\pickadate\\themes\\default.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\pickadate\\themes\\default.date.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\pickadate\\themes\\default.date.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\raphael\\raphael.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\raphael\\raphael.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\select2\\css\\select2.min.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\select2\\css\\select2.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\select2\\js\\select2.full.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\select2\\js\\select2.full.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\star-rating\\jquery.star-rating-svg.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\star-rating\\jquery.star-rating-svg.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\star-rating\\star-rating-svg.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\star-rating\\star-rating-svg.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\svganimation\\svg.animation.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\svganimation\\svg.animation.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\svganimation\\vivus.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\svganimation\\vivus.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\sweetalert2\\dist\\sweetalert2.min.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\sweetalert2\\dist\\sweetalert2.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\sweetalert2\\dist\\sweetalert2.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\sweetalert2\\dist\\sweetalert2.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\swiper\\css\\swiper-bundle.min.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\swiper\\css\\swiper-bundle.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\swiper\\js\\swiper-bundle.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\swiper\\js\\swiper-bundle.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\toastr\\css\\toastr.min.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\toastr\\css\\toastr.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\toastr\\js\\toastr.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\toastr\\js\\toastr.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\wnumb\\wNumb.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\wnumb\\wNumb.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\wow-master\\css\\libs\\animate.css",
+      "PackagePath": "staticwebassets\\admin\\vendor\\wow-master\\css\\libs\\animate.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\admin\\vendor\\wow-master\\dist\\wow.min.js",
+      "PackagePath": "staticwebassets\\admin\\vendor\\wow-master\\dist\\wow.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\css\\feather.css",
+      "PackagePath": "staticwebassets\\assets\\css\\feather.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\css\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\css\\owl.video.play.html",
+      "PackagePath": "staticwebassets\\assets\\css\\owl.video.play.html"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\fonts\\Feather144f.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Feather144f.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\fonts\\Feather144f.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Feather144f.ttf"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\fonts\\Feather144f.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Feather144f.woff"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\59112c94-a6e6-43b2-a8ae-18b2771a485c2411583.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\59112c94-a6e6-43b2-a8ae-18b2771a485c2411583.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\64470614-47ad-46f2-aa37-cb5c615971f744092a96bb9f751ca41e2b5ff893c936.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\64470614-47ad-46f2-aa37-cb5c615971f744092a96bb9f751ca41e2b5ff893c936.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\71c3501e-5798-47bd-b9f0-1876d6595f494758098.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\71c3501e-5798-47bd-b9f0-1876d6595f494758098.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\9baee544-3dba-4306-b796-7fb28cfb7bc018e2db3a3220fadf3c655a1c0e34d398.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\9baee544-3dba-4306-b796-7fb28cfb7bc018e2db3a3220fadf3c655a1c0e34d398.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\ban-bg.png",
+      "PackagePath": "staticwebassets\\assets\\img\\ban-bg.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\bank-image.png",
+      "PackagePath": "staticwebassets\\assets\\img\\bank-image.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\banner.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\become-01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\become-01.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\become-02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\become-02.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\bg-banner-01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\bg-banner-01.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\bg-banner-02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\bg-banner-02.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\bg-banner.png",
+      "PackagePath": "staticwebassets\\assets\\img\\bg-banner.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\blog-banner.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog-banner.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\blog\\blog-01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-01.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\blog\\blog-02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-02.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\blog\\blog-03.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-03.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\blog\\blog-04.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-04.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\blog\\blog-05.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-05.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\blog\\blog-06.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-06.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\blog\\blog-07.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-07.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\blog\\blog-08.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-08.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\blog\\blog-09.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-09.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\blog\\blog-10.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-10.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\blog\\blog-11.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-11.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\blog\\blog-12.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-12.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\blog\\blog-13.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-13.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\blog\\blog-14.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-14.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\blog\\blog-15.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-15.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\blog\\blog-16.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-16.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\blog\\blog-17.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-17.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\blog\\blog-18.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-18.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\blog\\blog-19.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog-19.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\categories-icon-01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\categories-icon-01.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\categories-icon-02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\categories-icon-02.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\categories-icon-03.png",
+      "PackagePath": "staticwebassets\\assets\\img\\categories-icon-03.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\categories-icon-04.png",
+      "PackagePath": "staticwebassets\\assets\\img\\categories-icon-04.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\categories-icon-05.png",
+      "PackagePath": "staticwebassets\\assets\\img\\categories-icon-05.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\categories-icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\categories-icon.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\category\\category-01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\category-01.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\category\\category-02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\category-02.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\category\\category-03.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\category-03.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\category\\category-04.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\category-04.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\category\\category-05.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\category-05.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\category\\category-06.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\category-06.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\category\\category-07.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\category-07.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\category\\category-08.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\category-08.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\category\\category-09.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\category-09.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\category\\category-10.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\category-10.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\category\\category-11.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\category-11.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\category\\category-12.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\category-12.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\category\\category-13.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\category-13.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\category\\category-14.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\category-14.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\category\\category-15.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\category-15.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\category\\category-16.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\category-16.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\category\\category-17.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\category-17.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\certificate-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\certificate-icon.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\come-soon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\come-soon.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\cources-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\cources-icon.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\course-bg.png",
+      "PackagePath": "staticwebassets\\assets\\img\\course-bg.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\course\\course-01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\course-01.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\course\\course-02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\course-02.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\course\\course-03.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\course-03.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\course\\course-04.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\course-04.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\course\\course-05.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\course-05.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\course\\course-06.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\course-06.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\course\\course-07.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\course-07.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\course\\course-08.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\course-08.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\course\\course-09.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\course-09.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\course\\course-10.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\course-10.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\course\\course-11.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\course-11.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\course\\course-12.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\course-12.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\course\\course-13.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\course-13.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\course\\course-14.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\course-14.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\course\\course-15.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\course-15.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\course\\course-16.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\course-16.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\course\\course-17.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\course\\course-17.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\deposit-01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\deposit-01.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\deposit-02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\deposit-02.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\deposit-03.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\deposit-03.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\deposit-04.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\deposit-04.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\e04c30d3-d36c-46dc-998c-01e442adb2e3Caption-this-7-December.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\e04c30d3-d36c-46dc-998c-01e442adb2e3Caption-this-7-December.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\error-01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\error-01.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\error-02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\error-02.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\error-bg1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\error-bg1.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\error.png",
+      "PackagePath": "staticwebassets\\assets\\img\\error.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\favicon.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\gratuate-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\gratuate-icon.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\cart.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\cart.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\chapter.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\chapter.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\chart.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\chart.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\check-circle.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\check-circle.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\close-circle.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\close-circle.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\cloud.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\cloud.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\icon-01.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\icon-01.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\icon-02.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\icon-02.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\icon-07.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\icon-07.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\icon-08.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\icon-08.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\icon-09.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\icon-09.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\icon-1.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\icon-1.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\icon-10.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\icon-10.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\icon-12.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\icon-12.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\icon-13.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\icon-13.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\icon-14.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\icon-14.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\icon-15.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\icon-15.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\icon-16.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\icon-16.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\icon-17.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\icon-17.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\icon-18.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\icon-18.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\icon-19.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\icon-19.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\icon-2.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\icon-2.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\icon-20.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\icon-20.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\icon-21.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\icon-21.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\icon-22.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\icon-22.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\icon-23.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\icon-23.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\icon-24.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\icon-24.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\icon-25.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\icon-25.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\icon-26.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\icon-26.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\icon-27.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\icon-27.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\icon-3.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\icon-3.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\icon-4.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\icon-4.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\import.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\import.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\key.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\key.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\lock.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\lock.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\message-text.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\message-text.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\messages.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\messages.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\mobile.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\mobile.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\notification.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\notification.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\people.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\people.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\play-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\play-icon.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\play.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\play.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\teacher.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\teacher.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\timer-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\timer-icon.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\timer-start.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\timer-start.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\timer.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\timer.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\user-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\user-icon.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\users.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\users.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\video.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\video.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\wish.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\icon\\wish.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\inner-banner.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\inner-banner.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\instructor-profile-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\instructor-profile-bg.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\instructor\\address-icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\instructor\\address-icon.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\instructor\\courses-icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\instructor\\courses-icon.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\instructor\\email-icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\instructor\\email-icon.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\instructor\\instructor-bg-banner.png",
+      "PackagePath": "staticwebassets\\assets\\img\\instructor\\instructor-bg-banner.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\instructor\\phone-icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\instructor\\phone-icon.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\instructor\\profile-avatar.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\instructor\\profile-avatar.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\instructor\\review-icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\instructor\\review-icon.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\instructor\\ttl-stud-icon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\instructor\\ttl-stud-icon.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\join.png",
+      "PackagePath": "staticwebassets\\assets\\img\\join.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\lead-01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\lead-01.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\lead-02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\lead-02.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\lead-03.png",
+      "PackagePath": "staticwebassets\\assets\\img\\lead-03.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\lead-04.png",
+      "PackagePath": "staticwebassets\\assets\\img\\lead-04.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\lead-05.png",
+      "PackagePath": "staticwebassets\\assets\\img\\lead-05.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\lead-06.png",
+      "PackagePath": "staticwebassets\\assets\\img\\lead-06.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\login-bg.png",
+      "PackagePath": "staticwebassets\\assets\\img\\login-bg.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\login-img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\login-img.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\logo.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\logo.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\net-icon-01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\net-icon-01.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\net-icon-02.png",
+      "PackagePath": "staticwebassets\\assets\\img\\net-icon-02.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\net-icon-03.png",
+      "PackagePath": "staticwebassets\\assets\\img\\net-icon-03.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\net-icon-04.png",
+      "PackagePath": "staticwebassets\\assets\\img\\net-icon-04.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\pencil-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\pencil-icon.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\plan.png",
+      "PackagePath": "staticwebassets\\assets\\img\\plan.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\profile-bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\profile-bg.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\qute-01.png",
+      "PackagePath": "staticwebassets\\assets\\img\\qute-01.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\qute.png",
+      "PackagePath": "staticwebassets\\assets\\img\\qute.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\send-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\send-icon.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\share.png",
+      "PackagePath": "staticwebassets\\assets\\img\\share.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\book.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\book.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\empty-wallet-change.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\empty-wallet-change.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\empty-wallet-tick.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\empty-wallet-tick.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\loc-icon.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\loc-icon.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\profile-avatar.png",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\profile-avatar.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\profile-user.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\profile-user.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\receipt-text.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\receipt-text.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\refer-img1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\refer-img1.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\refer-img10.png",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\refer-img10.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\refer-img2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\refer-img2.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\refer-img3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\refer-img3.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\refer-img4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\refer-img4.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\refer-img5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\refer-img5.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\refer-img6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\refer-img6.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\refer-img7.png",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\refer-img7.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\refer-img8.png",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\refer-img8.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\refer-img9.png",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\refer-img9.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\student-01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\student-01.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\student-02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\student-02.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\student-03.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\student-03.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\student-04.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\student-04.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\student-05.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\student-05.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\student-06.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\student-06.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\student-07.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\student-07.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\student-08.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\student-08.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\student-09.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\student-09.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\student-10.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\student-10.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\student-11.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\student-11.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\student-12.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\student-12.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\student-bg-banner.png",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\student-bg-banner.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\ticket-close.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\ticket-close.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\ticket-open.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\ticket-open.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\students\\ticket-total.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\students\\ticket-total.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\support-bg.png",
+      "PackagePath": "staticwebassets\\assets\\img\\support-bg.png"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\user-love.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user-love.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\user\\user.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user\\user.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\user\\user1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user\\user1.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\user\\user10.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user\\user10.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\user\\user11.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user\\user11.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\user\\user12.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user\\user12.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\user\\user13.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user\\user13.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\user\\user14.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user\\user14.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\user\\user15.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user\\user15.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\user\\user2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user\\user2.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\user\\user3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user\\user3.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\user\\user4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user\\user4.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\user\\user5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user\\user5.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\user\\user6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user\\user6.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\user\\user7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user\\user7.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\user\\user8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user\\user8.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\user\\user9.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user\\user9.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\video-img-01.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\video-img-01.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\video.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\video.jpg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\js\\ckeditor.js",
+      "PackagePath": "staticwebassets\\assets\\js\\ckeditor.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\js\\jquery-3.6.0.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery-3.6.0.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\js\\jquery.counterup.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.counterup.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\js\\jquery.waypoints.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.waypoints.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\js\\script.js",
+      "PackagePath": "staticwebassets\\assets\\js\\script.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\js\\validation.js",
+      "PackagePath": "staticwebassets\\assets\\js\\validation.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\aos\\aos.css",
+      "PackagePath": "staticwebassets\\assets\\plugins\\aos\\aos.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\aos\\aos.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\aos\\aos.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\apexchart\\apexcharts.min.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\apexchart\\apexcharts.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\apexchart\\chart-data.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\apexchart\\chart-data.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\bootstrap-tagsinput\\css\\bootstrap-tagsinput.css",
+      "PackagePath": "staticwebassets\\assets\\plugins\\bootstrap-tagsinput\\css\\bootstrap-tagsinput.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\bootstrap-tagsinput\\js\\bootstrap-tagsinput.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\bootstrap-tagsinput\\js\\bootstrap-tagsinput.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\dropzone\\dropzone.min.css",
+      "PackagePath": "staticwebassets\\assets\\plugins\\dropzone\\dropzone.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\dropzone\\dropzone.min.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\dropzone\\dropzone.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\feather\\feather.css",
+      "PackagePath": "staticwebassets\\assets\\plugins\\feather\\feather.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\feather\\feather.min.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\feather\\feather.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\feather\\fonts\\Feather144f.svg",
+      "PackagePath": "staticwebassets\\assets\\plugins\\feather\\fonts\\Feather144f.svg"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\feather\\fonts\\Feather144f.ttf",
+      "PackagePath": "staticwebassets\\assets\\plugins\\feather\\fonts\\Feather144f.ttf"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\feather\\fonts\\Feather144f.woff",
+      "PackagePath": "staticwebassets\\assets\\plugins\\feather\\fonts\\Feather144f.woff"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\fontawesome\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\css\\all.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\fontawesome\\css\\fontawesome.min.css",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\css\\fontawesome.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\fontawesome\\webfonts\\fa-brands-400.html",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\webfonts\\fa-brands-400.html"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\fontawesome\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\fontawesome\\webfonts\\fa-regular-400.html",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\webfonts\\fa-regular-400.html"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\fontawesome\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\fontawesome\\webfonts\\fa-solid-900.html",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\webfonts\\fa-solid-900.html"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\fontawesome\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\fontawesome\\webfonts\\fa-v4compatibility.html",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\webfonts\\fa-v4compatibility.html"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\fontawesome\\webfonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\assets\\plugins\\fontawesome\\webfonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\select2\\css\\select2.min.css",
+      "PackagePath": "staticwebassets\\assets\\plugins\\select2\\css\\select2.min.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\select2\\js\\select2.min.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\select2\\js\\select2.min.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\slick\\slick-theme.css",
+      "PackagePath": "staticwebassets\\assets\\plugins\\slick\\slick-theme.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\slick\\slick.css",
+      "PackagePath": "staticwebassets\\assets\\plugins\\slick\\slick.css"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\slick\\slick.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\slick\\slick.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\theia-sticky-sidebar\\ResizeSensor.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\theia-sticky-sidebar\\ResizeSensor.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\plugins\\theia-sticky-sidebar\\theia-sticky-sidebar.js",
+      "PackagePath": "staticwebassets\\assets\\plugins\\theia-sticky-sidebar\\theia-sticky-sidebar.js"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\cdn-cgi\\l\\email-protection.html",
+      "PackagePath": "staticwebassets\\cdn-cgi\\l\\email-protection.html"
+    },
+    {
+      "Id": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\cdn-cgi\\scripts\\5c5dd728\\cloudflare-static\\email-decode.min.js",
+      "PackagePath": "staticwebassets\\cdn-cgi\\scripts\\5c5dd728\\cloudflare-static\\email-decode.min.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.DreamsWebApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.DreamsWebApp.props",
+      "PackagePath": "build\\DreamsWebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.DreamsWebApp.props",
+      "PackagePath": "buildMultiTargeting\\DreamsWebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.DreamsWebApp.props",
+      "PackagePath": "buildTransitive\\DreamsWebApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

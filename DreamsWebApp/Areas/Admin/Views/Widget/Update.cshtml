@@ -1,0 +1,43 @@
+﻿@model UpdateWidgetWM
+
+<div class="content-body">
+    <div class="container-fluid">
+        <div class="row">
+            <div class=" col-lg-12">
+                 <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Widget</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="basic-form">
+                            <form method="post" enctype="multipart/form-data">
+                                <div class="row">
+                                    <div class="mb-3 col-md-6">
+                                        <label class="form-label" asp-for="Name"></label>
+                                        <input asp-for="Name" class="form-control">
+                                        <span asp-validation-for="Name" class="text-danger"></span>
+                                    </div>
+                                    <div class="mb-3 col-md-6">
+                                        <label class="form-label" asp-for="Count"></label>
+                                        <input class="form-control" asp-for="Count">
+                                        <span asp-validation-for="Count" class="text-danger"></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="mb-3 col-md-6">
+                                        <label class="form-label" asp-for="Image"></label>
+                                        <input asp-for="Image" class="form-control">
+                                        <div class="d-flex align-items-center m-1">
+                                            <img src="~/assets/img/@Model.ImageName" class="rounded-lg me-2" width="140" alt="image">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Update</button>
+                            </form>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>

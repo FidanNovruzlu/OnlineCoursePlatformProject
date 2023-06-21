@@ -1,0 +1,28 @@
+﻿@model Widget
+
+<div class="content-body">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xl-12">
+				<div class="card">
+					<div class="card-body">
+						<ul class="d-sm-flex d-block align-items-start justify-content-between m-3">
+							<li class="food-media">
+								<img src="~/assets/img/@Model.ImageName" class="rounded-lg me-2" width="100" height="200" alt="image">
+							</li>
+							<li class="ms-sm-3 ms-0">
+								<span>Content:</span>
+								<h3 class="heading">@Model.Name</h3>
+
+								<span>Total Count:</span>
+								<h4 class="heading">@Model.Count</h4>
+
+								<span class="badge badge-primary badge-sm mb-3">Id :  @Model.Id</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

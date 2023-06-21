@@ -1,0 +1,71 @@
+﻿@model Slide
+
+<div class="content-body">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xl-12">
+				<div class="card">
+					<div class="card-body">
+						<ul class="d-sm-flex d-block align-items-start justify-content-between m-3">
+							<li class="food-media">
+								<img src="~/assets/img/@Model.ImageName" class="rounded-lg me-2" width="140" height="400" alt="image">
+							</li>
+							<li class="ms-sm-3 ms-0">
+								<span>Sup Title:</span>
+								<h3 class="heading">@Model.SupTitle</h3>
+
+								<span>Title:</span>
+								<h4 class="heading">@Model.Title</h4>
+
+								<span class="badge badge-primary badge-sm mb-3">Id :  @Model.Id</span>
+
+								<p>Description:</p>
+								<h6>@Model.Description</h6>
+
+								<div class="row pt-5">
+									<div class="col-xl-6 col-md-6">
+										<h5>Start Content:</h5>
+										<div>
+											@Model.StartContent
+										</div>
+									</div>
+									<div class="col-xl-6 col-md-6">
+										<h5>End Content:</h5>
+											<div>
+												@Model.EndContent
+											</div>
+									</div>
+								</div>
+								<div class="row pt-5">
+									<div class=" col-6 mb-md-0 mb-3">
+										<ul>
+											<li>Average Rating</li>
+											<li><i class="fa fa-star text-warning fs-20 me-2"></i><a class="heading m-0 text-primary">@Model.AverageRateing</a></li>
+										</ul>
+
+									</div>
+									<div class="col-6 mb-md-0 mb-3">
+										<ul class="d-flex align-items-center">
+											<li>
+												<svg class="me-3" width="62" height="53" viewBox="0 0 62 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M8 31.7387C8 30.1102 6.20914 28.7901 4 28.7901C1.79086 28.7901 0 30.1102 0 31.7387V50.0515C0 51.6799 1.79086 53 4 53C6.20914 53 8 51.6799 8 50.0515V31.7387Z" fill="var(--primary)"/>
+												<path d="M26 21.2318C26 19.6242 24.2091 18.321 22 18.321C19.7909 18.321 18 19.6242 18 21.2318V50.0892C18 51.6968 19.7909 53 22 53C24.2091 53 26 51.6968 26 50.0892V21.2318Z" fill="var(--primary)"/>
+												<path d="M44 2.96576C44 1.32781 42.2091 0 40 0C37.7909 0 36 1.32782 36 2.96576V50.0342C36 51.6722 37.7909 53 40 53C42.2091 53 44 51.6722 44 50.0342V2.96576Z" fill="var(--primary)"/>
+												<path d="M62 26.5054C62 24.8762 60.2091 23.5556 58 23.5556C55.7909 23.5556 54 24.8762 54 26.5054V50.0502C54 51.6793 55.7909 53 58 53C60.2091 53 62 51.6793 62 50.0502V26.5054Z" fill="var(--primary)"/>
+												</svg>
+												</li>
+											<li>
+												<h4>@Model.Rating +</h4>
+												<span>Total Rating</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

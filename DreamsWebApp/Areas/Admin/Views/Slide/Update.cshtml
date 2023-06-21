@@ -1,0 +1,67 @@
+﻿@model UpdateSlideVM
+<div class="content-body">
+    <div class="container-fluid">
+        <div class="row">
+            <div class=" col-lg-12">
+                 <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Slide</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="basic-form">
+                            <form method="post" enctype="multipart/form-data">
+                                <div class="row">
+                                    <div class="mb-3 col-md-6">
+                                        <label class="form-label" asp-for="SupTitle"></label>
+                                        <input asp-for="SupTitle" class="form-control">
+                                        <span asp-validation-for="SupTitle" class="text-danger"></span>
+                                    </div>
+                                    <div class="mb-3 col-md-6">
+                                        <label class="form-label" asp-for="Title"></label>
+                                        <input class="form-control" asp-for="Title">
+                                        <span asp-validation-for="SupTitle" class="text-danger"></span>
+                                    </div>
+                                    <div class="mb-3 col-md-6">
+                                        <label class="form-label" asp-for="StartContent"></label>
+                                        <input  class="form-control" asp-for="StartContent">
+                                    </div>
+                                    <div class="mb-3 col-md-6">
+                                        <label class="form-label" asp-for="EndContent"></label>
+                                        <input asp-for="EndContent" class="form-control">
+                                    </div>
+            
+                                    
+                                </div>
+
+                                <div class="row">
+                                    <div class="mb-3 col-md-3">
+                                        <label class="form-label" asp-for="Rating"></label>
+                                        <input  class="form-control" asp-for="Rating">
+                                    </div>
+                                    <div class="mb-3 col-md-3">
+                                        <label class="form-label" asp-for="AverageRateing"></label>
+                                        <input asp-for="AverageRateing" class="form-control">
+                                    </div>
+                                    <div class="mb-3 col-md-6">
+                                        <label class="form-label" asp-for="Description"></label>
+                                        <input asp-for="Description" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="mb-3 col-md-6">
+                                        <label class="form-label" asp-for="Image"></label>
+                                        <input asp-for="Image" class="form-control">
+                                        <div class="d-flex align-items-center m-1">
+                                            <img src="~/assets/img/@Model.ImageName" class="rounded-lg me-2" width="140" alt="image">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Update</button>
+                            </form>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+</div>

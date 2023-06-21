@@ -1,0 +1,50 @@
+﻿@{
+	int count = 0;
+}
+
+@model List<Slide>
+
+<div class="px-5">
+	<div class="px-5">
+		<div class="px-5 m-5">
+			<div class="p-5 m-5">
+				<div class="table-responsive">
+					<table class="table table-responsive-md">
+						<thead>
+							<tr>
+								<th><strong>№</strong></th>
+								<th><strong>Image</strong></th>
+								<th><strong>Sup Title</strong></th>
+								<th><strong>Description</strong></th>
+								<th><strong>Rating</strong></th>
+								<th><strong>Settings</strong></th>
+							</tr>
+						</thead>
+						<tbody>
+							@foreach(var item in Model)
+							{
+								<tr>
+									<td><strong>@(++count)</strong></td>
+									<td>
+										<div class="d-flex align-items-center">
+											<img src="~/assets/img/@item.ImageName" class="rounded-lg me-2" width="130" alt="image">
+										</div>
+									</td>
+									<td>@item.SupTitle</td>
+									<td><div class="d-flex align-items-center">@item.Description</div></td>
+									<td>@item.Rating</td>
+									<td>
+										<div class="d-flex">
+										    <a asp-action="Detail" asp-route-id="@item.Id" class="btn btn-primary shadow btn-xs sharp me-1"><i class="bi bi-info-circle"></i></a>
+											<a asp-action="Update" asp-route-id="@item.Id"  class="btn btn-primary shadow btn-xs sharp me-1"><i class="fa fa-pencil"></i></a>
+										</div>
+									</td>
+								</tr>
+							}
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
