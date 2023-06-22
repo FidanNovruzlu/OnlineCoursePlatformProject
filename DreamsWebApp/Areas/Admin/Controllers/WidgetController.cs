@@ -3,12 +3,15 @@ using DreamsWebApp.Extensions;
 using DreamsWebApp.Models;
 using DreamsWebApp.ViewModels.SlideVM;
 using DreamsWebApp.ViewModels.WidgetVM;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Data;
 
 namespace DreamsWebApp.Areas.Admin.Controllers;
 [Area("Admin")]
+[Authorize(Roles = "Admin")]
 public class WidgetController : Controller
 {
 	private readonly DreamsDataContext _dataContext;

@@ -14,4 +14,6 @@ public class Instructor
 	public int CategoryId { get; set; }
 	public Category Category { get; set; } = null!;
 	public List<Course> Courses { get; set; }
+	public int JobId { get; set; }
+	public Job Job { get; set; }
 }

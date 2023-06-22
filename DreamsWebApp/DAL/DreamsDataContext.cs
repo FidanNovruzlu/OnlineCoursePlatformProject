@@ -1,6 +1,7 @@
 ﻿using DreamsWebApp.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection;
 
 namespace DreamsWebApp.DAL;
 public class DreamsDataContext:IdentityDbContext<AppUser>
@@ -15,4 +16,15 @@ public class DreamsDataContext:IdentityDbContext<AppUser>
 	public DbSet<Widget> Widgets { get; set; }
 	public DbSet<Course> Courses { get; set; }
 	public DbSet<Instructor> Instructors { get; set; }
+	public DbSet<Master> Masters { get; set; }
+	public DbSet<Job> Jobs { get; set; }
+	public DbSet<Level> Levels { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder builder)
+    {
+        base.OnModelCreating(builder);
+
+        builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
+    }
 }

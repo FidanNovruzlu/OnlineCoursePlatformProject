@@ -7,6 +7,7 @@ public class RegisterVM
     public string UserName { get; set; } = null!;
     [Required, MinLength(3)]
     public string Name { get; set; } = null!;
+
     [Required, MinLength(3)]
     public string Surname { get; set; } = null!;
     [EmailAddress,Required]

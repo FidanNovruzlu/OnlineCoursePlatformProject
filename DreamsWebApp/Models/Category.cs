@@ -6,4 +6,5 @@ public class Category
     public string ImageName { get; set; } = null!;
     public List<Instructor>? Instructors { get; set; }
     public ICollection<Slide>? Slides { get; set; }
+    public List<Course> Courses { get;}
 }

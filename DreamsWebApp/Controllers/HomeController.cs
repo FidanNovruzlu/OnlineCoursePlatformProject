@@ -19,12 +19,17 @@ public class HomeController : Controller
         List<Slide> slides =await  _context.Slides.ToListAsync();
         List<Widget> widgets=await _context.Widgets.ToListAsync();
         List<Category> categories = await _context.Categories.Include(c=>c.Instructors).ToListAsync();
+        List<Master> masters= await _context.Masters.ToListAsync();
+        List<Instructor> instructors= await _context.Instructors.Include(c=>c.Courses).Include(j=>j.Job).ToListAsync();
+        List<Course> courses = await _context.Courses.Include(c => c.Instructor).ToListAsync();
 
-        HomeVM homeVM = new HomeVM()
+         HomeVM homeVM = new()
         {
             Slides= slides,
             Widgets=widgets,
-            Categories=categories
+            Categories=categories,
+            Masters=masters,
+            Instructors=instructors,
         };
 
         return View(homeVM);

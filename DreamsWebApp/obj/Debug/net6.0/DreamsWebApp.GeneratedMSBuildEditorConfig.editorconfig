@@ -16,8 +16,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\desktop\programs\C#\ASP.NET Core MVC\DreamsWebApp\DreamsWebApp
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/desktop/programs/C\#/ASP.NET Core MVC/DreamsWebApp/DreamsWebApp/Areas/Admin/Views/Category/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop/programs/C\#/ASP.NET Core MVC/DreamsWebApp/DreamsWebApp/Areas/Admin/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/desktop/programs/C\#/ASP.NET Core MVC/DreamsWebApp/DreamsWebApp/Areas/Admin/Views/Dashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop/programs/C\#/ASP.NET Core MVC/DreamsWebApp/DreamsWebApp/Areas/Admin/Views/Master/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWFzdGVyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/desktop/programs/C\#/ASP.NET Core MVC/DreamsWebApp/DreamsWebApp/Areas/Admin/Views/Shared/_Layout.cshtml]
@@ -60,12 +72,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/desktop/programs/C\#/ASP.NET Core MVC/DreamsWebApp/DreamsWebApp/Views/Account/InstructorRegister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxJbnN0cnVjdG9yUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/desktop/programs/C\#/ASP.NET Core MVC/DreamsWebApp/DreamsWebApp/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/desktop/programs/C\#/ASP.NET Core MVC/DreamsWebApp/DreamsWebApp/Views/Account/Register.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+[D:/desktop/programs/C\#/ASP.NET Core MVC/DreamsWebApp/DreamsWebApp/Views/Account/StudentRegister.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTdHVkZW50UmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop/programs/C\#/ASP.NET Core MVC/DreamsWebApp/DreamsWebApp/Views/Course/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/desktop/programs/C\#/ASP.NET Core MVC/DreamsWebApp/DreamsWebApp/Views/Home/Index.cshtml]
@@ -74,6 +94,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/desktop/programs/C\#/ASP.NET Core MVC/DreamsWebApp/DreamsWebApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop/programs/C\#/ASP.NET Core MVC/DreamsWebApp/DreamsWebApp/Views/Instructor_profile/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zdHJ1Y3Rvcl9wcm9maWxlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/desktop/programs/C\#/ASP.NET Core MVC/DreamsWebApp/DreamsWebApp/Views/Job_category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iX2NhdGVnb3J5XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/desktop/programs/C\#/ASP.NET Core MVC/DreamsWebApp/DreamsWebApp/Views/Shared/Error.cshtml]

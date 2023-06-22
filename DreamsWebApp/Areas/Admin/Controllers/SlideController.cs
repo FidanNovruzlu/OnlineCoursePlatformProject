@@ -2,12 +2,14 @@
 using DreamsWebApp.Extensions;
 using DreamsWebApp.Models;
 using DreamsWebApp.ViewModels.SlideVM;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using System.Data;
 
 namespace DreamsWebApp.Areas.Admin.Controllers;
 [Area("Admin")]
-
+[Authorize(Roles = "Admin")]
 public class SlideController : Controller
 {
     private readonly DreamsDataContext _dataContext;

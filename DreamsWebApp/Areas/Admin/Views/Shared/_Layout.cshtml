@@ -994,10 +994,12 @@
 								<span class="nav-text">Dashboard</span>
 							</a>
 							<ul aria-expanded="false">
-								<li><a asp-action="Index" asp-controller="Dashboard">Dashboard Light</a></li>
-								<li><a asp-action="Index" asp-controller="Dashboard">Dashboard Dark</a></li>
+								<li><a asp-action="Index" asp-controller="Dashboard" >Dashboard Light</a></li>
+								<li><a asp-action="Index" asp-controller="Dashboard" >Dashboard Dark</a></li>
 							</ul>
 						</li>
+
+						@*Slide*@
 						<li>
 							<a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
 								<i class="bi bi-file-slides"></i>
@@ -1007,40 +1009,44 @@
 								<li><a asp-action="Index" asp-controller="Slide">Slide</a></li>
 							</ul>
 						</li>
-						<li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
-							<i class="material-symbols-outlined">school</i>
-							<span class="nav-text">Widget</span>
-						</a>
-						<ul aria-expanded="false">
-							<li><a asp-action="Index" asp-controller="Widget">Widget</a></li>
-							<li><a asp-action="Create" asp-controller="Widget">Add New Widget</a></li>
-						</ul>
 
-						</li>
-						<li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
-							<i class="material-symbols-outlined">person</i>
-							<span class="nav-text">Teacher</span>
-						</a>
-						<ul aria-expanded="false">
-							<li><a href="teacher.html">Teacher</a></li>
-							<li><a href="teacher-detail.html">Teacher Detail</a></li>
-							<li><a href="add-teacher.html">Add New Teacher</a></li>
-
-						</ul>
+						@*	Widget*@
+						<li>
+							<a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+								<i class="material-symbols-outlined">school</i>
+								<span class="nav-text">Widget</span>
+							</a>
+							<ul aria-expanded="false">
+								<li><a asp-action="Index" asp-controller="Widget">Widget</a></li>
+								<li><a asp-action="Create" asp-controller="Widget">Add New Widget</a></li>
+							</ul>
 						</li>
 
-						<li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
-							<i class="material-icons">folder</i>	
-							<span class="nav-text">File Manager</span>
-						</a>
-						<ul aria-expanded="false">
-							<li><a href="file-manager.html">File Manager</a></li>
-							<li><a href="user.html">User</a></li>	
-							<li><a href="celandar.html">Calendar</a></li>		
-							<li><a href="chat.html">Chat</a></li>
-							<li><a href="activity.html">Activity</a></li>	
-						</ul>
+						@*	Teacher*@
+						<li>
+							<a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+								<i class="material-symbols-outlined">person</i>
+								<span class="nav-text">Teacher</span>
+							</a>
+							<ul aria-expanded="false">
+								<li><a href="teacher.html">Teacher</a></li>
+								<li><a href="teacher-detail.html">Teacher Detail</a></li>
+								<li><a href="add-teacher.html">Add New Teacher</a></li>
+							</ul>
 						</li>
+
+						@*Category*@
+						<li>
+							<a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+								<i class="material-icons">folder</i>	
+								<span class="nav-text">Category</span>
+							</a>
+							<ul aria-expanded="false">
+								<li><a asp-action="Index" asp-controller="Category">Categoty</a></li>
+								<li><a asp-action="Create" asp-controller="Category">Add New Category</a></li>	
+							</ul>
+						</li>
+
 						<li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
 							<i class="material-icons"> app_registration </i>
 							<span class="nav-text">Apps</span>
@@ -1180,12 +1186,11 @@
 					</div>
 				</div>
 			</div>
-			<!--**********************************
-				Sidebar end
-			***********************************-->
+
 			<div>
 				@RenderBody()
 			</div>
+
 			<div class="footer footer-outer">
 				<div class="copyright">
 					<p>Copyright © Designed &amp; Developed by <a href="https://dexignlab.com/" target="_blank">DexignLab</a> 2023</p>
