@@ -1,358 +1,280 @@
-﻿
-<section class="page-content course-sec">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-12">
-                <div class="add-course-header">
-                    <h2>Add New Course</h2>
-                    <div class="add-course-btns">
-                        <ul class="nav">
-                            <li>
-                                <a href="dashboard-instructor.html" class="btn btn-black">Back to Course</a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0);" class="btn btn-success-dark">Save</a>
-                            </li>
-                        </ul>
+﻿@model CreateCourseVM
+
+<div class="mt-5">
+    <section class="page-content course-sec ">
+        <style>
+            .none{
+                display:none;
+            }
+        </style>
+        <hr />
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-12">
+                    <div class="add-course-header">
+                        <h2>Add New Course</h2>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card">
-                    <div class="widget-set">
-                        <div class="widget-setcount">
-                            <ul id="progressbar">
-                                <li class="progress-active">
-                                  <p><span></span> Basic Information</p>
-                                </li>
-                                <li>
-                                    <p><span></span> Courses Media</p>
-                                </li>
-                                <li>
-                                    <p><span></span> Curriculum</p>
-                                </li>
-                                <li>
-                                    <p><span></span> Settings</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="widget-content multistep-form">
-                            <fieldset id="first">
-                            <div class="add-course-info">
-                            <div class="add-course-inner-header">
-                            <h4>Basic Information</h4>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="widget-set">
+                            <div class="widget-content multistep-form">
+                                    <div class="add-course-info">
+                                        <div class="add-course-inner-header">
+                                            <h4>Basic Information</h4>
+                                        </div>
+                                        <div class="add-course-form">
+                                            <form method="post" enctype="multipart/form-data">
+                                                <div class="form-group">
+                                                    <label class="add-course-label" asp-for="Title">Course Title</label>
+                                                    <input asp-for="Title" class="form-control" placeholder="Course Title">
+                                                    <span class="text-danger" asp-validation-for="Title"></span>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="add-course-label">Courses Category</label>
+                                                    <select class="form-control select" asp-for="CategoryId">
+                                                        @foreach(var item in Model.Categories)
+                                                        {
+                                                            <option value="@item.Id">@item.Name</option>
+                                                        }
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="add-course-label">Courses Level</label>
+                                                    <select class="form-control select" asp-for="LevelId">
+                                                        @foreach(var item in Model.Levels)
+                                                        {
+                                                            <option value="@item.Id">@item.Name</option>
+                                                        }
+                                                    </select>
+                                                </div>
+                                                <div class="form-group mb-0">
+                                                    <label class="add-course-label" asp-for="Description">Course Description</label>
+                                                     <input asp-for="Description" class="form-control" placeholder="Course Description">
+                                                    <span class="text-danger" asp-validation-for="Description"></span>
+                                                </div>
+                                                <div class="add-course-info">
+                                                    <div class="add-course-inner-header">
+                                                        <h4>Courses Media</h4>
+                                                    </div>
+                                                    <div class="add-course-form">
+                                                            <div class="form-group">
+                                                                <label class="add-course-label" asp-for="Image">Course cover image</label>
+                                                                <div class="relative-form">
+                                                                    <span asp-validation-for="Image" class="text-danger">No File Selected</span>
+                                                                    <label class="relative-file-upload"> Upload Image <input asp-for="Image"> </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="add-image-box">
+                                                                    <a href="javascript:void(0);">
+                                                                         <i class="far fa-image"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="add-course-label" asp-for="Video"></label>
+                                                                <div class="relative-form">
+                                                                    <span asp-validation-for="Video" class="text-danger">No File Selected</span>
+                                                                    <label class="relative-file-upload"> Upload Video <input  asp-for="Video"> </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <div class="add-image-box add-video-box">
+                                                                    <a href="javascript:void(0);">
+                                                                    <i class="fas fa-circle-play"></i>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                                <div class="add-course-info">
+                                                    <div class="add-course-inner-header">
+                                                        <h4>Curriculum</h4>
+                                                    </div>
+                                              
+                                                     <div class="add-course-section">
+                                                         <br />
+                                                         <button class="btn section-create" id="sectionBtn">Add section</button>
+                                                      </div>
+                                                    <button class="btn btn-success btnCreate none">Create</button>
+                                                    <div class="add-course-forme none" >
+                                               
+                                                </div>
+                                                <div class="add-course-info">
+                                        <div class="add-course-inner-header">
+                                            <h4>Requirements</h4>
+                                        </div>
+                                        <div class="add-course-form">
+                                            <div class="form-group form-group-tagsinput">
+                                                <input asp-for="Requirements" data-role="tagsinput" class="input-tags form-control" name="html" value="jquery, bootstrap" id="html">
+                                            </div>
+                                            <div class="form-group mb-0">
+                                                <label class="add-course-label" asp-for="Price"></label>
+                                                <input asp-for="Price" class="form-control" placeholder="10.00">
+                                                <span class="text-danger" asp-validation-for="Price"></span>
+                                            </div>
+                                             <div class="widget-btn">
+                                                <button type="submit" class="btn btn-info-light next_btn">Create</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                <fieldset class="field-card">
+                                    <div class="add-course-info">
+                                        <div class="add-course-msg">
+                                            <i class="fas fa-circle-check"></i>
+                                            <h4>The Course Added Succesfully</h4>
+                                        </div>
+                                    </div>
+                                </fieldset>
                             </div>
-                            <div class="add-course-form">
-                            <form action="#">
-                            <div class="form-group">
-                            <label class="add-course-label">Course Title</label>
-                            <input type="text" class="form-control" placeholder="Course Title">
-                            </div>
-                            <div class="form-group">
-                            <label class="add-course-label">Courses Category</label>
-                            <select class="form-control select">
-                            <option>Category 01</option>
-                            <option>Category 02</option>
-                            <option>Category 03</option>
-                            <option>Category 04</option>
-                            </select>
-                            </div>
-                            <div class="form-group">
-                            <label class="add-course-label">Courses Level</label>
-                            <select class="form-control select">
-                            <option>Level 01</option>
-                            <option>Level 02</option>
-                            <option>Level 03</option>
-                            <option>Level 04</option>
-                            </select>
-                            </div>
-                            <div class="form-group mb-0">
-                             <label class="add-course-label">Course Description</label>
-                            <div id="editor"></div>
-                            </div>
-                            </form>
-                            </div>
-                            <div class="widget-btn">
-                            <a class="btn btn-black">Back</a>
-                            <a class="btn btn-info-light next_btn">Continue</a>
-                            </div>
-                            </div>
-                            </fieldset>
-                            <fieldset class="field-card">
-                            <div class="add-course-info">
-                            <div class="add-course-inner-header">
-                            <h4>Courses Media</h4>
-                            </div>
-                            <div class="add-course-form">
-                            <form action="#">
-                            <div class="form-group">
-                            <label class="add-course-label">Course cover image</label>
-                            <div class="relative-form">
-                            <span>No File Selected</span>
-                            <label class="relative-file-upload">
-                            Upload File <input type="file">
-                            </label>
-                            </div>
-                            </div>
-                            <div class="form-group">
-                            <div class="add-image-box">
-                            <a href="javascript:void(0);">
-                            <i class="far fa-image"></i>
-                            </a>
-                            </div>
-                            </div>
-                            <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Video URL">
-                            </div>
-                            <div class="form-group">
-                            <div class="add-image-box add-video-box">
-                            <a href="javascript:void(0);">
-                            <i class="fas fa-circle-play"></i>
-                            </a>
-                            </div>
-                            </div>
-                            </form>
-                            </div>
-                            <div class="widget-btn">
-                            <a class="btn btn-black prev_btn">Previous</a>
-                            <a class="btn btn-info-light next_btn">Continue</a>
-                            </div>
-                            </div>
-                            </fieldset>
-                            <fieldset class="field-card">
-                            <div class="add-course-info">
-                            <div class="add-course-inner-header">
-                            <h4>Curriculum</h4>
-                            </div>
-                            <div class="add-course-section">
-                            <a href="javascript:void(0);" class="btn">Add Section</a>
-                            </div>
-                            <div class="add-course-form">
-                            <div class="curriculum-grid">
-                            <div class="curriculum-head">
-                            <p>Section 1: Introduction</p>
-                            <a href="javascript:void(0);" class="btn">Add Lecture</a>
-                            </div>
-                            <div class="curriculum-info">
-                            <div id="accordion">
-                            <div class="faq-grid">
-                            <div class="faq-header">
-                            <a class="collapsed faq-collapse" data-bs-toggle="collapse" href="#collapseOne">
-                            <i class="fas fa-align-justify"></i> Introduction
-                            </a>
-                            <div class="faq-right">
-                            <a href="javascript:void(0);">
-                            <i class="far fa-pen-to-square"></i>
-                            </a>
-                            <a href="javascript:void(0);" class="me-0">
-                            <i class="far fa-trash-can"></i>
-                            </a>
-                            </div>
-                            </div>
-                            <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
-                            <div class="faq-body">
-                            <div class="add-article-btns">
-                            <a href="javascript:void(0);" class="btn">Add Article</a>
-                            <a href="javascript:void(0);" class="btn me-0">Add Description</a>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                            <div class="faq-grid">
-                            <div class="faq-header">
-                            <a class="collapsed faq-collapse" data-bs-toggle="collapse" href="#collapseTwo">
-                            <i class="fas fa-align-justify"></i> Installing Development Software
-                            </a>
-                            <div class="faq-right">
-                             <a href="javascript:void(0);">
-                            <i class="far fa-pen-to-square"></i>
-                            </a>
-                            <a href="javascript:void(0);" class="me-0">
-                            <i class="far fa-trash-can"></i>
-                            </a>
-                            </div>
-                            </div>
-                            <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
-                            <div class="faq-body">
-                            <div class="add-article-btns">
-                            <a href="javascript:void(0);" class="btn">Add Article</a>
-                            <a href="javascript:void(0);" class="btn me-0">Add Description</a>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                            <div class="faq-grid mb-0">
-                            <div class="faq-header">
-                            <a class="collapsed faq-collapse" data-bs-toggle="collapse" href="#collapseThree">
-                            <i class="fas fa-align-justify"></i> Hello World Project from GitHub
-                            </a>
-                            <div class="faq-right">
-                            <a href="javascript:void(0);">
-                            <i class="far fa-pen-to-square"></i>
-                            </a>
-                            <a href="javascript:void(0);" class="me-0">
-                            <i class="far fa-trash-can"></i>
-                            </a>
-                            </div>
-                            </div>
-                            <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
-                            <div class="faq-body">
-                            <div class="add-article-btns">
-                            <a href="javascript:void(0);" class="btn">Add Article</a>
-                            <a href="javascript:void(0);" class="btn me-0">Add Description</a>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                            <div class="curriculum-grid mb-0">
-                            <div class="curriculum-head">
-                            <p>Section 1: JavaScript Beginnings</p>
-                            <a href="javascript:void(0);" class="btn">Add Lecture</a>
-                            </div>
-                            <div class="curriculum-info">
-                            <div id="accordion-one">
-                            <div class="faq-grid">
-                            <div class="faq-header">
-                            <a class="collapsed faq-collapse" data-bs-toggle="collapse" href="#collapseFour">
-                            <i class="fas fa-align-justify"></i> Introduction
-                            </a>
-                            <div class="faq-right">
-                            <a href="javascript:void(0);">
-                            <i class="far fa-pen-to-square"></i>
-                            </a>
-                            <a href="javascript:void(0);" class="me-0">
-                            <i class="far fa-trash-can"></i>
-                            </a>
-                            </div>
-                            </div>
-                            <div id="collapseFour" class="collapse" data-bs-parent="#accordion-one">
-                            <div class="faq-body">
-                            <div class="add-article-btns">
-                            <a href="javascript:void(0);" class="btn">Add Article</a>
-                            <a href="javascript:void(0);" class="btn me-0">Add Description</a>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                            <div class="faq-grid">
-                            <div class="faq-header">
-                            <a class="collapsed faq-collapse" data-bs-toggle="collapse" href="#collapseFive">
-                            <i class="fas fa-align-justify"></i> Installing Development Software
-                            </a>
-                            <div class="faq-right">
-                            <a href="javascript:void(0);">
-                            <i class="far fa-pen-to-square"></i>
-                            </a>
-                            <a href="javascript:void(0);" class="me-0">
-                            <i class="far fa-trash-can"></i>
-                            </a>
-                            </div>
-                            </div>
-                             <div id="collapseFive" class="collapse" data-bs-parent="#accordion-one">
-                            <div class="faq-body">
-                            <div class="add-article-btns">
-                            <a href="javascript:void(0);" class="btn">Add Article</a>
-                            <a href="javascript:void(0);" class="btn me-0">Add Description</a>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                            <div class="faq-grid">
-                            <div class="faq-header">
-                            <a class="collapsed faq-collapse" data-bs-toggle="collapse" href="#collapseSix">
-                            <i class="fas fa-align-justify"></i> Hello World Project from GitHub
-                            </a>
-                            <div class="faq-right">
-                            <a href="javascript:void(0);">
-                            <i class="far fa-pen-to-square"></i>
-                            </a>
-                            <a href="javascript:void(0);" class="me-0">
-                            <i class="far fa-trash-can"></i>
-                            </a>
-                            </div>
-                            </div>
-                            <div id="collapseSix" class="collapse" data-bs-parent="#accordion-one">
-                            <div class="faq-body">
-                            <div class="add-article-btns">
-                            <a href="javascript:void(0);" class="btn">Add Article</a>
-                            <a href="javascript:void(0);" class="btn me-0">Add Description</a>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                            <div class="faq-grid mb-0">
-                            <div class="faq-header">
-                            <a class="collapsed faq-collapse" data-bs-toggle="collapse" href="#collapseSeven">
-                            <i class="fas fa-align-justify"></i> Our Sample Website
-                            </a>
-                            <div class="faq-right">
-                            <a href="javascript:void(0);">
-                            <i class="far fa-pen-to-square"></i>
-                            </a>
-                            <a href="javascript:void(0);" class="me-0">
-                            <i class="far fa-trash-can"></i>
-                            </a>
-                            </div>
-                            </div>
-                            <div id="collapseSeven" class="collapse" data-bs-parent="#accordion-one">
-                            <div class="faq-body">
-                            <div class="add-article-btns">
-                            <a href="javascript:void(0);" class="btn">Add Article</a>
-                            <a href="javascript:void(0);" class="btn me-0">Add Description</a>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                            <div class="widget-btn">
-                            <a class="btn btn-black prev_btn">Previous</a>
-                            <a class="btn btn-info-light next_btn">Continue</a>
-                            </div>
-                            </div>
-                            </fieldset>
-                            <fieldset class="field-card">
-                            <div class="add-course-info">
-                            <div class="add-course-inner-header">
-                            <h4>Requirements</h4>
-                            </div>
-                            <div class="add-course-form">
-                            <form action="#">
-                            <div class="form-group form-group-tagsinput">
-                            <input type="text" data-role="tagsinput" class="input-tags form-control" name="html" value="jquery, bootstrap" id="html">
-                            </div>
-                            <div class="form-group mb-0">
-                            <label class="add-course-label">Price</label>
-                            <input type="text" class="form-control" placeholder="10.00">
-                            </div>
-                            </form>
-                            </div>
-                            <div class="widget-btn">
-                            <a class="btn btn-black prev_btn">Previous</a>
-                            <a class="btn btn-info-light next_btn">Continue</a>
-                            </div>
-                            </div>
-                            </fieldset>
-                            <fieldset class="field-card">
-                            <div class="add-course-info">
-                            <div class="add-course-msg">
-                            <i class="fas fa-circle-check"></i>
-                            <h4>The Course Added Succesfully</h4>
-                            <p>Admin will be Approve soon.</p>
-                            </div>
-                            </div>
-                            </fieldset>
                         </div>
                     </div>
-                </div>
-             </div>
+                 </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+</div>
+<script>
+    console.log("work");
+    var count=0;
+    const textDiv = document.querySelector(".add-course-section");
+    const sectionBtn = document.querySelector("#sectionBtn");
+    const courseForm = document.querySelector(".add-course-forme");
+    const createBtn = document.querySelector(".btnCreate");
+
+    createBtn.addEventListener("click", (event) => {
+        const inputs = document.querySelectorAll(".sectionForm");
+        const values = Array.from(inputs).map(input => input.value);
+        console.log(values);
+        event.preventDefault();
+       var inputElements = textDiv.getElementsByTagName("input");
+while (inputElements.length > 0) {
+  textDiv.removeChild(inputElements[0]);
+}
+
+       courseForm.classList.remove("none");
+        for (let i = 0; i < values.length; i++) {
+  const curriculumGrid = document.createElement("div");
+  curriculumGrid.classList.add("curriculum-grid");
+  const curriculumHead = document.createElement("div");
+  curriculumHead.classList.add("curriculum-head");
+  const sectionText = document.createElement("p");
+  count=count+1;
+  sectionText.innerText = `Section ${count }: ${values[i]}`;
+  const lectureBtn = document.createElement("button");
+  lectureBtn.classList.add("btn");
+  lectureBtn.classList.add("lectureBtn");
+  lectureBtn.innerText = "Add Lecture";
+  const sectionInfo = document.createElement("div");
+  sectionInfo.classList.add("sectionInfo");
+
+  curriculumHead.appendChild(sectionText);
+  curriculumHead.appendChild(lectureBtn);
+  curriculumGrid.appendChild(curriculumHead);
+  curriculumGrid.appendChild(sectionInfo);
+  courseForm.appendChild(curriculumGrid);
+
+  lectureBtn.addEventListener("click", (event) => {
+    event.preventDefault();
+    console.log("isleyir");
+    console.log(sectionInfo);
+    const curriculumInfo = document.createElement("div");
+    curriculumInfo.classList.add("curriculum-info");
+    const accordion = document.createElement("div");
+    accordion.id = "accordion";
+    const faqGrid = document.createElement("div");
+    faqGrid.classList.add("faq-grid");
+    const faqHeader = document.createElement("div");
+    faqHeader.classList.add("faq-header");
+    const faqCollapse = document.createElement("a");
+    faqCollapse.classList.add("collapsed");
+    faqCollapse.classList.add("faq-collapse");
+    faqCollapse.setAttribute("data-bs-toggle", "collapse");
+    faqCollapse.href = "#collapseOne";
+    const faqIcon = document.createElement("i");
+    faqIcon.classList.add("fas");
+    faqIcon.classList.add("fa-align-justify");
+    faqCollapse.appendChild(faqIcon);
+    const faqText = document.createTextNode(values[i]);
+    faqCollapse.appendChild(faqText);
+    const faqRight = document.createElement("div");
+    faqRight.classList.add("faq-right");
+    const editLink = document.createElement("a");
+    editLink.href = "javascript:void(0);";
+    const editIcon = document.createElement("i");
+    editIcon.classList.add("far");
+    editIcon.classList.add("fa-pen-to-square");
+    editLink.appendChild(editIcon);
+    faqRight.appendChild(editLink);
+    const deleteLink = document.createElement("a");
+    deleteLink.href = "javascript:void(0);";
+    deleteLink.classList.add("me-0");
+    const deleteIcon = document.createElement("i");
+    deleteIcon.classList.add("far");
+    deleteIcon.classList.add("fa-trash-can");
+    deleteLink.appendChild(deleteIcon);
+    faqRight.appendChild(deleteLink);
+    faqHeader.appendChild(faqCollapse);
+    faqHeader.appendChild(faqRight);
+
+
+    const faqBody = document.createElement("div");
+    faqBody.classList.add("faq-body");
+    const addArticleBtns = document.createElement("div");
+    addArticleBtns.classList.add("add-article-btns");
+
+
+     const addDescriptionBtn = document.createElement("a");
+  addDescriptionBtn.href = "javascript:void(0);";
+  addDescriptionBtn.classList.add("btn");
+  addDescriptionBtn.classList.add("me-0");
+  addDescriptionBtn.classList.add("descriptionBtn");
+  addDescriptionBtn.innerText = "Add Description";
+
+  addArticleBtns.appendChild(addDescriptionBtn);
+  faqBody.appendChild(addArticleBtns);
+  faqGrid.appendChild(faqHeader);
+  faqGrid.appendChild(faqBody);
+  accordion.appendChild(faqGrid);
+  curriculumInfo.appendChild(accordion);
+  sectionInfo.appendChild(curriculumInfo);
+
+  addDescriptionBtn.addEventListener("click", () => {
+    const inputElement = document.createElement("input");
+    inputElement.setAttribute("type", "text");
+    inputElement.setAttribute("placeholder", "write section name");
+    inputElement.classList.add("form-control");
+    inputElement.setAttribute("asp-for", "Lectures");
+    inputElement.classList.add("sectionForm");
+    inputElement.style.cssText =
+      "display:flex; flex-wrap:wrap; border-color:blue; width:50%;margin-top:5px";
+    faqBody.appendChild(inputElement);
+    addDescriptionBtn.classList.add("none");
+  });
+  });
+}
+
+    });
+
+    sectionBtn.addEventListener("click", (event) => {
+        event.preventDefault();
+        createBtn.classList.remove("none");
+        console.log("working");
+        const inputElement = document.createElement("input");
+        inputElement.setAttribute("type", "text");
+        inputElement.setAttribute("placeholder", "write section name");
+        inputElement.classList.add("form-control");
+        inputElement.classList.add("sectionForm");
+          inputElement.setAttribute("asp-for", "Sections");
+        inputElement.style.cssText = "display:flex; flex-wrap:wrap; border-color:blue; width:50%;margin-top:5px";
+        textDiv.appendChild(inputElement);
+       
+    });
+</script>

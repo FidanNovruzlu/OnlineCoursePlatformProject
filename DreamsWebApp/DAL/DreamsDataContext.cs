@@ -1,7 +1,9 @@
 ﻿using DreamsWebApp.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System.Drawing.Printing;
 using System.Reflection;
+using System.Reflection.Emit;
 
 namespace DreamsWebApp.DAL;
 public class DreamsDataContext:IdentityDbContext<AppUser>
@@ -19,6 +21,8 @@ public class DreamsDataContext:IdentityDbContext<AppUser>
 	public DbSet<Master> Masters { get; set; }
 	public DbSet<Job> Jobs { get; set; }
 	public DbSet<Level> Levels { get; set; }
+	public DbSet<Comment> Comments { get; set; }
+	public DbSet<MailSetting> MailSettings { get; set; }
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
@@ -26,5 +30,8 @@ public class DreamsDataContext:IdentityDbContext<AppUser>
 
         builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
+        builder.Entity<MailSetting>()
+            .HasKey(m => m.Id);
     }
+
 }

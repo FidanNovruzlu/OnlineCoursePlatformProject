@@ -26,34 +26,34 @@ public class WidgetController : Controller
 		List<Widget> widgets= _dataContext.Widgets.Take(4).ToList();
 		return View(widgets);
 	}
-	public IActionResult Create()
-	{
-		return View();
-	}
-	[HttpPost]
-	[ValidateAntiForgeryToken]
-	public async Task<IActionResult> Create(CreateWidgetVM createWidgetVM)
-	{
-		if (!ModelState.IsValid) return View(createWidgetVM);
+	//public IActionResult Create()
+	//{
+	//	return View();
+	//}
+	//[HttpPost]
+	//[ValidateAntiForgeryToken]
+	//public async Task<IActionResult> Create(CreateWidgetVM createWidgetVM)
+	//{
+	//	if (!ModelState.IsValid) return View(createWidgetVM);
 
-		if (!createWidgetVM.Image.CheckType("image/") & createWidgetVM.Image.CheckSize(2048))
-		{
-			ModelState.AddModelError("", "Incorrect image type or size.");
-			return View(createWidgetVM);
-		}
-		string newFilename = await createWidgetVM.Image.UplaodAsync(_webHostEnvironment.WebRootPath,"assets", "img");
+	//	if (!createWidgetVM.Image.CheckType("image/") & createWidgetVM.Image.CheckSize(2048))
+	//	{
+	//		ModelState.AddModelError("", "Incorrect image type or size.");
+	//		return View(createWidgetVM);
+	//	}
+	//	string newFilename = await createWidgetVM.Image.UplaodAsync(_webHostEnvironment.WebRootPath,"assets", "img");
 
-		Widget widget = new()
-		{
-			Count=createWidgetVM.Count,
-			Name=createWidgetVM.Name,
-			ImageName=newFilename
-		};
+	//	Widget widget = new()
+	//	{
+	//		Count=createWidgetVM.Count,
+	//		Name=createWidgetVM.Name,
+	//		ImageName=newFilename
+	//	};
 
-		_dataContext.Widgets.Add(widget);
-		_dataContext.SaveChanges();
-		return RedirectToAction(nameof(Index));
-	}
+	//	_dataContext.Widgets.Add(widget);
+	//	_dataContext.SaveChanges();
+	//	return RedirectToAction(nameof(Index));
+	//}
 	public IActionResult Detail(int id)
 	{
 		Widget? widget= _dataContext.Widgets.FirstOrDefault(s => s.Id == id);

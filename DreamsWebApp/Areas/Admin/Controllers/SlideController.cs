@@ -35,7 +35,7 @@ public class SlideController : Controller
         Slide? slide = _dataContext.Slides.Find(id);
         if (slide == null) return NotFound();
 
-        UpdateSlideVM updateSlideVM= new UpdateSlideVM()
+        UpdateSlideVM updateSlideVM= new()
         {
             Title= slide.Title,
             SupTitle= slide.SupTitle,
@@ -43,8 +43,6 @@ public class SlideController : Controller
             StartContent= slide.StartContent,
             Description = slide.Description,
             ImageName= slide.ImageName,
-            Rating= slide.Rating,
-            AverageRateing= slide.AverageRateing,
         };
 
         return View(updateSlideVM);

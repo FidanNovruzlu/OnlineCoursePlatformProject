@@ -2,88 +2,75 @@
 @{
     Layout = null;
     <link rel="shortcut icon" type="image/x-icon" href="~/assets/img/favicon.svg">
-    <link rel="stylesheet" href="~/assets/css/bootstrap.min.css">
+    <link href="~/admin/vendor/wow-master/css/libs/animate.css" rel="stylesheet">
+    <link href="~/admin/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/admin/vendor/bootstrap-select-country/css/bootstrap-select-country.min.css">
+    <link rel="stylesheet" href="~/admin/vendor/jquery-nice-select/css/nice-select.css">
+    <link href="~/admin/vendor/datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="~/assets/plugins/fontawesome/css/fontawesome.min.css">
-    <link rel="stylesheet" href="~/assets/plugins/fontawesome/css/all.min.css">
-
-    <link rel="stylesheet" href="~/assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="~/assets/css/owl.theme.default.min.css">
-
-    <link rel="stylesheet" href="~/assets/plugins/slick/slick.css">
-    <link rel="stylesheet" href="~/assets/plugins/slick/slick-theme.css">
-
-    <link rel="stylesheet" href="~/assets/plugins/select2/css/select2.min.css">
-
-    <link rel="stylesheet" href="~/assets/plugins/aos/aos.css">
-    <link rel="stylesheet" href="~/assets/css/style.css">
+    <link href="~/admin/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
+    <!--swiper-slider-->
+    <link rel="stylesheet" href="~/admin/vendor/swiper/css/swiper-bundle.min.css">
+    <!-- Style css -->
+    <link  href="~/admin/css/style.css" rel="stylesheet">
 }
-<div class="main-wrapper log-wrap">
-    <div class="row">
-         <div class="col-md-6 login-bg">
-             <div class="owl-carousel login-slide owl-theme">
-                 <div class="welcome-login">
-                    <div class="login-banner">
-                         <img src="~/assets/img/login-img.png" class="img-fluid" alt="Logo">
-                    </div>
-                    <div class="mentor-course text-center">
-                        <h2>Welcome to <br>DreamsLMS Courses.</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    </div>
+<body class="body  h-100">
+    <div class="authincation d-flex flex-column flex-lg-row flex-column-fluid">
+        <div class="login-aside text-center  d-flex flex-column flex-row-auto">
+            <div class="d-flex flex-column-auto flex-column pt-lg-40 pt-15">
+                 <div class="text-center mb-lg-4 pt-3 logo">
+                     <a asp-action="Index" asp-controller="Home" class="navbar-brand logo d-flex justify-content-center align-items-center">
+                          <img src="~/assets/img/logo.svg" class="img-fluid" alt="Logo" width="200px">
+                     </a>
+                      <h1 class="text-center text-white d-flex justify-content-center align-items-center pt-4">Welcome back!</h1>
                 </div>
-             </div>
-         </div>
-         <div class="col-md-6 login-wrap-bg">
-            <div class="login-wrapper">
-                <div class="loginbox">
-                     <div class="w-100">
-                        <div class="img-logo">
-                            <img src="~/assets/img/logo.svg" class="img-fluid" alt="Logo">
-                            <div class="back-home">
-                                 <a asp-action="Index" asp-controller="Home">Back to Home</a>
-                            </div>
-                        </div>
-                        <h1>Sign into Your Account</h1>
-                        <form method="post">
-                            <div class="text-danger" asp-validation-summary="ModelOnly"></div>
-                            <div class="form-group">
-                                <label class="form-control-label" asp-for="UserName"></label>
-                                <input asp-for="UserName" class="form-control" placeholder="Enter your username">
-                                <span asp-validation-for="UserName" class="text-danger"></span>
-                            </div>
-                            <div class="form-group">
-                                <label class="form-control-label" asp-for="Password"></label>
-                                <div class="pass-group">
-                                    <input asp-for="Password" class="form-control pass-input" placeholder="Enter your password">
-                                    <span class="feather-eye toggle-password" asp-validation-for="Password"></span>
+            </div>
+            <div class="aside-image position-relative">
+                <img src="~/assets/img/login-img.png" class="img2 move-2" alt="Logo">
+                <img class="img4 move-4 rounded-circle" src="~/admin/images/background/pic-2.png" alt="" width="260px">
+                <img class="img1 move-1 rounded-circle" src="~/assets/img/course/course-06.jpg" alt="" width="120px" height="120px">
+                <img class="img3 move-3 rounded-circle" src="~/assets/img/course/course-08.jpg" alt="" width="140px" height="140px">
+            </div>
+        </div>
+        <div class="container flex-row-fluid d-flex flex-column justify-content-center position-relative overflow-hidden p-7 mx-auto">
+            <div class="d-flex justify-content-center h-100 align-items-center">
+                <div class="authincation-content style-2">
+                    <div class="row no-gutters">
+                        <div class="col-xl-12 tab-content">
+                            <div id="sign-up" class="auth-form tab-pane fade show active  form-validation">
+                                <form method="post">
+                                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                                    <div class="text-center mb-4">
+                                        <h3 class="text-center mb-2 text-black">Sign In</h3>
+                                        <hr />
+                                    </div>
+
+                                    <div class="form-row ">
+                                        <div class="mb-3 p-1 ">
+                                            <label class="form-label mb-2 fs-13 label-color font-w500" asp-for="UserName"></label>
+                                            <input class="form-control" placeholder="Enter your username" asp-for="UserName">
+                                            <span asp-validation-for="UserName" class="text-danger"></span>
+                                        </div>
+                                        <div class="mb-3 p-1 ">
+                                            <label class="form-label mb-2 fs-13 label-color font-w500" asp-for="Password"></label>
+                                            <input class="form-control" placeholder="Enter your password" asp-for="Password">
+                                            <span asp-validation-for="Password" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                    <a href="javascript:void(0);" class="text-primary float-end mb-4">Forgot Password ?</a>
+                                    <button type="submit" class="btn btn-block btn-primary">Sign me in</button>
+
+                                </form>
+                                <div class="new-account mt-3 text-center">
+                                    <p class="font-w500">New User? <a class="text-primary" asp-action="StudentRegister" asp-controller="Account">Create Account</a></p>
                                 </div>
                             </div>
-                            <div class="forgot">
-                                 <span><a class="forgot-link" href="forgot-password.html">Forgot Password ?</a></span>
-                            </div>
-                            <div class="remember-me">
-                                <label class="custom_check mr-2 mb-0 d-inline-flex remember-me"> Remember me
-                                    <input type="checkbox" name="radio">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                            <div class="d-grid">
-                                <button class="btn btn-primary btn-start" type="submit">Sign In</button>
-                            </div>
-                        </form>
-                     </div>
-                </div>
-                <div class="google-bg text-center">
-                    <span><a href="#">Or sign in with</a></span>
-                    <div class="sign-google">
-                        <ul>
-                            <li><a href="#"><img src="~/assets/img/net-icon-01.png" class="img-fluid" alt="Logo"> Sign In using Google</a></li>
-                            <li><a href="#"><img src="~/assets/img/net-icon-02.png" class="img-fluid" alt="Logo">Sign In using Facebook</a></li>
-                        </ul>
+                        </div>
                     </div>
-                    <p class="mb-0">New User ? <a href="register.html">Create an Account</a></p>
-                 </div>
+                </div>
             </div>
-         </div>
+        </div>
     </div>
-</div>
+
+</body>

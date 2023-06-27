@@ -53,124 +53,81 @@
                                     <li class="active">
                                         <a asp-action="Index" asp-controller="Home">Home</a>
                                     </li>
-                                    <li class="has-submenu">
+                                   @* Instructor*@
+                                    <li class="has-submenu ">
                                         <a href="#">Instructor <i class="fas fa-chevron-down"></i></a>
                                         <ul class="submenu">
-                                            <li><a href="instructor-dashboard.html">Dashboard</a></li>
+                                            <li><a asp-action="Dashboard" asp-controller="Instructor">Dashboard</a></li>
                                             <li class="has-submenu">
-                                                <a href="instructor-list.html">Instructor</a>
+                                                <a asp-action="List" asp-controller="Instructor">Instructor</a>
                                                 <ul class="submenu">
-                                                    <li><a href="instructor-list.html">List</a></li>
-                                                    <li><a href="instructor-grid.html">Grid</a></li>
+                                                    <li><a asp-action="List" asp-controller="Instructor">List</a></li>
+                                                    <li><a asp-action="Grid" asp-controller="Instructor">Grid</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="instructor-course.html">My Course</a></li>
-                                            <li><a href="instructor-reviews.html">Reviews</a></li>
-                                            <li><a href="instructor-earnings.html">Earnings</a></li>
-                                            <li><a href="instructor-orders.html">Orders</a></li>
-                                            <li><a href="instructor-payouts.html">Payouts</a></li>
-                                            <li><a href="instructor-tickets.html">Support Ticket</a></li>
-                                            <li><a href="instructor-edit-profile.html">Instructor Profile</a></li>
-                                            <li><a href="instructor-security.html">Security</a></li>
-                                            <li><a href="instructor-social-profiles.html">Social Profiles</a></li>
-                                            <li><a href="instructor-profile-privacy.html">Profile Privacy</a></li>
-                                            <li><a href="instructor-delete-profile.html">Delete Profile</a></li>
-                                            <li><a href="instructor-linked-account.html">Linked Accounts</a></li>
+                                            <li><a asp-action="Course" asp-controller="Instructor">My Course</a></li>
+                                            <li><a asp-action="Reviews" asp-controller="Instructor">Reviews</a></li>
+                                            <li><a asp-action="Index" asp-controller="Instructor">Instructor Profile</a></li>
                                         </ul>
                                     </li>
-                                    <li class="has-submenu">
+                                   @* Student*@
+                                    <li class="has-submenu ">
                                         <a href="#">Student <i class="fas fa-chevron-down"></i></a>
                                         <ul class="submenu first-submenu">
                                             <li class="has-submenu ">
-                                                <a href="students-list.html">Student</a>
+                                                <a asp-action="List" asp-controller="Student">Student</a>
                                                 <ul class="submenu">
-                                                    <li><a href="students-list.html">List</a></li>
-                                                    <li><a href="students-grid.html">Grid</a></li>
+                                                    <li><a asp-action="List" asp-controller="Student">List</a></li>
+                                                    <li><a asp-action="Grid" asp-controller="Student">Grid</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="setting-edit-profile.html">Student Profile</a></li>
-                                            <li><a href="setting-student-security.html">Security</a></li>
-                                            <li><a href="setting-student-social-profile.html">Social profile</a></li>
-                                            <li><a href="setting-student-privacy.html">Profile Privacy</a></li>
-                                            <li><a href="setting-student-accounts.html">Link Accounts</a></li>
-                                            <li><a href="setting-student-referral.html">Referal</a></li>
-                                            <li><a href="setting-student-subscription.html">Subscribtion</a></li>
-                                            <li><a href="setting-student-billing.html">Billing</a></li>
-                                            <li><a href="setting-student-payment.html">Payment</a></li>
-                                            <li><a href="setting-student-invoice.html">Invoice</a></li>
-                                            <li><a href="setting-support-tickets.html">Support Tickets</a></li>
+                                            <li><a asp-action="Index" asp-controller="Student">Student Profile</a></li>
                                         </ul>
                                     </li>
-                                    @*<li class="has-submenu">
-                                        <a href="#">Course <i class="fas fa-chevron-down"></i></a>
-                                        <ul class="submenu">
-                                            <li><a  asp-action="Create" asp-controller="Course">Add Course</a></li>
-                                            <li><a href="blog-grid.html">Course List</a></li>
-                                            <li><a href="blog-masonry.html">Course Grid</a></li>
-                                            <li><a href="blog-modern.html">Course Details</a></li>
-                                         </ul>
-                                    </li>*@
-
-                                    <li class="has-submenu">
+                                    <li class="has-submenu ">
                                         <a href="#">Pages <i class="fas fa-chevron-down"></i></a>
-                                        <ul class="submenu">                                   
-                                            <li class="has-submenu">
-                                                <a href="come-soon.html">Error</a>
-                                                <ul class="submenu">
-                                                    <li><a href="come-soon.html">Comeing soon</a></li>
-                                                    <li><a href="error-404.html">404</a></li>
-                                                    <li><a href="error-500.html">500</a></li>
-                                                    <li><a href="under-construction.html">Under Construction</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="faq.html">FAQ</a></li>
-                                            <li><a href="support.html">Support</a></li>
-                                            <li><a asp-action="Index" asp-controller="Job_category">Category</a></li>
-                                            <li><a href="cart.html">Cart</a></li>
-                                            <li><a href="checkout.html">Checkout</a></li>
-                                            <li><a href="login.html">Login</a></li>
-                                            <li><a href="register.html">Register</a></li>
-                                            <li><a href="forgot-password.html">Forgot Password</a></li>
+                                        <ul class="submenu"> 
+                                            <li><a asp-action="Index" asp-controller="Category">Category</a></li>
+                                            <li><a asp-action="Index" asp-controller="Checkout">Cart</a></li>
+                                            <li><a asp-action="Login" asp-controller="Account">Login</a></li>
+                                            <li><a asp-action="StudentRegister" asp-controller="Account">Register</a></li>
+                                            <li><a asp-action="ForgotPassword" asp-controller="Account">Forgot Password</a></li>
                                         </ul>
-                                    </li>
-
-                                    <li class="login-link">
-                                        <a href="login.html">Login / Signup</a>
                                     </li>
                                 </ul>
                             </div>
-                            @if (User.IsInRole("Admin"))
-                            {
-                                 <li><a asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Admin</a></li>
-                            }
                             @if (User.Identity.IsAuthenticated)
                             {
                                 <ul class="nav header-navbar-rht">
-                                    <li class="p-3 text-dark"> @User.Identity.Name</li>
                                     @if (User.IsInRole("Instructor"))
                                     {
-                                        <li class="has-submenu">
-                                            <a href="#">Course <i class="fas fa-chevron-down"></i></a>
-                                            <ul class="submenu">
-                                                <li><a  asp-action="Create" asp-controller="Course">Create Course</a></li>
-                                                <li><a href="blog-grid.html">Course List</a></li>
-                                                <li><a href="blog-masonry.html">Course Grid</a></li>
-                                                <li><a href="blog-modern.html">Course Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a asp-controller="Course" asp-action="MyCourses">My Courses</a></li>
-                                        <li><a asp-controller="Course" asp-action="TeacherCertificatedUsers">Certificated Students</a></li>
-                                        <li><a asp-controller="Course" asp-action="Create">Create Course</a></li>
+                                        <ul class="main-nav">
+                                            <li class="has-submenu">
+                                                <a href="#">Course <i class="fas fa-chevron-down"></i></a>
+                                                <ul class="submenu">
+                                                    <li><a asp-action="Create" asp-controller="Course">Create Course</a></li>
+                                                    <li><a asp-action="Index" asp-controller="Course">Course List</a></li>
+                                                    <li><a asp-action="Grid" asp-controller="Course">Course Grid</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
                                     }
                                     @if (User.IsInRole("Student"))
                                     {
-                                        <li><a asp-controller="Course" asp-action="UserInstalledCourse">My Courses</a></li>
-                                        <li><a asp-controller="Course" asp-action="MyCertificates">My Certificates</a></li>
+                                        <li><a asp-controller="Course" asp-action="Index">My Courses</a></li>
+                                    }
+                                    @if (User.IsInRole("Admin"))
+                                    {
+                                        <li class="p-3 text-danger"> @User.Identity.Name</li>
+                                    }
+                                    else
+                                    {
+                                        <li class="p-3 text-danger"> @User.Identity.Name</li>
                                     }
                                     <li class="nav-item p-3">
-                                         <form method="post" asp-action="LogOut" asp-controller="Account">
-                                             <button style=" color:white ;background-color:#dc3545;" class="btn rounded-pill">Log Out </button>
-                                         </form>
+                                        <form method="post" asp-action="LogOut" asp-controller="Account">
+                                            <button style=" color:white ;background-color:#dc3545;" class="btn rounded-pill">Log Out </button>
+                                        </form>
                                     </li>
                                 </ul>
                             }
@@ -189,7 +146,7 @@
                     </nav>
                 </div>
             </header>
-            @RenderBody()
+                @RenderBody()
             <footer class="footer">
 
             <div class="footer-top aos" data-aos="fade-up">

@@ -7,16 +7,18 @@ public class Course
     public string ImageName { get; set; } = null!;
     public string Title { get; set; } = null!;
     public string VideoUrl { get; set; } = null!;
-    public string Section { get; set; } = null!;
-    public string Lecture { get; set; } 
-    public string Article { get; set; } 
-    public string LectureDescription { get; set; }
-    public string Requirements { get; set; } 
-    public double Price { get; set; }
+    public string? Requirements { get; set; } 
+    public decimal Price { get; set; }
+    public decimal? DiscountPrice { get; set; }
     public int CategoryId { get; set; }
-    public Category Category { get; set; }
+    public Category Category { get; set; } = null!;
     public int InstructorId { get; set; }
     public Instructor Instructor { get; set; } = null!;
     public int LevelId { get; set; }
-    public Level Level { get; set; }
+    public Level? Level { get; set; }
+    public bool? TrendingCourse { get; set; }
+    public bool? FeaturedCourse { get; set; }
+    public double Rating { get; set; }
+    public List<Comment>? Comments { get; set; }
+    public List<Section> Sections { get; set; }
 }

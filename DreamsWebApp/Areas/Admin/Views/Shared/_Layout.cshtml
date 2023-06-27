@@ -749,12 +749,6 @@
 										<svg id="icon-minimize-1" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="A098AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minimize"><path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3" style="stroke-dasharray: 37, 57; stroke-dashoffset: 0;"></path></svg>
 									</a>
 								</li>
-
-								<li class="nav-item dropdown notification_dropdown">
-									<a class="nav-link bell-link" href="javascript:void(0);">
-										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#A098AE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>						
-									</a>
-								</li>		
 								<li class="nav-item bell-icon blink dropdown notification_dropdown">
 									<a class="nav-link  " href="javascript:void(0);" role="button" data-bs-toggle="dropdown">
 								<svg width="20" height="20" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -919,10 +913,13 @@
 														<li>
 															<img src="~/admin/images/user.jpg" class="ms-0" alt="">
 														</li>
-														<li class="ms-2">
-															<h4 class="mb-0">Nella Vita</h4>
-															<span>Admin</span>
-														</li>
+														 @if (User.IsInRole("Admin"))
+														{
+															<li class="ms-2">
+																	<h4 class="mb-0"> @User.Identity.Name</h4>
+																<span>Admin</span>
+															</li>
+														}
 													</ul>
 
 												</div>
@@ -936,25 +933,6 @@
 															</g>
 														</svg>
 														<span class="ms-2">Profile </span>
-													</a>
-													<a href="chat.html" class="dropdown-item ai-icon ">
-														<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="svg-main-icon">
-															<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																<rect x="0" y="0" width="24" height="24"/>
-																<path d="M21.9999843,15.009808 L22.0249378,15 L22.0249378,19.5857864 C22.0249378,20.1380712 21.5772226,20.5857864 21.0249378,20.5857864 C20.7597213,20.5857864 20.5053674,20.4804296 20.317831,20.2928932 L18.0249378,18 L5,18 C3.34314575,18 2,16.6568542 2,15 L2,6 C2,4.34314575 3.34314575,3 5,3 L19,3 C20.6568542,3 22,4.34314575 22,6 L22,15 C22,15.0032706 21.9999948,15.0065399 21.9999843,15.009808 Z M6.16794971,10.5547002 C7.67758127,12.8191475 9.64566871,14 12,14 C14.3543313,14 16.3224187,12.8191475 17.8320503,10.5547002 C18.1384028,10.0951715 18.0142289,9.47430216 17.5547002,9.16794971 C17.0951715,8.86159725 16.4743022,8.98577112 16.1679497,9.4452998 C15.0109146,11.1808525 13.6456687,12 12,12 C10.3543313,12 8.9890854,11.1808525 7.83205029,9.4452998 C7.52569784,8.98577112 6.90482849,8.86159725 6.4452998,9.16794971 C5.98577112,9.47430216 5.86159725,10.0951715 6.16794971,10.5547002 Z" fill="var(--primary)"/>
-															</g>
-														</svg>
-														<span class="ms-2">Message </span>
-													</a>
-													<a href="email-inbox.html" class="dropdown-item ai-icon ">
-														<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="svg-main-icon">
-															<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-																<rect x="0" y="0" width="24" height="24"/>
-																<path d="M21,12.0829584 C20.6747915,12.0283988 20.3407122,12 20,12 C16.6862915,12 14,14.6862915 14,18 C14,18.3407122 14.0283988,18.6747915 14.0829584,19 L5,19 C3.8954305,19 3,18.1045695 3,17 L3,8 C3,6.8954305 3.8954305,6 5,6 L19,6 C20.1045695,6 21,6.8954305 21,8 L21,12.0829584 Z M18.1444251,7.83964668 L12,11.1481833 L5.85557487,7.83964668 C5.4908718,7.6432681 5.03602525,7.77972206 4.83964668,8.14442513 C4.6432681,8.5091282 4.77972206,8.96397475 5.14442513,9.16035332 L11.6444251,12.6603533 C11.8664074,12.7798822 12.1335926,12.7798822 12.3555749,12.6603533 L18.8555749,9.16035332 C19.2202779,8.96397475 19.3567319,8.5091282 19.1603533,8.14442513 C18.9639747,7.77972206 18.5091282,7.6432681 18.1444251,7.83964668 Z" fill="#000000"/>
-																<circle fill="var(--primary)" opacity="0.3" cx="19.5" cy="17.5" r="2.5"/>
-															</g>
-														</svg>
-														<span class="ms-2">Notification </span>
 													</a>
 													<a href="javascript:void(0);" class="dropdown-item ai-icon ">
 														<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1" class="svg-main-icon">
@@ -994,8 +972,7 @@
 								<span class="nav-text">Dashboard</span>
 							</a>
 							<ul aria-expanded="false">
-								<li><a asp-action="Index" asp-controller="Dashboard" >Dashboard Light</a></li>
-								<li><a asp-action="Index" asp-controller="Dashboard" >Dashboard Dark</a></li>
+								<li><a asp-action="Index" asp-controller="Dashboard" >Dashboard</a></li>
 							</ul>
 						</li>
 
@@ -1047,136 +1024,14 @@
 							</ul>
 						</li>
 
-						<li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
-							<i class="material-icons"> app_registration </i>
-							<span class="nav-text">Apps</span>
+						@*Courses*@
+						<li>
+							<a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
+								<i class="material-icons">folder</i>	
+								<span class="nav-text">Course</span>
 							</a>
 							<ul aria-expanded="false">
-								<li><a href="app-profile.html">Profile</a></li>
-								<li><a href="edit-profile.html">Edit Profile</a></li>
-								<li><a href="post-details.html">Post Details</a></li>
-								<li><a class="has-arrow" href="javascript:void(0);" aria-expanded="false">Email</a>
-									<ul aria-expanded="false">
-										<li><a href="email-compose.html">Compose</a></li>
-										<li><a href="email-inbox.html">Inbox</a></li>
-										<li><a href="email-read.html">Read</a></li>
-									</ul>
-								</li>
-								<li><a href="app-calender.html">Calendar</a></li>
-								<li><a class="has-arrow" href="javascript:void(0);" aria-expanded="false">Shop</a>
-									<ul aria-expanded="false">
-										<li><a href="ecom-product-grid.html">Product Grid</a></li>
-										<li><a href="ecom-product-list.html">Product List</a></li>
-										<li><a href="ecom-product-detail.html">Product Details</a></li>
-										<li><a href="ecom-product-order.html">Order</a></li>
-										<li><a href="ecom-checkout.html">Checkout</a></li>
-										<li><a href="ecom-invoice.html">Invoice</a></li>
-										<li><a href="ecom-customers.html">Customers</a></li>
-									</ul>
-								</li>
-							</ul>
-						</li>
-						<li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
-							<i class="material-icons"> assessment </i>
-								<span class="nav-text">Charts</span>
-							</a>
-							<ul aria-expanded="false">
-								<li><a href="chart-flot.html">Flot</a></li>
-								<li><a href="chart-morris.html">Morris</a></li>
-								<li><a href="chart-chartjs.html">Chartjs</a></li>
-								<li><a href="chart-chartist.html">Chartist</a></li>
-								<li><a href="chart-sparkline.html">Sparkline</a></li>
-								<li><a href="chart-peity.html">Peity</a></li>
-							</ul>
-						</li>
-						<li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
-
-								<i class="material-icons"> favorite </i>
-								<span class="nav-text">Bootstrap</span>
-							</a>
-							<ul aria-expanded="false">
-								<li><a href="ui-accordion.html">Accordion</a></li>
-								<li><a href="ui-alert.html">Alert</a></li>
-								<li><a href="ui-badge.html">Badge</a></li>
-								<li><a href="ui-button.html">Button</a></li>
-								<li><a href="ui-modal.html">Modal</a></li>
-								<li><a href="ui-button-group.html">Button Group</a></li>
-								<li><a href="ui-list-group.html">List Group</a></li>
-								<li><a href="ui-card.html">Cards</a></li>
-								<li><a href="ui-carousel.html">Carousel</a></li>
-								<li><a href="ui-dropdown.html">Dropdown</a></li>
-								<li><a href="ui-popover.html">Popover</a></li>
-								<li><a href="ui-progressbar.html">Progressbar</a></li>
-								<li><a href="ui-tab.html">Tab</a></li>
-								<li><a href="ui-typography.html">Typography</a></li>
-								<li><a href="ui-pagination.html">Pagination</a></li>
-								<li><a href="ui-grid.html">Grid</a></li>
-
-							</ul>
-						</li>
-						<li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
-								<i class="material-icons"> extension </i>
-								<span class="nav-text">Plugins</span>
-							</a>
-							<ul aria-expanded="false">
-								<li><a href="uc-select2.html">Select 2</a></li>
-								<li><a href="uc-nestable.html">Nestedable</a></li>
-								<li><a href="uc-noui-slider.html">Noui Slider</a></li>
-								<li><a href="uc-sweetalert.html">Sweet Alert</a></li>
-								<li><a href="uc-toastr.html">Toastr</a></li>
-								<li><a href="map-jqvmap.html">Jqv Map</a></li>
-								<li><a href="uc-lightgallery.html">Light Gallery</a></li>
-							</ul>
-						</li>
-						<li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
-								<i class="material-icons"> widgets </i>
-								<span class="nav-text">Widget</span>
-							</a>
-							<ul aria-expanded="false">
-								<li><a href="widget-chart.html">Chart</a></li>
-								<li><a href="widget-card.html">Card</a></li>
-								<li><a href="widget-list.html">List</a></li>
-							</ul>
-						</li>
-						<li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
-								<i class="material-icons"> insert_drive_file </i>
-								<span class="nav-text">Forms</span>
-							</a>
-							<ul aria-expanded="false">
-								<li><a href="form-element.html">Form Elements</a></li>
-								<li><a href="form-wizard.html">Wizard</a></li>
-								<li><a href="form-ckeditor.html">CkEditor</a></li>
-								<li><a href="form-pickers.html">Pickers</a></li>
-								<li><a href="form-validation.html">Form Validate</a></li>
-							</ul>
-						</li>
-						<li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
-								<i class="material-icons"> table_chart </i>
-								<span class="nav-text">Table</span>
-							</a>
-							<ul aria-expanded="false">
-								<li><a href="table-bootstrap-basic.html">Bootstrap</a></li>
-								<li><a href="table-datatable-basic.html">Datatable</a></li>
-							</ul>
-						</li>
-						<li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
-								<i class="material-icons">article</i>
-								<span class="nav-text">Pages</span>
-							</a>
-							<ul aria-expanded="false">
-								<li><a href="page-login.html">Login</a></li>
-								<li><a href="page-register.html">Register</a></li>
-								<li><a class="has-arrow" href="javascript:void(0);" aria-expanded="false">Error</a>
-									<ul aria-expanded="false">
-										<li><a href="page-error-400.html">Error 400</a></li>
-										<li><a href="page-error-403.html">Error 403</a></li>
-										<li><a href="page-error-404.html">Error 404</a></li>
-										<li><a href="page-error-500.html">Error 500</a></li>
-										<li><a href="page-error-503.html">Error 503</a></li>
-									</ul>
-								</li>
-								<li><a href="page-lock-screen.html">Lock Screen</a></li>
-								<li><a href="empty-page.html">Empty Page</a></li>
+								<li><a asp-action="Index" asp-controller="Course">Course</a></li>
 							</ul>
 						</li>
 					</ul>

@@ -22,6 +22,7 @@ public class HomeController : Controller
         List<Master> masters= await _context.Masters.ToListAsync();
         List<Instructor> instructors= await _context.Instructors.Include(c=>c.Courses).Include(j=>j.Job).ToListAsync();
         List<Course> courses = await _context.Courses.Include(c => c.Instructor).ToListAsync();
+        List<Student> students= await _context.Students.ToListAsync();
 
          HomeVM homeVM = new()
         {
@@ -30,8 +31,15 @@ public class HomeController : Controller
             Categories=categories,
             Masters=masters,
             Instructors=instructors,
+            Students=students,
+            Courses=courses,
         };
 
         return View(homeVM);
+    }
+
+    public IActionResult Search(string searchQuery, int categoryId)
+    {
+        return View();
     }
 }

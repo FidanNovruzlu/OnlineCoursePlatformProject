@@ -13,14 +13,14 @@
                             <p>@item.Description</p>
                         </div>
                         <div class="banner-content">
-                            <form class="form" action="https://dreamslms.dreamguystech.com/course-list.html">
+                            <form class="form" method="get">
                                 <div class="form-inner">
                                     <div class="input-group">
                                         <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                                        <input type="email" class="form-control" placeholder="Search School, Online eductional centers, etc">
-                                        <span class="drop-detail" >
-                                            <select class="form-select select" asp-for="CategoryId">
-                                                @foreach(var category in Model.Categories)
+                                        <input type="text" name="searchQuery" class="form-control" placeholder="Search Course, Online educational centers, etc">
+                                        <span class="drop-detail">
+                                            <select name="categoryId" class="form-select select">
+                                                @foreach (var category in Model.Categories)
                                                 {
                                                     <option value="@category.Id">@category.Name</option>
                                                 }
@@ -35,10 +35,10 @@
                             <p>@item.StartContent<br>@item.EndContent</p>
                             <div class="trust-rating d-flex align-items-center">
                                 <div class="rate-head">
-                                     <h2><span>@item.Rating</span>+</h2>
+                                     <h2><span>@item.AverageRateing</span>+</h2>
                                 </div>
                                 <div class="rating d-flex align-items-center">
-                                    <h2 class="d-inline-block average-rating">@item.AverageRateing</h2>
+                                   <h2 class="d-inline-block average-rating">@item.Rating</h2>
                                     <i class="fas fa-star filled"></i>
                                     <i class="fas fa-star filled"></i>
                                     <i class="fas fa-star filled"></i>
@@ -62,25 +62,52 @@
 <section class="section student-course">
     <div class="container">
         <div class="course-widget">
-            <div class="row">
-                @foreach(var item in Model.Widgets)
-                {
-                    <div class="col-lg-3 col-md-6">
-                        <div class="course-full-width">
-                            <div class="blur-border course-radius align-items-center aos" data-aos="fade-up">
-                                <div class="online-course d-flex align-items-center">
-                                    <div class="course-img">
-                                        <img src="~/assets/img/@item.ImageName" alt="image" width="100">
-                                    </div>
-                                    <div class="course-inner-content">
-                                        <h4><span>@item.Count</span>K</h4>
-                                        <p>@item.Name</p>
-                                    </div>
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="course-full-width">
+                        <div class="blur-border course-radius align-items-center aos" data-aos="fade-up">
+                            <div class="online-course d-flex align-items-center">
+                                <div class="course-img">
+                                    <img src="~/assets/img/cources-icon.svg" alt="image" width="100">
+                                </div>
+                                <div class="course-inner-content">
+                                    <h4><span>@Model.Courses.Count</span></h4>
+                                    <p>Online Courses</p>
                                 </div>
                             </div>
                         </div>
-                     </div>
-                }
+                    </div>
+                 </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="course-full-width">
+                        <div class="blur-border course-radius align-items-center aos" data-aos="fade-up">
+                            <div class="online-course d-flex align-items-center">
+                                <div class="course-img">
+                                    <img src="~/assets/img/gratuate-icon.svg" alt="image" width="100">
+                                </div>
+                                <div class="course-inner-content">
+                                    <h4><span>@Model.Students.Count</span></h4>
+                                    <p>Online Students</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                  <div class="col-lg-3 col-md-6">
+                    <div class="course-full-width">
+                        <div class="blur-border course-radius align-items-center aos" data-aos="fade-up">
+                            <div class="online-course d-flex align-items-center">
+                                <div class="course-img">
+                                    <img src="~/assets/img/pencil-icon.svg" alt="image" width="100">
+                                </div>
+                                <div class="course-inner-content">
+                                    <h4><span>@Model.Instructors.Count</span></h4>
+                                    <p>Online Instructors</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
             </div>
         </div>
     </div>
@@ -126,16 +153,16 @@
 <section class="section new-course">
     <div class="container">
         <div class="section-header aos" data-aos="fade-up">
-        <div class="section-sub-head">
-        <span>What’s New</span>
-        <h2>Featured Courses</h2>
-        </div>
-        <div class="all-btn all-category d-flex align-items-center">
-        <a href="course-list.html" class="btn btn-primary">All Courses</a>
-        </div>
+            <div class="section-sub-head">
+            <span>What’s New</span>
+            <h2>Featured Courses</h2>
+            </div>
+            <div class="all-btn all-category d-flex align-items-center">
+            <a href="course-list.html" class="btn btn-primary">All Courses</a>
+            </div>
         </div>
         <div class="section-text aos" data-aos="fade-up">
-        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aenean accumsan bibendum gravida maecenas augue elementum et neque. Suspendisse imperdiet.</p>
+            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aenean accumsan bibendum gravida maecenas augue elementum et neque. Suspendisse imperdiet.</p>
         </div>
         <div class="course-feature">
             <div class="row">
@@ -163,14 +190,14 @@
                                 <a href="#"><i class="fa-regular fa-heart"></i></a>
                                 </div>
                                 </div>
-                                <h3 class="title instructor-text"><a href="course-details.html">Information About UI/UX Design Degree</a></h3>
+                                <h3 class="title instructor-text"><a asp-action="Detail" asp-controller="Course" asp-route-CourseId="@Model.CourseId">Information About UI/UX Design Degree</a></h3>
                                 <div class="course-info d-flex align-items-center">
                                     <div class="rating-img d-flex align-items-center">
                                         <img src="~/assets/img/icon/icon-01.svg" alt="">
                                         <p>12+ Lesson</p>
                                     </div>
                                     <div class="course-view d-flex align-items-center">
-                                        <img src="~/assets/img/icon/icon-02.svg" alt="">
+                                        <img src="~/assets/img/icon/icon-02.svg" alt="image">
                                         <p>9hr 30min</p>
                                     </div>
                                 </div>
