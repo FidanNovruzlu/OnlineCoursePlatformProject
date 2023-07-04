@@ -1,0 +1,88 @@
+﻿@model List<BasketItemVM>
+@{
+    decimal totalPrice = 0;
+}
+
+<div class="main-wrapper pt-5 mt-5">
+    <div class="breadcrumb-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-12">
+                    <div class="breadcrumb-list">
+                        <nav aria-label="breadcrumb" class="page-breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a asp-action="Index" asp-controller="">Home</a></li>
+                                <li class="breadcrumb-item" aria-current="page">Pages</li>
+                                <li class="breadcrumb-item" aria-current="page">Carts</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="course-content">
+        <div class="container">
+            <div class="card wish-card">
+                <div class="card-header">
+                    @if (Model != null)
+                    {
+                        <h5>There are @Model.Count courses in the cart</h5>
+                    }
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table cart-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Image</th>
+                                    <th scope="col">Course</th>
+                                    <th scope="col">Price</th>
+                                    <th scope="col">Remove</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @if (Model is null || Model.Count == 0)
+                                {
+                                    <tr>
+                                        <td colspan="4" class="text-center">No items in the cart</td>
+                                    </tr>
+                                }
+                                else
+                                {
+                                    @foreach (var item in Model)
+                                    {
+                                        <tr>
+                                            <td class="image product-thumbnail"><img src="~/assets/img/course/@item.ImageName" alt="image" style="width:200px"></td>
+                                            <td class="product-des product-name">
+                                                <a asp-action="Checkout" asp-controller="Home">@item.Title</a><br>
+                                            </td>
+                                            <td data-title="Price">$@item.Price</td>
+                                            <td data-title="Remove">
+                                                <form method="post" asp-action="RemoveCart" asp-route-id="@item.Id" asp-controller="Course">
+                                                    <button type="submit" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></button>
+                                                </form>
+                                            </td>
+                                            @{
+                                                totalPrice += item.Price;
+                                            }
+                                        </tr>
+                                    }
+                                }
+                                <tr>
+                                    <td colspan="2"></td>
+                                    <td class="text-right" data-title="total">
+                                        <h5>Total Price:</h5>
+                                    </td>
+                                    <td>
+                                        <h5>$@totalPrice</h5>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

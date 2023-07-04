@@ -19,6 +19,27 @@ namespace DreamsWebApp.Services
             _emailSettings = emailSettings.Value;
         }
 
+        public async Task SendEmail(string email, string subject, string body, bool isHtml = false)
+        {
+            var message = new MimeMessage();
+            message.From.Add(MailboxAddress.Parse(_emailSettings.Email));
+            message.To.Add(MailboxAddress.Parse(email));
+            message.Subject = subject;
+
+            var builder = new BodyBuilder();
+            builder.HtmlBody = body;
+
+            message.Body = builder.ToMessageBody();
+
+            using (var client = new SmtpClient())
+            {
+                client.Connect(_emailSettings.Host, _emailSettings.Port, SecureSocketOptions.StartTls);
+                client.Authenticate(_emailSettings.Email, _emailSettings.Password);
+                await client.SendAsync(message);
+                client.Disconnect(true);
+            }
+        }
+
         public async Task SendEmailAsync(MailRequestVM mailRequest)
         {
             var email = new MimeMessage();
@@ -47,12 +68,12 @@ namespace DreamsWebApp.Services
             builder.HtmlBody = mailRequest.Body;
             email.Body = builder.ToMessageBody();
 
-            using (var smtp = new SmtpClient())
+            using (var client = new SmtpClient())
             {
-                smtp.Connect(_emailSettings.Host, _emailSettings.Port, SecureSocketOptions.StartTls);
-                smtp.Authenticate(_emailSettings.Email, _emailSettings.Password);
-                await smtp.SendAsync(email);
-                smtp.Disconnect(true);
+                client.Connect(_emailSettings.Host, _emailSettings.Port, SecureSocketOptions.StartTls);
+                client.Authenticate(_emailSettings.Email, _emailSettings.Password);
+                await client.SendAsync(email);
+                client.Disconnect(true);
             }
         }
     }

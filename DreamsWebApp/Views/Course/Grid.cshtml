@@ -25,16 +25,13 @@
                 <div class="showing-list">
                 <div class="row">
                 <div class="col-lg-6">
-                <div class="d-flex align-items-center">
-                <div class="view-icons">
-                <a href="course-grid.html" class="grid-view active"><i class="feather-grid"></i></a>
-                <a href="course-list.html" class="list-view"><i class="feather-list"></i></a>
-                </div>
-                <div class="show-result">
-                <h4>Showing 1-9 of 50 results</h4>
-                </div>
-                </div>
-                </div>
+                        <div class="d-flex align-items-center">
+                            <div class="view-icons">
+                                <a asp-action="Grid" asp-controller="Course" class="grid-view"><i class="fas fa-th"></i></a>
+                                <a asp-action="Index" asp-controller="Course" class="list-view active"><i class="fas fa-list"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 <div class="col-lg-6">
                 <div class="show-filter add-course-info">
                 <form action="#">

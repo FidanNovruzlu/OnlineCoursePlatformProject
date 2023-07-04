@@ -34,11 +34,18 @@ namespace DreamsWebApp.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Email")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
                     b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<bool?>("IsReminded")
                         .HasColumnType("bit");
 
                     b.Property<bool?>("IsTeacher")
@@ -96,6 +103,47 @@ namespace DreamsWebApp.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("AppUser");
+                });
+
+            modelBuilder.Entity("DreamsWebApp.Models.BasketItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("AppUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("Count")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("OrderId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AppUserId");
+
+                    b.HasIndex("CourseId");
+
+                    b.HasIndex("OrderId");
+
+                    b.ToTable("BasketItems");
                 });
 
             modelBuilder.Entity("DreamsWebApp.Models.Category", b =>
@@ -152,6 +200,23 @@ namespace DreamsWebApp.Migrations
                     b.ToTable("Comments", (string)null);
                 });
 
+            modelBuilder.Entity("DreamsWebApp.Models.Company", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("ImageName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Companies");
+                });
+
             modelBuilder.Entity("DreamsWebApp.Models.Course", b =>
                 {
                     b.Property<int>("Id")
@@ -177,15 +242,12 @@ namespace DreamsWebApp.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("InstructorId")
-                        .HasColumnType("int");
+                    b.Property<string>("InstructorId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("LevelId")
                         .HasColumnType("int");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
@@ -218,57 +280,6 @@ namespace DreamsWebApp.Migrations
                     b.ToTable("Courses");
                 });
 
-            modelBuilder.Entity("DreamsWebApp.Models.Instructor", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("About")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Address")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("JobId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Phone")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ProfileImageName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Surname")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CategoryId");
-
-                    b.HasIndex("JobId");
-
-                    b.ToTable("Instructors");
-                });
-
             modelBuilder.Entity("DreamsWebApp.Models.Job", b =>
                 {
                     b.Property<int>("Id")
@@ -284,6 +295,31 @@ namespace DreamsWebApp.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Jobs");
+                });
+
+            modelBuilder.Entity("DreamsWebApp.Models.Knowledge", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImageName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Knowledges");
                 });
 
             modelBuilder.Entity("DreamsWebApp.Models.Lecture", b =>
@@ -325,6 +361,34 @@ namespace DreamsWebApp.Migrations
                     b.ToTable("Levels");
                 });
 
+            modelBuilder.Entity("DreamsWebApp.Models.MailSetting", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Host")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Port")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("MailSettings");
+                });
+
             modelBuilder.Entity("DreamsWebApp.Models.Master", b =>
                 {
                     b.Property<int>("Id")
@@ -344,6 +408,38 @@ namespace DreamsWebApp.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Masters");
+                });
+
+            modelBuilder.Entity("DreamsWebApp.Models.Order", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("AppUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime?>("PurchaseAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool?>("Status")
+                        .HasColumnType("bit");
+
+                    b.Property<decimal>("TotalPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AppUserId");
+
+                    b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("DreamsWebApp.Models.Section", b =>
@@ -368,6 +464,27 @@ namespace DreamsWebApp.Migrations
                     b.ToTable("Section");
                 });
 
+            modelBuilder.Entity("DreamsWebApp.Models.Setting", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Key")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Value")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Settings");
+                });
+
             modelBuilder.Entity("DreamsWebApp.Models.Slide", b =>
                 {
                     b.Property<int>("Id")
@@ -377,9 +494,6 @@ namespace DreamsWebApp.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<int>("AverageRateing")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CatagoryId")
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
@@ -411,9 +525,7 @@ namespace DreamsWebApp.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CatagoryId");
-
-                    b.ToTable("Slides");
+                    b.ToTable("Slides", (string)null);
                 });
 
             modelBuilder.Entity("DreamsWebApp.Models.Student", b =>
@@ -610,6 +722,57 @@ namespace DreamsWebApp.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("DreamsWebApp.Models.Instructor", b =>
+                {
+                    b.HasBaseType("DreamsWebApp.Models.AppUser");
+
+                    b.Property<string>("About")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Address")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("CategoryId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("JobId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ProfileImageName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasIndex("CategoryId");
+
+                    b.HasIndex("JobId");
+
+                    b.HasDiscriminator().HasValue("Instructor");
+                });
+
+            modelBuilder.Entity("DreamsWebApp.Models.BasketItem", b =>
+                {
+                    b.HasOne("DreamsWebApp.Models.AppUser", "AppUser")
+                        .WithMany("BasketItems")
+                        .HasForeignKey("AppUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DreamsWebApp.Models.Course", "Course")
+                        .WithMany()
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DreamsWebApp.Models.Order", "Order")
+                        .WithMany("BasketItems")
+                        .HasForeignKey("OrderId");
+
+                    b.Navigation("AppUser");
+
+                    b.Navigation("Course");
+
+                    b.Navigation("Order");
+                });
+
             modelBuilder.Entity("DreamsWebApp.Models.Comment", b =>
                 {
                     b.HasOne("DreamsWebApp.Models.AppUser", "AppUser")
@@ -656,25 +819,6 @@ namespace DreamsWebApp.Migrations
                     b.Navigation("Level");
                 });
 
-            modelBuilder.Entity("DreamsWebApp.Models.Instructor", b =>
-                {
-                    b.HasOne("DreamsWebApp.Models.Category", "Category")
-                        .WithMany("Instructors")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("DreamsWebApp.Models.Job", "Job")
-                        .WithMany("Instructors")
-                        .HasForeignKey("JobId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("Category");
-
-                    b.Navigation("Job");
-                });
-
             modelBuilder.Entity("DreamsWebApp.Models.Lecture", b =>
                 {
                     b.HasOne("DreamsWebApp.Models.Section", "Section")
@@ -686,6 +830,17 @@ namespace DreamsWebApp.Migrations
                     b.Navigation("Section");
                 });
 
+            modelBuilder.Entity("DreamsWebApp.Models.Order", b =>
+                {
+                    b.HasOne("DreamsWebApp.Models.AppUser", "AppUser")
+                        .WithMany("Orders")
+                        .HasForeignKey("AppUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("AppUser");
+                });
+
             modelBuilder.Entity("DreamsWebApp.Models.Section", b =>
                 {
                     b.HasOne("DreamsWebApp.Models.Course", "Course")
@@ -695,17 +850,6 @@ namespace DreamsWebApp.Migrations
                         .IsRequired();
 
                     b.Navigation("Course");
-                });
-
-            modelBuilder.Entity("DreamsWebApp.Models.Slide", b =>
-                {
-                    b.HasOne("DreamsWebApp.Models.Category", "Category")
-                        .WithMany("Slides")
-                        .HasForeignKey("CatagoryId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("Category");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -759,9 +903,30 @@ namespace DreamsWebApp.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("DreamsWebApp.Models.Instructor", b =>
+                {
+                    b.HasOne("DreamsWebApp.Models.Category", "Category")
+                        .WithMany("Instructors")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.HasOne("DreamsWebApp.Models.Job", "Job")
+                        .WithMany("Instructors")
+                        .HasForeignKey("JobId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.Navigation("Category");
+
+                    b.Navigation("Job");
+                });
+
             modelBuilder.Entity("DreamsWebApp.Models.AppUser", b =>
                 {
+                    b.Navigation("BasketItems");
+
                     b.Navigation("Comments");
+
+                    b.Navigation("Orders");
                 });
 
             modelBuilder.Entity("DreamsWebApp.Models.Category", b =>
@@ -769,8 +934,6 @@ namespace DreamsWebApp.Migrations
                     b.Navigation("Courses");
 
                     b.Navigation("Instructors");
-
-                    b.Navigation("Slides");
                 });
 
             modelBuilder.Entity("DreamsWebApp.Models.Course", b =>
@@ -778,11 +941,6 @@ namespace DreamsWebApp.Migrations
                     b.Navigation("Comments");
 
                     b.Navigation("Sections");
-                });
-
-            modelBuilder.Entity("DreamsWebApp.Models.Instructor", b =>
-                {
-                    b.Navigation("Courses");
                 });
 
             modelBuilder.Entity("DreamsWebApp.Models.Job", b =>
@@ -795,9 +953,19 @@ namespace DreamsWebApp.Migrations
                     b.Navigation("Courses");
                 });
 
+            modelBuilder.Entity("DreamsWebApp.Models.Order", b =>
+                {
+                    b.Navigation("BasketItems");
+                });
+
             modelBuilder.Entity("DreamsWebApp.Models.Section", b =>
                 {
                     b.Navigation("Lectures");
+                });
+
+            modelBuilder.Entity("DreamsWebApp.Models.Instructor", b =>
+                {
+                    b.Navigation("Courses");
                 });
 #pragma warning restore 612, 618
         }

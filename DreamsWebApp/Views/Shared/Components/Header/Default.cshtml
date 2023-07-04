@@ -1,0 +1,169 @@
+﻿@model Dictionary<string,Setting>
+<header class="header">
+    <div class="header-fixed">
+         <nav class="navbar navbar-expand-lg header-nav scroll-sticky">
+              <div class="container">
+                    <div class="navbar-header">
+                        <a id="mobile_btn" href="javascript:void(0);">
+                            <span class="bar-icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </a>
+                        <a asp-action="Index" asp-controller="Home" class="navbar-brand logo">
+                                <img src="~/assets/img/logo.svg" class="img-fluid" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="main-menu-wrapper">
+                        <div class="menu-header">
+                            <a asp-action="Index" asp-controller="Home" class="menu-logo">
+                                    <img src="~/assets/img/logo.svg" class="img-fluid" alt="Logo">
+                            </a>
+                            <a id="menu_close" class="menu-close" href="javascript:void(0);">
+                                    <i class="fas fa-times"></i>
+                            </a>
+                        </div>
+                        <ul class="main-nav">
+                            <li class="active">
+                                <a asp-action="Index" asp-controller="Home">Home</a>
+                            </li>
+                @* Instructor*@
+                            <li class="has-submenu ">
+                                <a href="#">Instructor <i class="fas fa-chevron-down"></i></a>
+                                <ul class="submenu">
+                                    <li><a asp-action="Dashboard" asp-controller="Instructor">Dashboard</a></li>
+                                    <li class="has-submenu">
+                                        <a asp-action="List" asp-controller="Instructor">Instructor</a>
+                                        <ul class="submenu">
+                                            <li><a asp-action="List" asp-controller="Instructor">List</a></li>
+                                            <li><a asp-action="Grid" asp-controller="Instructor">Grid</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a asp-action="Course" asp-controller="Instructor">My Course</a></li>
+                                    <li><a asp-action="Reviews" asp-controller="Instructor">Reviews</a></li>
+                                    <li><a asp-action="Index" asp-controller="Instructor">Instructor Profile</a></li>
+                                </ul>
+                            </li>
+                @* Student*@
+                            <li class="has-submenu ">
+                                <a href="#">Student <i class="fas fa-chevron-down"></i></a>
+                                <ul class="submenu first-submenu">
+                                    <li class="has-submenu ">
+                                        <a asp-action="List" asp-controller="Student">Student</a>
+                                        <ul class="submenu">
+                                            <li><a asp-action="List" asp-controller="Student">List</a></li>
+                                            <li><a asp-action="Grid" asp-controller="Student">Grid</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a asp-action="Index" asp-controller="Student">Student Profile</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu ">
+                                <a href="#">Pages <i class="fas fa-chevron-down"></i></a>
+                                <ul class="submenu"> 
+                                    <li><a asp-action="Index" asp-controller="Category">Category</a></li>
+                                    <li><a asp-action="GetCarts" asp-controller="Course">Cart</a></li>
+                                     <li><a asp-action="Checkout" asp-controller="Home">Checkout</a></li>
+                                     <li><a asp-action="GetWishlist" asp-controller="Course">Wishlist</a></li>
+                                    <li><a asp-action="Login" asp-controller="Account">Login</a></li>
+                                    <li><a asp-action="StudentRegister" asp-controller="Account">Register</a></li>
+                                    <li><a asp-action="ForgotPassword" asp-controller="Account">Forgot Password</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <ul class="nav header-navbar-rht">
+                        @if (User.IsInRole("Instructor"))
+                        {
+                            <ul class="main-nav">
+                                <li class="has-submenu">
+                                    <a href="#">Course <i class="fas fa-chevron-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a asp-action="Create" asp-controller="Course">Create Course</a></li>
+                                        <li><a asp-action="Index" asp-controller="Course">Course List</a></li>
+                                        <li><a asp-action="Grid" asp-controller="Course">Course Grid</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        }
+                        @if (User.IsInRole("Student"))
+                        {
+                            <ul class="main-nav">
+                                <li class="has-submenu">
+                                    <a href="#">Course <i class="fas fa-chevron-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a asp-controller="Course" asp-action="Index">My Courses</a></li>
+                                        <li><a asp-action="Index" asp-controller="Course">Course List</a></li>
+                                        <li><a asp-action="Grid" asp-controller="Course">Course Grid</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        }
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li class="p-3 text-danger"> @User.Identity.Name</li>
+                        }
+                        else
+                        {
+                                <li class="p-3 text-danger">
+                                  <span class="user-name">@User.Identity.Name</span>
+                                 @* <div class="user-initial">
+                                    <span>@User.Identity.Name.Substring(0, 1)</span>
+                                  </div>*@
+                                </li>
+
+                        }
+
+                            <li class="nav-item py-2">
+                                <a asp-action="GetCarts" asp-controller="Course" class="nav-link">
+                                    <span id="boot-icon" class="bi bi-basket-fill"  style="font-size: 25px; color: black;"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item p-2">
+                                <form method="post" asp-action="LogOut" asp-controller="Account">
+                                    <button style=" color:white ;" class="btn btn-primary rounded-pill">Log Out </button>
+                                </form>
+                            </li>
+                        </ul>
+                    }
+                    else
+                    {
+                        <ul class="nav header-navbar-rht">
+                            <li class="nav-item">
+                                <a class="nav-link header-sign" asp-action="Login" asp-controller="Account" >Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header-login" asp-action="StudentRegister" asp-controller="Account">Register</a>
+                            </li>
+                        </ul>
+                    }
+              </div>
+         </nav>
+    </div>
+</header>
+<style>
+.user-initial {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #f44336; /* Önerilen bir renk kullanabilirsiniz */
+  text-align: center;
+  line-height: 35px; /* Yükseklikle aynı olmalı */
+  font-size: 18px;
+  color: #ffffff; /* İçerik rengini istediğiniz gibi ayarlayabilirsiniz */
+  margin-right: 10px; /* İstenilen boşluk miktarını ayarlayabilirsiniz */
+}
+
+.user-name {
+  font-weight: 300px;
+  font-size: 16px; 
+  padding-right:30px;
+  padding-left:220px;
+}
+
+}
+</style>

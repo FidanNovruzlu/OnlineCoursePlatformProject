@@ -21,234 +21,26 @@
 
         <link rel="stylesheet" href="~/assets/plugins/aos/aos.css">
         <link rel="stylesheet" href="~/assets/css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">    
     </head>
     <body>
         <div class="main-wrapper">
-            <header class="header">
-                <div class="header-fixed">
-                    <nav class="navbar navbar-expand-lg header-nav scroll-sticky">
-                        <div class="container">
-                            <div class="navbar-header">
-                                <a id="mobile_btn" href="javascript:void(0);">
-                                    <span class="bar-icon">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </span>
-                                </a>
-                                <a asp-action="Index" asp-controller="Home" class="navbar-brand logo">
-                                     <img src="~/assets/img/logo.svg" class="img-fluid" alt="Logo">
-                                </a>
-                            </div>
-                            <div class="main-menu-wrapper">
-                                <div class="menu-header">
-                                    <a asp-action="Index" asp-controller="Home" class="menu-logo">
-                                         <img src="~/assets/img/logo.svg" class="img-fluid" alt="Logo">
-                                    </a>
-                                    <a id="menu_close" class="menu-close" href="javascript:void(0);">
-                                         <i class="fas fa-times"></i>
-                                    </a>
-                                </div>
-                                <ul class="main-nav">
-                                    <li class="active">
-                                        <a asp-action="Index" asp-controller="Home">Home</a>
-                                    </li>
-                                   @* Instructor*@
-                                    <li class="has-submenu ">
-                                        <a href="#">Instructor <i class="fas fa-chevron-down"></i></a>
-                                        <ul class="submenu">
-                                            <li><a asp-action="Dashboard" asp-controller="Instructor">Dashboard</a></li>
-                                            <li class="has-submenu">
-                                                <a asp-action="List" asp-controller="Instructor">Instructor</a>
-                                                <ul class="submenu">
-                                                    <li><a asp-action="List" asp-controller="Instructor">List</a></li>
-                                                    <li><a asp-action="Grid" asp-controller="Instructor">Grid</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a asp-action="Course" asp-controller="Instructor">My Course</a></li>
-                                            <li><a asp-action="Reviews" asp-controller="Instructor">Reviews</a></li>
-                                            <li><a asp-action="Index" asp-controller="Instructor">Instructor Profile</a></li>
-                                        </ul>
-                                    </li>
-                                   @* Student*@
-                                    <li class="has-submenu ">
-                                        <a href="#">Student <i class="fas fa-chevron-down"></i></a>
-                                        <ul class="submenu first-submenu">
-                                            <li class="has-submenu ">
-                                                <a asp-action="List" asp-controller="Student">Student</a>
-                                                <ul class="submenu">
-                                                    <li><a asp-action="List" asp-controller="Student">List</a></li>
-                                                    <li><a asp-action="Grid" asp-controller="Student">Grid</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a asp-action="Index" asp-controller="Student">Student Profile</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="has-submenu ">
-                                        <a href="#">Pages <i class="fas fa-chevron-down"></i></a>
-                                        <ul class="submenu"> 
-                                            <li><a asp-action="Index" asp-controller="Category">Category</a></li>
-                                            <li><a asp-action="Index" asp-controller="Checkout">Cart</a></li>
-                                            <li><a asp-action="Login" asp-controller="Account">Login</a></li>
-                                            <li><a asp-action="StudentRegister" asp-controller="Account">Register</a></li>
-                                            <li><a asp-action="ForgotPassword" asp-controller="Account">Forgot Password</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            @if (User.Identity.IsAuthenticated)
-                            {
-                                <ul class="nav header-navbar-rht">
-                                    @if (User.IsInRole("Instructor"))
-                                    {
-                                        <ul class="main-nav">
-                                            <li class="has-submenu">
-                                                <a href="#">Course <i class="fas fa-chevron-down"></i></a>
-                                                <ul class="submenu">
-                                                    <li><a asp-action="Create" asp-controller="Course">Create Course</a></li>
-                                                    <li><a asp-action="Index" asp-controller="Course">Course List</a></li>
-                                                    <li><a asp-action="Grid" asp-controller="Course">Course Grid</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    }
-                                    @if (User.IsInRole("Student"))
-                                    {
-                                        <li><a asp-controller="Course" asp-action="Index">My Courses</a></li>
-                                    }
-                                    @if (User.IsInRole("Admin"))
-                                    {
-                                        <li class="p-3 text-danger"> @User.Identity.Name</li>
-                                    }
-                                    else
-                                    {
-                                        <li class="p-3 text-danger"> @User.Identity.Name</li>
-                                    }
-                                    <li class="nav-item p-3">
-                                        <form method="post" asp-action="LogOut" asp-controller="Account">
-                                            <button style=" color:white ;background-color:#dc3545;" class="btn rounded-pill">Log Out </button>
-                                        </form>
-                                    </li>
-                                </ul>
-                            }
-                            else
-                            {
-                                <ul class="nav header-navbar-rht">
-                                    <li class="nav-item">
-                                        <a class="nav-link header-sign" asp-action="Login" asp-controller="Account" >Login</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link header-login" asp-action="StudentRegister" asp-controller="Account">Register</a>
-                                    </li>
-                                </ul>
-                            }
-                        </div>
-                    </nav>
-                </div>
-            </header>
-                @RenderBody()
-            <footer class="footer">
-
-            <div class="footer-top aos" data-aos="fade-up">
-             <div class="container">
-            <div class="row">
-            <div class="col-lg-4 col-md-6">
-
-            <div class="footer-widget footer-about">
-            <div class="footer-logo">
-            <img src="~/assets/img/logo.svg" alt="logo">
-            </div>
-            <div class="footer-about-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat mauris Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut consequat mauris</p>
-            </div>
-            </div>
-
-            </div>
-            <div class="col-lg-2 col-md-6">
-
-            <div class="footer-widget footer-menu">
-            <h2 class="footer-title">For Instructor</h2>
-            <ul>
-            <li><a href="instructor-profile.html">Profile</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="register.html">Register</a></li>
-            <li><a href="instructor-list.html">Instructor</a></li>
-            <li><a href="deposit-instructor-dashboard.html"> Dashboard</a></li>
-            </ul>
-            </div>
-
-            </div>
-            <div class="col-lg-2 col-md-6">
-
-            <div class="footer-widget footer-menu">
-            <h2 class="footer-title">For Student</h2>
-            <ul>
-            <li><a href="student-profile.html">Profile</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="register.html">Register</a></li>
-            <li><a href="students-list.html">Student</a></li>
-            <li><a href="deposit-student-dashboard.html"> Dashboard</a></li>
-            </ul>
-            </div>
-
-            </div>
-            <div class="col-lg-4 col-md-6">
-
-            <div class="footer-widget footer-contact">
-            <h2 class="footer-title">News letter</h2>
-            <div class="news-letter">
-            <form>
-            <input type="text" class="form-control" placeholder="Enter your email address" name="email">
-            </form>
-            </div>
-            <div class="footer-contact-info">
-            <div class="footer-address">
-            <img src="~/assets/img/icon/icon-20.svg" alt="" class="img-fluid">
-            <p> 3556 Beech Street, San Francisco,<br> California, CA 94108 </p>
-            </div>
-            <p>
-            <img src="~/assets/img/icon/icon-19.svg" alt="" class="img-fluid">
-            <a href="cdn-cgi/l/email-protection.html" class="__cf_email__" data-cfemail="cbafb9aeaaa6b8a7a6b88baeb3aaa6bba7aee5a8a4a6">[email&#160;protected]</a>
-            </p>
-            <p class="mb-0">
-            <img src="~/assets/img/icon/icon-21.svg" alt="" class="img-fluid">
-            +19 123-456-7890
-            </p>
-            </div>
-            </div>
-
-            </div>
-            </div>
-            </div>
-            </div>
-
-
-            <div class="footer-bottom">
-            <div class="container">
-
-            <div class="copyright">
-            <div class="row">
-            <div class="col-md-6">
-            <div class="privacy-policy">
-            <ul>
-            <li><a href="term-condition.html">Terms</a></li>
-            <li><a href="privacy-policy.html">Privacy</a></li>
-            </ul>
-            </div>
-            </div>
-            <div class="col-md-6">
-            <div class="copyright-text">
-            <p class="mb-0">&copy; 2022 DreamsLMS. All rights reserved.</p>
-            </div>
-            </div>
-            </div>
-            </div>
-
-            </div>
-            </div>
-
-            </footer>
+        @await Component.InvokeAsync("Header")
+        @RenderBody()
+        @await Component.InvokeAsync("Footer")
         </div>
+
+        <script>
+            var url = 'Course/Search';
+            var searchBtn = document.getElementById("searchBtn");
+
+            console.log(searchBtn);
+
+            searchBtn.addEventListener("click", () => {
+            var searchInput = document.getElementById("searchInput");
+                window.location.href = `/Course/Search?title=${searchInput.value}`;
+            })
+        </script>
 
         <script data-cfasync="false" src="~/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
         <script src="~/assets/js/jquery-3.6.0.min.js"></script>

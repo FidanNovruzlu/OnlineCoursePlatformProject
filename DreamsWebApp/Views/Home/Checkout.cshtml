@@ -1,0 +1,102 @@
+﻿@model OrderVM
+@inject IOptions<StripeSettings> Stripe
+
+<div class="main-wrapper pt-5 mt-5">
+    <hr />
+    <div class="breadcrumb-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-12">
+                    <div class="breadcrumb-list">
+                        <nav aria-label="breadcrumb" class="page-breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Home">Home</a></li>
+                                <li class="breadcrumb-item" aria-current="page">Pages</li>
+                                <li class="breadcrumb-item" aria-current="page">Checkout</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="course-content checkout-widget">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="student-widget">
+                        <div class="student-widget-group add-course-info">
+                            <div class="cart-head">
+                                <h4>Billing Address</h4>
+                            </div>
+                            <div class="checkout-form">
+                                <form method="post" onchange="this.form.submit()" asp-action="Checkout" asp-controller="Home">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="form-group mb-5">
+                                                <label class="form-control-label" asp-for="Address">Address</label>
+                                                <input type="text" name="Address" class="form-control" placeholder="Address" asp-for="Address">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-lg-10">
+                                            <div class="form-group ship-check">
+                                                <input class="form-check-input" type="checkbox" name="remember"> Shipping address is the same as my billing address
+                                            </div>
+                                            <div class="form-group ship-check mb-5">
+                                                <input class="form-check-input" type="checkbox" name="remember"> Save this information for next time
+                                            </div>
+                                        </div>
+                                        <script src="//checkout.stripe.com/v2/checkout.js" 
+                                         class="stripe-button"
+                                         data-key="@Stripe.Value.Publishablekey"
+                                         data-amount="@ViewBag.Total"
+                                         data-name="[Deveducate]"
+                                         data-locale="en"
+                                        data-discription="Sample charge"
+                                        data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                                        data-zip-code="true">
+                                        </script>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 theiaStickySidebar">
+                    <div class="student-widget select-plan-group">
+                       <div class="student-widget-group">
+                        <div class="plan-header">
+                            <h4>Selected Plan</h4>
+                        </div>
+                        <div class="basic-plan">
+                            <h3>Basic</h3>
+                            <p>For individuals who just need to start with the basic features</p>
+                            <p>per user, per month when billed monthly</p>
+                            <h2><span>$</span>10</h2>
+                        </div>
+                        <div class="benifits-feature">
+                            <h3>Benefits</h3>
+                            <ul>
+                                <li><i class="fas fa-circle"></i> Access to slack community</li>
+                                <li><i class="fas fa-circle"></i> Access to support team</li>
+                                <li><i class="fas fa-circle"></i> Algorithmic bidding</li>
+                            </ul>
+                        </div>
+                        <div class="benifits-feature">
+                            <h3>Features</h3>
+                            <ul>
+                                <li><i class="fas fa-circle"></i> Search term isolation</li>
+                                <li><i class="fas fa-circle"></i> Total sales analytics</li>
+                                <li><i class="fas fa-circle"></i> Best seller rank</li>
+                            </ul>
+                        </div>
+                        <div class="plan-change">
+                            <a href="pricing-plan.html" class="btn btn-primary">Change the Plan</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

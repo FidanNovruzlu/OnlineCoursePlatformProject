@@ -1,4 +1,4 @@
-﻿@model List<Course>
+﻿@model CourseVM
 
 <div class="pt-5 mt-5 main-wrapper">
     <hr />
@@ -19,59 +19,67 @@
     </div>
     </div>
     </div>
-
     <section class="course-content">
         <div class="container">
             <div class="row">
                 <div class="col-lg-9">
                     <div class="showing-list">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="view-icons">
+                                        <a asp-action="Grid" asp-controller="Course" class="grid-view"><i class="fas fa-th"></i></a>
+                                        <a asp-action="Index" asp-controller="Course" class="list-view active"><i class="fas fa-list"></i></a>
+                                    </div>
+                                </div>
+                         </div>
+                            <div class="col-lg-6">
+                               <div class="show-filter add-course-info">
+                                    <div class="row">
+                                       <div class="col-md-8 col-lg-8 col-item">
+                                            <div class="form-group select-form mb-0">
+                                                <form asp-action="Index" asp-controller="Course" asp-route-categoryId="@Model.CategoryId" asp-route-order="@Model.Order" asp-route-instructorId="@Model.InstructorId">
+                                                    <div class="input-group d-flex">
+                                                        <div class="form-outline">
+                                                            <input type="text" class="form-control" placeholder="Search our courses" name="search" value="@(Model.Search==null? "": @Model.Search)"/>
+                                                        </div>
+                                                        <div class="input-group-append">
+                                                            <button type="submit" class="btn btn-primary">
+                                                                <i class="fas fa-search"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-4 col-lg-4 col-item">
+                                            <div class="form-group select-form mb-0">
+                                                <form asp-action="Index" asp-controller="Course" asp-route-categoryId="@Model.CategoryId" asp-route-serach="@Model.Search" asp-route-instructorId="@Model.InstructorId">
+                                                    <select class="form-select select" name="Oredr" onchange="this.form.submit()">
+                                                        <option value="">Default</option>
+                                                        <option value="1">Sort By Name</option>
+                                                        <option value="2">Sort By Price</option>
+                                                        <option value="3">Sort By Date</option>
+                                                    </select>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                     <div class="row">
-                    <div class="col-lg-6">
-                    <div class="d-flex align-items-center">
-                    <div class="view-icons">
-                    <a href="course-grid.html" class="grid-view"><i class="feather-grid"></i></a>
-                    <a asp-action="Index" asp-controller="Course" class="list-view active"><i class="feather-list"></i></a>
-                    </div>
-                    <div class="show-result">
-                    <h4>Showing 1-9 of 50 results</h4>
-                    </div>
-                    </div>
-                    </div>
-                    <div class="col-lg-6">
-                    <div class="show-filter add-course-info ">
-                    <form action="#">
-                    <div class="row gx-2 align-items-center">
-                    <div class="col-md-6 col-item">
-                    <div class=" search-group">
-                    <i class="feather-search"></i>
-                    <input type="text" class="form-control" placeholder="Search our courses">
-                    </div>
-                    </div>
-                    <div class="col-md-6 col-lg-6 col-item">
-                    <div class="form-group select-form mb-0">
-                    <select class="form-select select" name="sellist1">
-                    <option>Newly published </option>
-                    <option>published 1</option>
-                    <option>published 2</option>
-                    <option>published 3</option>
-                    </select>
-                    </div>
-                    </div>
-                    </div>
-                    </form>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-                    <div class="row">
-                        @foreach(Course item in Model)
+                        @foreach(Course item in Model.Courses)
                         {
                             <div class="col-lg-12 col-md-12 d-flex">
                                 <div class="course-box course-design list-course d-flex">
                                      <div class="product">
                                         <div class="product-img">
-                                            <a href="course-details.html">
-                                                 <img class="img-fluid" alt="" src="assets/img/course/@item.ImageName">
+                                            <a asp-action="Detail" asp-controller="Course" asp-route-id="@item.Id">
+                                                 <img class="img-fluid" alt="image" src="~/assets/img/course/@item.ImageName">
                                             </a>
                                              <div class="price">
                                                 <h3>$@item.Price <span>$99.00</span></h3>
@@ -79,20 +87,17 @@
                                         </div>
                                         <div class="product-content">
                                         <div class="head-course-title">
-                                        <h3 class="title"><a href="course-details.html">Information About UI/UX Design Degree</a></h3>
+                                            <h3 class="title"><a asp-action="Detail" asp-controller="Course" asp-route-id="@item.Id">@item.Title</a></h3>
                                         <div class="all-btn all-category d-flex align-items-center">
-                                        <a href="checkout.html" class="btn btn-primary">BUY NOW</a>
+                                        <a asp-action="Index" asp-asp-controller="Checkout" class="btn btn-primary">BUY NOW</a>
                                         </div>
                                         </div>
                                         <div class="course-info border-bottom-0 pb-0 d-flex align-items-center">
-                                        <div class="rating-img d-flex align-items-center">
-                                        <img src="assets/img/icon/icon-01.svg" alt="">
-                                        <p>12+ Lesson</p>
-                                        </div>
-                                        <div class="course-view d-flex align-items-center">
-                                        <img src="assets/img/icon/icon-02.svg" alt="">
-                                        <p>9hr 30min</p>
-                                        </div>
+                                            <div class="rating-img d-flex align-items-center">
+                                                <img src="~/assets/img/icon/icon-01.svg" alt="">
+                                                <p>12+ Lesson</p>
+                                            </div>
+                                              
                                         </div>
                                         <div class="rating">
                                         <i class="fas fa-star filled"></i>
@@ -104,15 +109,26 @@
                                         </div>
                                         <div class="course-group d-flex mb-0">
                                         <div class="course-group-img d-flex">
-                                        <a href="instructor-profile.html"><img src="assets/img/user/user1.jpg" alt="" class="img-fluid"></a>
-                                        <div class="course-name">
-                                        <h4><a href="instructor-profile.html">Rolands R</a></h4>
-                                        <p>Instructor</p>
+                                                <a asp-action="Index" asp-controller="Instructor"><img src="~/assets/img/user/@item.Instructor.ProfileImageName" alt="" class="img-fluid"></a>
+                                            <div class="course-name">
+                                            <h4><a asp-action="Index" asp-controller="Instructor">@item.Instructor.Name @item.Instructor.Surname</a></h4>
+                                            <p>Instructor</p>
+                                            </div>
                                         </div>
-                                        </div>
-                                        <div class="course-share d-flex align-items-center justify-content-center">
-                                        <a href="#rate"><i class="fa-regular fa-heart"></i></a>
-                                        </div>
+                                            <div class="course-share d-flex align-items-center justify-content-center">
+                                                    <a asp-action="AddWishlist" asp-controller="Course" asp-route-id="@item.Id">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16 ">
+                                                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                                    <div class="course-view d-flex align-items-center">
+                                                     <a class="cart-icon" asp-controller="Course" asp-action="AddCart" asp-route-id="@item.Id">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                                        </svg>
+                                                    </a>
+                                                </div>
                                         </div>
                                         </div>
                                     </div>
@@ -149,216 +165,92 @@
                     </div>
                 </div>
                 <div class="col-lg-3 theiaStickySidebar">
-                <div class="filter-clear">
-                <div class="clear-filter d-flex align-items-center">
-                <h4><i class="feather-filter"></i>Filters</h4>
-                <div class="clear-text">
-                <p>CLEAR</p>
-                </div>
-                </div>
-
-                <div class="card search-filter categories-filter-blk">
-                <div class="card-body">
-                <div class="filter-widget mb-0">
-                <div class="categories-head d-flex align-items-center">
-                <h4>Course categories</h4>
-                <i class="fas fa-angle-down"></i>
-                </div>
-                <div>
-                <label class="custom_check">
-                <input type="checkbox" name="select_specialist">
-                <span class="checkmark"></span> Backend (3)
-                </label>
-                </div>
-                <div>
-                <label class="custom_check">
-                <input type="checkbox" name="select_specialist">
-                <span class="checkmark"></span> CSS (2)
-                </label>
-                </div>
-                <div>
-                <label class="custom_check">
-                <input type="checkbox" name="select_specialist">
-                <span class="checkmark"></span> Frontend (2)
-                </label>
-                </div>
-                <div>
-                <label class="custom_check">
-                <input type="checkbox" name="select_specialist" checked>
-                <span class="checkmark"></span> General (2)
-                </label>
-                </div>
-                <div>
-                <label class="custom_check">
-                <input type="checkbox" name="select_specialist" checked>
-                <span class="checkmark"></span> IT & Software (2)
-                </label>
-                </div>
-                <div>
-                <label class="custom_check">
-                <input type="checkbox" name="select_specialist">
-                <span class="checkmark"></span> Photography (2)
-                </label>
-                </div>
-                <div>
-                <label class="custom_check">
-                <input type="checkbox" name="select_specialist">
-                 <span class="checkmark"></span> Programming Language (3)
-                </label>
-                </div>
-                <div>
-                <label class="custom_check mb-0">
-                <input type="checkbox" name="select_specialist">
-                <span class="checkmark"></span> Technology (2)
-                </label>
-                </div>
-                </div>
-                </div>
-                </div>
-
-
-                <div class="card search-filter">
-                <div class="card-body">
-                <div class="filter-widget mb-0">
-                <div class="categories-head d-flex align-items-center">
-                <h4>Instructors</h4>
-                <i class="fas fa-angle-down"></i>
-                </div>
-                <div>
-                <label class="custom_check">
-                <input type="checkbox" name="select_specialist">
-                <span class="checkmark"></span> Keny White (10)
-                </label>
-                </div>
-                <div>
-                <label class="custom_check">
-                <input type="checkbox" name="select_specialist">
-                <span class="checkmark"></span> Hinata Hyuga (5)
-                </label>
-                </div>
-                <div>
-                <label class="custom_check">
-                <input type="checkbox" name="select_specialist">
-                <span class="checkmark"></span> John Doe (3)
-                </label>
-                </div>
-                <div>
-                <label class="custom_check mb-0">
-                <input type="checkbox" name="select_specialist" checked>
-                <span class="checkmark"></span> Nicole Brown
-                </label>
-                </div>
-                </div>
-                </div>
-                </div>
-
-
-                <div class="card search-filter ">
-                <div class="card-body">
-                <div class="filter-widget mb-0">
-                <div class="categories-head d-flex align-items-center">
-                <h4>Price</h4>
-                <i class="fas fa-angle-down"></i>
-                </div>
-                <div>
-                <label class="custom_check custom_one">
-                <input type="radio" name="select_specialist">
-                <span class="checkmark"></span> All (18)
-                </label>
-                </div>
-                <div>
-                <label class="custom_check custom_one">
-                <input type="radio" name="select_specialist">
-                <span class="checkmark"></span> Free (3)
-                </label>
-                </div>
-                <div>
-                <label class="custom_check custom_one mb-0">
-                <input type="radio" name="select_specialist" checked>
-                <span class="checkmark"></span> Paid (15)
-                </label>
-                </div>
-                </div>
-                </div>
-                </div>
-
-
-                <div class="card post-widget ">
-                <div class="card-body">
-                <div class="latest-head">
-                <h4 class="card-title">Latest Courses</h4>
-                </div>
-                <ul class="latest-posts">
-                <li>
-                <div class="post-thumb">
-                <a href="course-details.html">
-                <img class="img-fluid" src="assets/img/blog/blog-01.jpg" alt="">
-                </a>
-                </div>
-                <div class="post-info free-color">
-                <h4>
-                <a href="course-details.html">Introduction LearnPress – LMS plugin</a>
-                </h4>
-                <p>FREE</p>
-                </div>
-                </li>
-                <li>
-                <div class="post-thumb">
-                <a href="course-details.html">
-                <img class="img-fluid" src="assets/img/blog/blog-02.jpg" alt="">
-                </a>
-                </div>
-                <div class="post-info">
-                <h4>
-                <a href="course-details.html">Become a PHP Master and Make Money</a>
-                </h4>
-                <p>$200</p>
-                </div>
-                </li>
-                <li>
-                <div class="post-thumb">
-                <a href="#">
-                <img class="img-fluid" src="assets/img/blog/blog-03.jpg" alt="">
-                </a>
-                </div>
-                <div class="post-info free-color">
-                <h4>
-                <a href="blog-details.html">Learning jQuery Mobile for Beginners</a>
-                </h4>
-                <p>FREE</p>
-                </div>
-                </li>
-                <li>
-                <div class="post-thumb">
-                <a href="course-details.html">
-                <img class="img-fluid" src="assets/img/blog/blog-01.jpg" alt="">
-                </a>
-                </div>
-                <div class="post-info">
-                <h4>
-                <a href="course-details.html.html">Improve Your CSS Workflow with SASS</a>
-                </h4>
-                <p>$200</p>
-                </div>
-                </li>
-                <li>
-                <div class="post-thumb ">
-                <a href="course-details.html">
-                <img class="img-fluid" src="assets/img/blog/blog-02.jpg" alt="">
-                </a>
-                </div>
-                <div class="post-info free-color">
-                <h4>
-                <a href="course-details.html">HTML5/CSS3 Essentials in 4-Hours</a>
-                </h4>
-                <p>FREE</p>
-                </div>
-                </li>
-                </ul>
-                </div>
-                </div>
-
-                </div>
+                     <div class="filter-clear">
+                        <div class="clear-filter d-flex align-items-center">
+                        <h4><i class="feather-filter"></i>Filters</h4>
+                        <div class="clear-text">
+                        <p>CLEAR</p>
+                        </div>
+                        </div>
+                        <div class="card search-filter categories-filter-blk">
+                            <div class="card-body">
+                                 <div class="filter-widget mb-0">
+                                    <div class="categories-head d-flex align-items-center">
+                                        <h4>Course categories</h4>
+                                        <i class="fas fa-angle-down"></i>
+                                    </div>
+                                    <div>
+                                        <label class="custom_check">
+                                            <a asp-action="Index" asp-controller="Course" asp-route-order="@Model.Order" asp-route-serach="@Model.Search">
+                                                <input type="checkbox" name="select_specialist" >
+                                                <span class="checkmark"></span> All (@Model.Categories.Count)
+                                            </a>
+                                        </label>
+                                    </div>
+                                    @foreach(var category in Model.Categories)
+                                    {
+                                        <div>
+                                            <label class="custom_check">
+                                                <a asp-action="Index" asp-controller="Course" asp-route-categoryId="@category.Id" asp-route-order="@Model.Order" asp-route-serach="@Model.Search" asp-route-instructorId="@Model.InstructorId">
+                                                    <input type="checkbox" name="select_specialist">
+                                                    <span class="checkmark"></span>@category.Name (@category.Courses.Count)
+                                                </a>
+                                            </label>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card search-filter">
+                            <div class="card-body">
+                                <div class="filter-widget mb-0">
+                                    <div class="categories-head d-flex align-items-center">
+                                        <h4>Instructors</h4>
+                                        <i class="fas fa-angle-down"></i>
+                                    </div>
+                                    @foreach(var instructor in Model.Instructors)
+                                    {
+                                        <div>
+                                            <label class="custom_check">
+                                                    <a asp-action="Index" asp-controller="Course" asp-route-instructorId="@instructor.Id" asp-route-categoryId="@Model.CategoryId" asp-route-order="@Model.Order" asp-route-serach="@Model.Search">
+                                                    <input type="checkbox" name="select_specialist">
+                                                    <span class="checkmark"></span>@instructor.Name @instructor.Surname (@instructor.Courses.Count)
+                                                </a>
+                                            </label>
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card search-filter ">
+                        <div class="card-body">
+                        <div class="filter-widget mb-0">
+                        <div class="categories-head d-flex align-items-center">
+                        <h4>Price</h4>
+                        <i class="fas fa-angle-down"></i>
+                        </div>
+                        <div>
+                        <label class="custom_check custom_one">
+                        <input type="radio" name="select_specialist">
+                        <span class="checkmark"></span> All (18)
+                        </label>
+                        </div>
+                        <div>
+                        <label class="custom_check custom_one">
+                        <input type="radio" name="select_specialist">
+                        <span class="checkmark"></span> Free (3)
+                        </label>
+                        </div>
+                        <div>
+                        <label class="custom_check custom_one mb-0">
+                        <input type="radio" name="select_specialist" checked>
+                        <span class="checkmark"></span> Paid (15)
+                        </label>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
                 </div>
              </div>
         </div>

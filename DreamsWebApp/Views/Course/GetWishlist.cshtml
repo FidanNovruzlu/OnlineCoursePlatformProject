@@ -1,0 +1,87 @@
+﻿@model List<CartVM>
+
+<div class="main-wrapper pt-5 mt-5">
+    <div class="breadcrumb-bar">
+<div class="container">
+<div class="row">
+<div class="col-md-12 col-12">
+<div class="breadcrumb-list">
+<nav aria-label="breadcrumb" class="page-breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a asp-action="Index" asp-controller="">Home</a></li>
+<li class="breadcrumb-item" aria-current="page">Pages</li>
+<li class="breadcrumb-item" aria-current="page">Wishlists</li>
+</ol>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<section class="course-content">
+    <div class="container">
+        <div class="card wish-card">
+            <div class="card-header">
+            <h5>Your Wishlist (@Model.Count items)</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-12">
+                            @if(Model is null)
+                            {
+                                <div></div>
+                            }
+                            else
+                            {
+                                
+                            @foreach(var item in Model)
+                        {
+                             <div class="wishlist-item">
+                                <div class="row align-items-center">
+                                    <div class="col-md-9">
+                                        <div class="wishlist-detail">
+                                            <div class="wishlist-img">
+                                                <a asp-action="Detail" asp-controller="Course">
+                                                    <img alt="" src="~/assets/img/course/@item.ImageUrl">
+                                                </a>
+                                                <div class="price-amt">
+                                                    <h4>$@item.Price</h4>
+                                                </div>
+                                            </div>
+                                            <div class="wishlist-info">
+                                                <h5><a href="course-details.html">@item.Price</a></h5>
+                                                <div class="course-info d-flex align-items-center border-bottom-0 pb-0">
+                                                    <div class="rating-img d-flex align-items-center">
+                                                        <img src="~/assets/img/icon/icon-01.svg" alt="">
+                                                        <p>12+ Lesson</p>
+                                                    </div>
+                                                </div>
+                                                <div class="rating">
+                                                    <i class="fas fa-star filled"></i>
+                                                    <i class="fas fa-star filled"></i>
+                                                    <i class="fas fa-star filled"></i>
+                                                    <i class="fas fa-star filled"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <span class="d-inline-block average-rating"><span>4.0</span> (15)</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                    <div class="remove-btn">
+                                            <a asp-action="RemoveCartWishList" asp-route-id="@item.Id" class="btn">Remove</a>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                            }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>

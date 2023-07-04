@@ -5,6 +5,7 @@ using DreamsWebApp.Services.Interfaces;
 using MailKit;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Stripe;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,9 +30,9 @@ builder.Services.AddDbContext<DreamsDataContext>(opt =>
     opt.UseSqlServer(builder.Configuration.GetConnectionString("SqlServer"));
 });
 
+builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Stripe"));
 builder.Services.Configure<MailSetting>(builder.Configuration.GetSection("MailSettings"));
 builder.Services.AddTransient<IEmailService, EmailService>();
-
 
 var app = builder.Build();
 
@@ -46,10 +47,13 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
+StripeConfiguration.ApiKey = builder.Configuration["Stripe:Secretkey"];
+
 app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
+
 
 app.MapControllerRoute(
             name: "areas",

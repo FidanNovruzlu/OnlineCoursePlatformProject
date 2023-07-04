@@ -12,25 +12,7 @@
                             <h1>@item.SupTitle</h1>
                             <p>@item.Description</p>
                         </div>
-                        <div class="banner-content">
-                            <form class="form" method="get">
-                                <div class="form-inner">
-                                    <div class="input-group">
-                                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                                        <input type="text" name="searchQuery" class="form-control" placeholder="Search Course, Online educational centers, etc">
-                                        <span class="drop-detail">
-                                            <select name="categoryId" class="form-select select">
-                                                @foreach (var category in Model.Categories)
-                                                {
-                                                    <option value="@category.Id">@category.Name</option>
-                                                }
-                                            </select>
-                                        </span>
-                                        <button class="btn btn-primary sub-btn" type="submit"><i class="fas fa-arrow-right"></i></button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                        @await Component.InvokeAsync("SearchBar")
                         <div class="trust-user">
                             <p>@item.StartContent<br>@item.EndContent</p>
                             <div class="trust-rating d-flex align-items-center">
@@ -98,7 +80,7 @@
                         <div class="blur-border course-radius align-items-center aos" data-aos="fade-up">
                             <div class="online-course d-flex align-items-center">
                                 <div class="course-img">
-                                    <img src="~/assets/img/pencil-icon.svg" alt="image" width="100">
+                                    <img src="~/assets/img/cources-icon.svg" alt="image" width="100">
                                 </div>
                                 <div class="course-inner-content">
                                     <h4><span>@Model.Instructors.Count</span></h4>
@@ -113,7 +95,6 @@
     </div>
 </section>
 
-
 <section class="section how-it-works">
     <div class="container">
         <div class="section-header aos" data-aos="fade-up">
@@ -122,7 +103,7 @@
                 <h2>Top Category</h2>
             </div>
             <div class="all-btn all-category d-flex align-items-center">
-                <a asp-action="Index" asp-controller="Job_category" class="btn btn-primary">All Categories</a>
+                <a asp-action="Index" asp-controller="Category" class="btn btn-primary">All Categories</a>
             </div>
         </div>
         <div class="section-text aos" data-aos="fade-up">
@@ -149,16 +130,15 @@
     </div>
 </section>
 
-
 <section class="section new-course">
     <div class="container">
         <div class="section-header aos" data-aos="fade-up">
             <div class="section-sub-head">
-            <span>What’s New</span>
-            <h2>Featured Courses</h2>
+                <span>What’s New</span>
+                <h2>Featured Courses</h2>
             </div>
             <div class="all-btn all-category d-flex align-items-center">
-            <a href="course-list.html" class="btn btn-primary">All Courses</a>
+                <a asp-action="Index" asp-controller="Course" class="btn btn-primary">All Courses</a>
             </div>
         </div>
         <div class="section-text aos" data-aos="fade-up">
@@ -166,61 +146,71 @@
         </div>
         <div class="course-feature">
             <div class="row">
-                <div class="col-lg-4 col-md-6 d-flex">
-                    <div class="course-box d-flex aos" data-aos="fade-up">
-                        <div class="product">
-                            <div class="product-img">
-                                <a href="course-details.html">
-                                    <img class="img-fluid" alt="" src="~/assets/img/course/course-01.jpg">
-                                </a>
-                                <div class="price">
-                                    <h3>$300 <span>$99.00</span></h3>
+                @foreach(var item in Model.Courses)
+                {
+                    <div class="col-lg-4 col-md-6 d-flex">
+                        <div class="course-box d-flex aos" data-aos="fade-up">
+                            <div class="product">
+                                <div class="product-img">
+                                    <a asp-action="Detail" asp-controller="Course" asp-route-id="@item.Id">
+                                        <img class="img-fluid" alt="image" src="~/assets/img/course/@item.ImageName">
+                                    </a>
+                                    <div class="price">
+                                        <h3>$@item.Price <span>$99.00</span></h3>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <div class="course-group d-flex">
+                                        <div class="course-group-img d-flex">
+                                            <a asp-action="Index" asp-controller="Instructor"><img src="~/assets/img/user/@item.Instructor.ProfileImageName" alt="" class="img-fluid"></a>
+                                            <div class="course-name">
+                                                <h4><a asp-action="Index" asp-controller="Instructor">@item.Instructor.Name @item.Instructor.Surname</a></h4>
+                                                <p>Instructor</p>
+                                            </div>
+                                        </div>
+                                          <div class="course-share d-flex align-items-center justify-content-center">
+                                            <a asp-action="AddWishlist" asp-controller="Course" asp-route-id="@item.Id">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                                                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h3 class="title instructor-text"><a asp-action="Detail" asp-controller="Course" asp-route-id="@item.Id">@item.Title</a></h3>
+                                    <div class="course-info d-flex align-items-center">
+                                        <div class="rating-img d-flex align-items-center">
+                                            <img src="~/assets/img/icon/icon-01.svg" alt="">
+                                            <p>12+ Lesson</p>
+                                        </div>
+                                            <div class="course-view d-flex align-items-center">
+                                                 <a class="cart-icon" asp-controller="Course" asp-action="AddCart" asp-route-id="@item.Id">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                                    </svg>
+                                                </a>
+                                            </div>
+
+                                    </div>
+                                    <div class="rating">
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star"></i>
+                                        <span class="d-inline-block average-rating"><span>4.0</span> (15)</span>
+                                    </div>
+                                    <div class="all-btn all-category d-flex align-items-center">
+                                        <a asp-action="Index" asp-controller="Checkout" class="btn btn-primary">BUY NOW</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="product-content">
-                                <div class="course-group d-flex">
-                                <div class="course-group-img d-flex">
-                                    <a href="instructor-profile.html"><img src="~/assets/img/user/user1.jpg" alt="" class="img-fluid"></a>
-                                    <div class="course-name">
-                                        <h4><a href="instructor-profile.html">Nicole Brown</a></h4>
-                                        <p>Instructor</p>
-                                    </div>
-                                </div>
-                                <div class="course-share d-flex align-items-center justify-content-center">
-                                <a href="#"><i class="fa-regular fa-heart"></i></a>
-                                </div>
-                                </div>
-                                <h3 class="title instructor-text"><a asp-action="Detail" asp-controller="Course" asp-route-CourseId="@Model.CourseId">Information About UI/UX Design Degree</a></h3>
-                                <div class="course-info d-flex align-items-center">
-                                    <div class="rating-img d-flex align-items-center">
-                                        <img src="~/assets/img/icon/icon-01.svg" alt="">
-                                        <p>12+ Lesson</p>
-                                    </div>
-                                    <div class="course-view d-flex align-items-center">
-                                        <img src="~/assets/img/icon/icon-02.svg" alt="image">
-                                        <p>9hr 30min</p>
-                                    </div>
-                                </div>
-                                <div class="rating">
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star filled"></i>
-                                    <i class="fas fa-star"></i>
-                                    <span class="d-inline-block average-rating"><span>4.0</span> (15)</span>
-                                </div>
-                                <div class="all-btn all-category d-flex align-items-center">
-                                    <a href="checkout.html" class="btn btn-primary">BUY NOW</a>
-                                </div>
-                            </div>
-                        </div>
+                         </div>
                     </div>
-                </div>
+                }
              </div>
         </div>
     </div>
 </section>
-
 
 <section class="section master-skill">
     <div class="container">
@@ -264,260 +254,115 @@
     </div>
 </section>
 
-
-<section class="section trend-course">
+<section class="section lead-companies">
     <div class="container">
-        <div class="section-header aos" data-aos="fade-up">
-            <div class="section-sub-head">
-                <span>What’s New</span>
-                <h2>TRENDING COURSES</h2>
-            </div>
-            <div class="all-btn all-category d-flex align-items-center">
-                <a href="course-list.html" class="btn btn-primary">All Courses</a>
+        <div class="section-header aos aos-init aos-animate" data-aos="fade-up">
+            <div class="section-sub-head feature-head text-center">
+                <span>Trusted By</span>
+                <h2>500+ Leading Universities And Companies</h2>
             </div>
         </div>
-        <div class="section-text aos" data-aos="fade-up">
-            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aenean accumsan bibendum gravida maecenas augue elementum et neque. Suspendisse imperdiet.</p>
-        </div>
-        <div class="owl-carousel trending-course owl-theme aos" data-aos="fade-up">
-           @* foreach*@
-            <div class="course-box trend-box">
-                <div class="product trend-product">
-                    <div class="product-img">
-                        <a href="course-details.html">
-                        <img class="img-fluid" alt="" src="~/assets/img/course/course-09.jpg">
-                        </a>
-                        <div class="price">
-                        <h3>$300 <span>$99.00</span></h3>
-                        </div>
-                    </div>
-                    <div class="product-content">
-                        <div class="course-group d-flex">
-                            <div class="course-group-img d-flex">
-                                <a href="instructor-profile.html"><img src="~/assets/img/user/user3.jpg" alt="" class="img-fluid"></a>
-                                <div class="course-name">
-                                    <h4><a href="instructor-profile.html">John Smith</a></h4>
-                                    <p>Instructor</p>
+        <div class="lead-group aos aos-init aos-animate" data-aos="fade-up">
+            <div class="lead-group-slider owl-carousel owl-theme owl-loaded owl-drag">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        @foreach (Company item in Model.Companies)
+                        {
+                                <div class="owl-item">
+                                    <div class="item">
+                                        <div class="lead-img">
+                                            <img class="img-fluid" alt="" src="assets/img/@item.ImageName">
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="course-share d-flex align-items-center justify-content-center">
-                            <a href="#"><i class="fa-regular fa-heart"></i></a>
-                            </div>
-                        </div>
-                        <h3 class="title"><a href="course-details.html">Responsive Web Design Essentials HTML5 CSS3 and Bootstrap</a></h3>
-                        <div class="course-info d-flex align-items-center">
-                            <div class="rating-img d-flex align-items-center">
-                                <img src="~/assets/img/icon/icon-01.svg" alt="" class="img-fluid">
-                                <p>10+ Lesson</p>
-                            </div>
-                            <div class="course-view d-flex align-items-center">
-                                <img src="~/assets/img/icon/icon-02.svg" alt="" class="img-fluid">
-                                <p>11hr 30min</p>
-                            </div>
-                        </div>
-                        <div class="rating">
-                            <i class="fas fa-star filled"></i>
-                            <i class="fas fa-star filled"></i>
-                            <i class="fas fa-star filled"></i>
-                            <i class="fas fa-star filled"></i>
-                            <i class="fas fa-star"></i>
-                            <span class="d-inline-block average-rating"><span>4.0</span> (15)</span>
-                        </div>
-                        <div class="all-btn all-category d-flex align-items-center">
-                         <a href="checkout.html" class="btn btn-primary">BUY NOW</a>
-                        </div>
-                    </div>
-                 </div>
-            </div>
-        </div>
-
-        <div class="feature-instructors">
-            <div class="section-header aos" data-aos="fade-up">
-                <div class="section-sub-head feature-head text-center">
-                    <h2>Featured Instructor</h2>
-                    <div class="section-text aos" data-aos="fade-up">
-                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget aenean accumsan bibendum gravida maecenas augue elementum et neque. Suspendisse imperdiet.</p>
+                        }
                     </div>
                 </div>
-            </div>
-            <div class="owl-carousel instructors-course owl-theme aos" data-aos="fade-up">
-                @foreach(Instructor item in Model.Instructors)
-                {
-                    <div class="instructors-widget">
-                        <div class="instructors-img ">
-                            <a href="instructor-list.html">
-                                <img class="img-fluid" alt="" src="~/assets/img/user/@item.ProfileImageName">
-                            </a>
-                        </div>
-                        <div class="instructors-content text-center">
-                            <h5><a href="instructor-profile.html">@item.Name @item.Surname</a></h5>
-                            <p>Web Developer</p>
-                            <div class="student-count d-flex justify-content-center">
-                                <i class="fa-solid fa-user-group"></i>
-                                <span>50 Students</span>
-                            </div>
-                        </div>
-                    </div>
-                }
+                <div class="owl-nav disabled">
+                    <button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button>
+                    <button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button>
+                </div>
+                <div class="owl-dots disabled">
+                    <button role="button" class="owl-dot active"><span></span></button>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-
-<section class="section lead-companies">
-<div class="container">
-<div class="section-header aos" data-aos="fade-up">
-<div class="section-sub-head feature-head text-center">
-<span>Trusted By</span>
-<h2>500+ Leading Universities And Companies</h2>
-</div>
-</div>
-<div class="lead-group aos" data-aos="fade-up">
-<div class="lead-group-slider owl-carousel owl-theme">
-<div class="item">
-<div class="lead-img">
-<img class="img-fluid" alt="" src="~/assets/img/lead-01.png">
-</div>
-</div>
-<div class="item">
-<div class="lead-img">
-<img class="img-fluid" alt="" src="~/assets/img/lead-02.png">
-</div>
-</div>
-<div class="item">
-<div class="lead-img">
-<img class="img-fluid" alt="" src="~/assets/img/lead-03.png">
-</div>
-</div>
-<div class="item">
-<div class="lead-img">
-<img class="img-fluid" alt="" src="~/assets/img/lead-04.png">
-</div>
-</div>
-<div class="item">
-<div class="lead-img">
-<img class="img-fluid" alt="" src="~/assets/img/lead-05.png">
-</div>
-</div>
-<div class="item">
-<div class="lead-img">
-<img class="img-fluid" alt="" src="~/assets/img/lead-06.png">
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-
 <section class="section share-knowledge">
-<div class="container">
-<div class="row">
-<div class="col-md-6">
-<div class="knowledge-img aos" data-aos="fade-up">
-<img src="~/assets/img/share.png" alt="" class="img-fluid">
-</div>
-</div>
-<div class="col-md-6 d-flex align-items-center">
-<div class="join-mentor aos" data-aos="fade-up">
-<h2>Want to share your knowledge? Join us a Mentor</h2>
-<p>High-definition video is video of higher resolution and quality than standard-definition. While there is no standardized meaning for high-definition, generally any video.</p>
-<ul class="course-list">
-<li><i class="fa-solid fa-circle-check"></i>Best Courses</li>
-<li><i class="fa-solid fa-circle-check"></i>Top rated Instructors</li>
-</ul>
-<div class="all-btn all-category d-flex align-items-center">
-<a href="instructor-list.html" class="btn btn-primary">Read More</a>
-</div>
-</div>
-</div>
-</div>
-</div>
+    <div class="container">
+        <div class="row">
+            @foreach(Knowledge item in Model.Knowledges)
+            {
+                
+            <div class="col-md-6">
+                <div class="knowledge-img aos" data-aos="fade-up">
+                <img src="~/assets/img/@item.ImageName" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="join-mentor aos" data-aos="fade-up">
+                    <h2>@item.Title</h2>
+                    <p>@item.Description</p>
+                    <ul class="course-list">
+                        <li><i class="fa-solid fa-circle-check"></i>Best Courses</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Top rated Instructors</li>
+                    </ul>
+                    <div class="all-btn all-category d-flex align-items-center">
+                        <a asp-action="List" asp-controller="Instructor" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
 </section>
-
 
 <section class="section user-love">
-<div class="container">
-<div class="section-header white-header aos" data-aos="fade-up">
-<div class="section-sub-head feature-head text-center">
-<span>Check out these real reviews</span>
-<h2>Users-love-us Don't take it from us.</h2>
-</div>
-</div>
-</div>
+    <div class="container">
+        <div class="section-header white-header aos" data-aos="fade-up">
+            <div class="section-sub-head feature-head text-center">
+                <span>Check out these real reviews</span>
+                <h2>Users-love-us Don't take it from us.</h2>
+            </div>
+        </div>
+    </div>
 </section>
-
 
 <section class="testimonial-four">
-<div class="review">
-<div class="container">
-<div class="testi-quotes">
-<img src="~/assets/img/qute.png" alt="">
-</div>
-<div class="mentor-testimonial lazy slider aos" data-aos="fade-up" data-sizes="50vw ">
-<div class="d-flex justify-content-center">
-<div class="testimonial-all d-flex justify-content-center">
-<div class="testimonial-two-head text-center align-items-center d-flex">
-<div class="testimonial-four-saying ">
-<div class="testi-right">
-<img src="~/assets/img/qute-01.png" alt="">
-</div>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-<div class="four-testimonial-founder">
-<div class="fount-about-img">
-<a href="instructor-profile.html"><img src="~/assets/img/user/user1.jpg" alt="" class="img-fluid"></a>
-</div>
-<h3><a href="instructor-profile.html">Daziy Millar</a></h3>
-<span>Founder of Awesomeux Technology</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="d-flex justify-content-center">
-<div class="testimonial-all d-flex justify-content-center">
-<div class="testimonial-two-head text-center align-items-center d-flex">
-<div class="testimonial-four-saying ">
-<div class="testi-right">
-<img src="~/assets/img/qute-01.png" alt="">
-</div>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-<div class="four-testimonial-founder">
-<div class="fount-about-img">
-<a href="instructor-profile.html"><img src="~/assets/img/user/user3.jpg" alt="" class="img-fluid"></a>
-</div>
-<h3><a href="instructor-profile.html">john smith</a></h3>
-<span>Founder of Awesomeux Technology</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="d-flex justify-content-center">
-<div class="testimonial-all d-flex justify-content-center">
-<div class="testimonial-two-head text-center align-items-center d-flex">
-<div class="testimonial-four-saying ">
-<div class="testi-right">
-<img src="~/assets/img/qute-01.png" alt="">
-</div>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-<div class="four-testimonial-founder">
-<div class="fount-about-img">
-<a href="instructor-profile.html"><img src="~/assets/img/user/user2.jpg" alt="" class="img-fluid"></a>
-</div>
-<h3><a href="instructor-profile.html">David Lee</a></h3>
-<span>Founder of Awesomeux Technology</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+    <div class="review">
+        <div class="container">
+            <div class="testi-quotes">
+                <img src="~/assets/img/qute.png" alt="">
+            </div>
+            <div class="mentor-testimonial lazy slider aos" data-aos="fade-up" data-sizes="50vw ">
+                <div class="d-flex justify-content-center">
+                    <div class="testimonial-all d-flex justify-content-center">
+                        <div class="testimonial-two-head text-center align-items-center d-flex">
+                            @foreach(var item in Model.Comments)
+                            {
+                                 <div class="testimonial-four-saying ">
+                                    <div class="testi-right">
+                                         <img src="~/assets/img/qute-01.png" alt="">
+                                    </div>
+                                    <p>@item.Message</p>
+                                    <div class="four-testimonial-founder">
+                                        <div class="fount-about-img">
+                                        <a href="instructor-profile.html"><img src="~/assets/img/user/user1.jpg" alt="" class="img-fluid"></a>
+                                        </div>
+                                        <h3><a href="instructor-profile.html">Daziy Millar</a></h3>
+                                        <span>@item.Course.Title</span>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-
 
 <section class="section become-instructors aos" data-aos="fade-up">
 <div class="container">
@@ -559,3 +404,26 @@
 </div>
 </div>
 </section>
+
+<style>
+    .cart-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  padding:3px;
+}
+
+.cart-icon:hover {
+  background-color: #e0e0e0;
+}
+
+.cart-text {
+  margin-left: 8px;
+}
+
+</style>

@@ -10,6 +10,4 @@ public class Slide
     public string StartContent { get; set; } = null!;
     public string EndContent { get; set; } = null!;
     public string ImageName { get; set; } = null!;
-    public int CatagoryId { get; set; }
-    public Category Category { get; set; }
 }

@@ -1,6 +1,7 @@
 ﻿using DreamsWebApp.DAL;
 using DreamsWebApp.Extensions;
 using DreamsWebApp.Models;
+using DreamsWebApp.ViewModels.CategoryVM;
 using DreamsWebApp.ViewModels.SlideVM;
 using DreamsWebApp.ViewModels.WidgetVM;
 using Microsoft.AspNetCore.Authorization;
@@ -26,34 +27,8 @@ public class WidgetController : Controller
 		List<Widget> widgets= _dataContext.Widgets.Take(4).ToList();
 		return View(widgets);
 	}
-	//public IActionResult Create()
-	//{
-	//	return View();
-	//}
-	//[HttpPost]
-	//[ValidateAntiForgeryToken]
-	//public async Task<IActionResult> Create(CreateWidgetVM createWidgetVM)
-	//{
-	//	if (!ModelState.IsValid) return View(createWidgetVM);
 
-	//	if (!createWidgetVM.Image.CheckType("image/") & createWidgetVM.Image.CheckSize(2048))
-	//	{
-	//		ModelState.AddModelError("", "Incorrect image type or size.");
-	//		return View(createWidgetVM);
-	//	}
-	//	string newFilename = await createWidgetVM.Image.UplaodAsync(_webHostEnvironment.WebRootPath,"assets", "img");
-
-	//	Widget widget = new()
-	//	{
-	//		Count=createWidgetVM.Count,
-	//		Name=createWidgetVM.Name,
-	//		ImageName=newFilename
-	//	};
-
-	//	_dataContext.Widgets.Add(widget);
-	//	_dataContext.SaveChanges();
-	//	return RedirectToAction(nameof(Index));
-	//}
+	//DETAIL
 	public IActionResult Detail(int id)
 	{
 		Widget? widget= _dataContext.Widgets.FirstOrDefault(s => s.Id == id);
@@ -61,13 +36,16 @@ public class WidgetController : Controller
 
 		return View(widget);
 	}
+
+
+	//UPDATE
 	public IActionResult Update(int id)
 	{
 		Widget? widget = _dataContext.Widgets.FirstOrDefault(w=>w.Id== id);
 		if (widget == null) return NotFound();
-		UpdateWidgetWM updateWidgetWM=new UpdateWidgetWM()
+
+		UpdateWidgetWM updateWidgetWM=new ()
 		{
-			Count=widget.Count,
 			Name=widget.Name,
 			ImageName=widget.ImageName,
 		};
@@ -75,47 +53,35 @@ public class WidgetController : Controller
 	}
 	[HttpPost]
 	[ValidateAntiForgeryToken]
-	public async Task<IActionResult> Update(int id, UpdateWidgetWM updateWidgetWM)
+	public async Task<IActionResult> Update(int id, UpdateWidgetWM update)
 	{
-		if (!ModelState.IsValid) return View(updateWidgetWM);
+		if (!ModelState.IsValid) return View(update);
 
-		Widget? widget=  await _dataContext.Widgets.FirstOrDefaultAsync(s => s.Id == id);
+		Widget? widget = _dataContext.Widgets.FirstOrDefault(s => s.Id == id);
 		if (widget == null) return NotFound();
 
+		if (update.Image != null)
+		{
+			if (!update.Image.CheckType("image/") & update.Image.CheckSize(2048))
+			{
+				ModelState.AddModelError("", "Incorrect image type or size.");
+				return View(update);
+			}
 
-		if (!updateWidgetWM.Image.CheckType("image/") & updateWidgetWM.Image.CheckSize(2048))
-		{
-			ModelState.AddModelError("", "Incorrect image type or size.");
-			return View(updateWidgetWM);
-		}
-		if (updateWidgetWM.Image != null)
-		{
 			string path = Path.Combine(_webHostEnvironment.WebRootPath, "assets", "img", widget.ImageName);
 			if (System.IO.File.Exists(path))
 			{
 				System.IO.File.Delete(path);
 			}
-			string newFilename = await updateWidgetWM.Image.UplaodAsync(_webHostEnvironment.WebRootPath, "assets", "img");
 
+			string newFilename = await update.Image.UplaodAsync(_webHostEnvironment.WebRootPath, "assets", "img");
 			widget.ImageName = newFilename;
 		}
 
-		_dataContext.Widgets.Update(widget);
-		 await _dataContext.SaveChangesAsync();
-		return RedirectToAction(nameof(Index));
-	}
-	[HttpPost]
-	public IActionResult Delete(int id)
-	{
-		Widget? widget = _dataContext.Widgets.FirstOrDefault(s => s.Id == id);
-		if (widget == null) return NotFound();
+		widget.Id = id;
+		widget.Name = update.Name;
 
-		string path = Path.Combine(_webHostEnvironment.WebRootPath,"assets", "img", widget.ImageName);
-		if (System.IO.File.Exists(path))
-		{
-			System.IO.File.Delete(path);
-		}
-		_dataContext.Widgets.Remove(widget);
+		_dataContext.Widgets.Update(widget);
 		_dataContext.SaveChanges();
 		return RedirectToAction(nameof(Index));
 	}

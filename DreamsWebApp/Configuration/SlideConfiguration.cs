@@ -8,10 +8,12 @@ namespace DreamsWebApp.Configuration
     {
         public void Configure(EntityTypeBuilder<Slide> builder)
         {
-            builder.HasOne(s => s.Category)
-                .WithMany(c => c.Slides)
-                .HasForeignKey(s => s.CatagoryId)
-                .OnDelete(DeleteBehavior.Restrict);
+            builder.ToTable("Slides");
+
+            //builder.HasOne(s => s.Category)
+            //    .WithMany(c => c.Slides)
+            //    .HasForeignKey(s => s.CategoryId)
+            //    .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

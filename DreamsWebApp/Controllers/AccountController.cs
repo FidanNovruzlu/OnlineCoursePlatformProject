@@ -27,11 +27,12 @@ public class AccountController:Controller
 		_emailService = emailService;
     }
 
+
+	//Register
 	public IActionResult InstructorRegister()
 	{
 		return View();
 	}
-
 	public IActionResult StudentRegister()
 	{
 		return View();
@@ -43,7 +44,7 @@ public class AccountController:Controller
 	{
 		if (!ModelState.IsValid) return View();
 
-		AppUser newUser = new()
+		Instructor newUser = new()
 		{
 			Name = register.Name,
 			UserName = register.UserName,
@@ -62,6 +63,7 @@ public class AccountController:Controller
 			}
 			return View(register);
 		}
+
 		string token = await _userManager.GenerateEmailConfirmationTokenAsync(newUser);
 		string link = Url.Action("ConfrimUser", "Account", new { email = register.Email, token = token }, HttpContext.Request.Scheme);
 
@@ -92,7 +94,7 @@ public class AccountController:Controller
 	{
 		if (!ModelState.IsValid) return View();
 
-		AppUser newUser = new AppUser()
+		AppUser newUser = new()
 		{
 			Name = register.Name,
             Surname= register.Surname,
@@ -128,13 +130,15 @@ public class AccountController:Controller
 			Credentials = new NetworkCredential("7L2P4QW@code.edu.az", "pmretojfjscqqjrk")
 		};
 		smtpClient.Send(message);
-		await _userManager.AddToRoleAsync(newUser, "Student");
+       // await _userManager.AddToRoleAsync(newUser, "Student");
+        await _userManager.AddToRoleAsync(newUser, "Admin");
 		await _signInManager.SignInAsync(newUser, true);
 		return RedirectToAction(nameof(Login));
 	}
 
 
 
+	//Confrimation
     public async Task<IActionResult> ConfrimUser(string email, string token)
     {
         AppUser user = await _userManager.FindByEmailAsync(email);
@@ -151,6 +155,9 @@ public class AccountController:Controller
         return RedirectToAction("Index", "Home");
     }
 
+
+
+	//Login
 
     public IActionResult Login()
     {
@@ -188,6 +195,8 @@ public class AccountController:Controller
     }
 
 
+
+	//Log out
     [HttpPost]
     public async Task<IActionResult> LogOut()
     {
@@ -196,6 +205,8 @@ public class AccountController:Controller
     }
 
 
+
+	//Role
 	public async Task CreateRole()
 	{
 		if (!await _roleManager.RoleExistsAsync("Admin"))
@@ -211,6 +222,10 @@ public class AccountController:Controller
 			await _roleManager.CreateAsync(new IdentityRole { Name = "Student" });
 		}
 	}
+
+
+
+	//Forgot Password
     public IActionResult ForgotPassword()
     {
         return View();
@@ -237,6 +252,10 @@ public class AccountController:Controller
         return RedirectToAction(nameof(Login));
 
     }
+
+
+
+	//Reset Password
     public async Task<IActionResult> ResetPassword(string userId, string token)
     {
 		if(string.IsNullOrWhiteSpace(userId) || string.IsNullOrWhiteSpace(token)) return BadRequest();
@@ -273,5 +292,4 @@ public class AccountController:Controller
 
         return RedirectToAction(nameof(Login));
     }
-
 }

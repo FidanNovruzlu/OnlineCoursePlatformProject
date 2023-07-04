@@ -16,5 +16,4 @@ public class DetailCourseVM
      public Category Category { get; set; }
     public Level Levels { get; set; }
     public Instructor Instructor { get; set; }
-    public CommentVM CommentVM { get; set; }
 }

@@ -2,7 +2,6 @@
 public class Course
 {
     public int Id { get; set; }
-    public string Name { get; set; } = null!;
     public string Description { get; set; }=null!;
     public string ImageName { get; set; } = null!;
     public string Title { get; set; } = null!;
@@ -12,7 +11,7 @@ public class Course
     public decimal? DiscountPrice { get; set; }
     public int CategoryId { get; set; }
     public Category Category { get; set; } = null!;
-    public int InstructorId { get; set; }
+    public string InstructorId { get; set; }
     public Instructor Instructor { get; set; } = null!;
     public int LevelId { get; set; }
     public Level? Level { get; set; }

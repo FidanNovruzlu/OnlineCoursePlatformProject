@@ -18,10 +18,10 @@ namespace DreamsWebApp.Configuration
                 .HasForeignKey(c => c.CategoryId)
                 .OnDelete(DeleteBehavior.Restrict);
 
-            builder.HasMany(c => c.Slides)
-               .WithOne(c => c.Category)
-               .HasForeignKey(c => c.CatagoryId)
-               .OnDelete(DeleteBehavior.Restrict);
+            //builder.HasMany(c => c.Slides)
+            //   .WithOne(c => c.Category)
+            //   .HasForeignKey(c => c.CategoryId)
+            //   .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

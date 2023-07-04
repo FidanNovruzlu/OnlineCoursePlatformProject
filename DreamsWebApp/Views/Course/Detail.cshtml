@@ -1,4 +1,4 @@
-﻿@model DetailCourseVM
+﻿@model Course
 
 <div class="pt-5 mt-5">
     <div class="breadcrumb-bar">
@@ -12,7 +12,7 @@
                             <li class="breadcrumb-item"><a asp-action="Index" asp-controller="Home">Home</a></li>
                             <li class="breadcrumb-item" aria-current="page">Courses</li>
                             <li class="breadcrumb-item" aria-current="page">All Courses</li>
-                            <li class="breadcrumb-item" aria-current="page">@Model.Name</li>
+                            <li class="breadcrumb-item" aria-current="page">@Model.Title</li>
                         </ol>
                         </nav>
                     </div>
@@ -20,31 +20,30 @@
             </div>
         </div>
     </div>
-
     <div class="inner-banner">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <div class="instructor-wrap border-bottom-0 m-0">
-                    <div class="about-instructor align-items-center">
-                    <div class="abt-instructor-img">
-                    <a href="instructor-profile.html"><img src="~/assets/img/user/@Model.Instructor.ProfileImageName" alt="img" class="img-fluid"></a>
-                    </div>
-                    <div class="instructor-detail me-3">
-                        <h5><a href="instructor-profile.html">@Model.Instructor.Name @Model.Instructor.Surname</a></h5>
-                        <p>@Model.Instructor.Job.Name</p>
-                    </div>
-                    <div class="rating mb-0">
-                    <i class="fas fa-star filled"></i>
-                    <i class="fas fa-star filled"></i>
-                    <i class="fas fa-star filled"></i>
-                    <i class="fas fa-star filled"></i>
-                    <i class="fas fa-star"></i>
-                    <span class="d-inline-block average-rating"><span>4.5</span> (15)</span>
-                    </div>
-                    </div>
-                    <span class="web-badge mb-3">@Model.Category.Name</span>
-                    </div>
+                  @*  <div class="instructor-wrap border-bottom-0 m-0">
+                        <div class="about-instructor align-items-center">
+                            <div class="abt-instructor-img">
+                                <a asp-action="Index" asp-controller="Instructor"><img src="~/assets/img/user/@Model.Instructor.ProfileImageName" alt="img" class="img-fluid"></a>
+                            </div>
+                            <div class="instructor-detail me-3">
+                                <h5><a asp-action="Index" asp-controller="Instructor">@Model.Instructor.Name @Model.Instructor.Surname</a></h5>
+                                <p>@Model.Instructor.Job.Name</p>
+                            </div>
+                            <div class="rating mb-0">
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="d-inline-block average-rating"><span>4.5</span> (15)</span>
+                            </div>
+                        </div>
+                        <span class="web-badge mb-3">@Model.Category.Name</span>
+                    </div>*@
                     <h2>@Model.Title</h2>
                     <p>@Model.Description</p>
                     <div class="course-info d-flex align-items-center border-bottom-0 m-0 p-0">
@@ -65,45 +64,44 @@
             </div>
         </div>
     </div>
-
     <section class="page-content course-sec">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
                     <div class="card overview-sec">
-                    <div class="card-body">
-                    <h5 class="subs-title">Overview</h5>
-                    <h6>Course Description</h6>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                    <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    <h6>What you'll learn</h6>
-                    <div class="row">
-                    <div class="col-md-6">
-                    <ul>
-                    <li>Become a UX designer.</li>
-                    <li>You will be able to add UX designer to your CV</li>
-                    <li>Become a UI designer.</li>
-                    <li>Build & test a full website design.</li>
-                    <li>Build & test a full mobile app.</li>
-                    </ul>
-                    </div>
-                    <div class="col-md-6">
-                    <ul>
-                    <li>Learn to design websites & mobile phone apps.</li>
-                    <li>You'll learn how to choose colors.</li>
-                    <li>Prototype your designs with interactions.</li>
-                    <li>Export production ready assets.</li>
-                    <li>All the techniques used by UX professionals</li>
-                    </ul>
-                    </div>
-                    </div>
-                    <h6>Requirements</h6>
-                    <ul class="mb-0">
-                    <li>You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.</li>
-                    <li>No previous design experience is needed.</li>
-                    <li class="mb-0">No previous Adobe XD skills are needed.</li>
-                    </ul>
-                    </div>
+                        <div class="card-body">
+                            <h5 class="subs-title">Overview</h5>
+                            <h6>Course Description</h6>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                            <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <h6>What you'll learn</h6>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul>
+                                    <li>Become a UX designer.</li>
+                                    <li>You will be able to add UX designer to your CV</li>
+                                    <li>Become a UI designer.</li>
+                                    <li>Build & test a full website design.</li>
+                                    <li>Build & test a full mobile app.</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                    <li>Learn to design websites & mobile phone apps.</li>
+                                    <li>You'll learn how to choose colors.</li>
+                                    <li>Prototype your designs with interactions.</li>
+                                    <li>Export production ready assets.</li>
+                                    <li>All the techniques used by UX professionals</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <h6>Requirements</h6>
+                            <ul class="mb-0">
+                            <li>You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.</li>
+                            <li>No previous design experience is needed.</li>
+                            <li class="mb-0">No previous Adobe XD skills are needed.</li>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="card content-sec">
@@ -143,13 +141,7 @@
                     <span>02:53</span>
                     </div>
                     </li>
-                    <li>
-                    <p><img src="~/assets/img/icon/play.svg" alt="" class="me-2">Lecture1.3 How to solve the previous exercise</p>
-                    <div>
-                    <a href="javascript:;">Preview</a>
-                    <span>02:53</span>
-                    </div>
-                    </li>
+                   
                     <li>
                     <p><img src="~/assets/img/icon/play.svg" alt="" class="me-2">Lecture1.5 How to use text layers effectively</p>
                     <div>
@@ -180,13 +172,7 @@
                     <span>02:53</span>
                     </div>
                     </li>
-                    <li>
-                    <p><img src="~/assets/img/icon/play.svg" alt="" class="me-2">Lecture1.3 How to solve the previous exercise</p>
-                    <div>
-                    <a href="javascript:;">Preview</a>
-                    <span>02:53</span>
-                    </div>
-                    </li>
+                 
                     <li>
                     <p><img src="~/assets/img/icon/play.svg" alt="" class="me-2">Lecture1.3 How to solve the previous exercise</p>
                     <div>
@@ -238,13 +224,7 @@
                     <span>02:53</span>
                     </div>
                     </li>
-                    <li>
-                    <p><img src="~/assets/img/icon/play.svg" alt="" class="me-2">Lecture1.5 How to use text layers effectively</p>
-                    <div>
-                    <a href="javascript:;">Preview</a>
-                    <span>02:53</span>
-                    </div>
-                    </li>
+                   
                     </ul>
                     </div>
                     </div>
@@ -268,13 +248,7 @@
                     <span>02:53</span>
                     </div>
                     </li>
-                    <li>
-                    <p><img src="~/assets/img/icon/play.svg" alt="" class="me-2">Lecture4.3 How to solve the previous exercise</p>
-                    <div>
-                    <a href="javascript:;">Preview</a>
-                    <span>02:53</span>
-                    </div>
-                    </li>
+                  
                     <li>
                     <p><img src="~/assets/img/icon/play.svg" alt="" class="me-2">Lecture4.4 How to solve the previous exercise</p>
                     <div>
@@ -294,7 +268,6 @@
                     </div>
                     </div>
                     </div>
-
                     <div class="card instructor-sec">
                     <div class="card-body">
                     <h5 class="subs-title">About the instructor</h5>
@@ -347,7 +320,6 @@
                     </ul>
                     </div>
                     </div>
-
                     <div class="card review-sec">
                         <div class="card-body">
                             <h5 class="subs-title">Reviews</h5>
@@ -374,23 +346,12 @@
                             <a href="javascript:;" class="btn btn-reply"><i class="feather-corner-up-left"></i> Reply</a>
                         </div>
                     </div>
-
                     <div class="card comment-sec">
                         <div class="card-body">
                             <h5 class="subs-title">Post A comment</h5>
-                            <form method="post">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input class="form-control" placeholder="Full Name">
-                                        </div>
-                                    </div>
-                                </div>
+                            <form method="post" asp-action="AddComment" asp-controller="Course" asp-route-courseId="@Model.Id">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Subject">
-                                </div>
-                                <div class="form-group">
-                                    <textarea rows="4" class="form-control" placeholder="Your Comments"></textarea>
+                                    <textarea name="message" rows="4" class="form-control" placeholder="Your Comments"></textarea>
                                 </div>
                                 <div class="submit-section">
                                     <button class="btn submit-btn" type="submit">Submit</button>
@@ -405,26 +366,26 @@
                 <div class="video-sec vid-bg">
                 <div class="card">
                 <div class="card-body">
-                <a href="https://www.youtube.com/embed/1trvO6dqQUI" class="video-thumbnail" data-fancybox="">
+                <a  class="video-thumbnail" data-fancybox="">
                 <div class="play-icon">
                 <i class="fa-solid fa-play"></i>
                 </div>
-                <img class="" src="~/assets/img/video.jpg" alt="">
+                <img class="" src="~/assets/img/@Model.ImageName" alt="video">
                 </a>
                 <div class="video-details">
                 <div class="course-fee">
                 <h2>FREE</h2>
-                <p><span>$99.00</span> 50% off</p>
+                <p><span>$@Model.Price</span> 50% off</p>
                 </div>
                 <div class="row gx-2">
                 <div class="col-md-6">
-                <a href="course-wishlist.html" class="btn btn-wish w-100"><i class="feather-heart"></i> Add to Wishlist</a>
+                <a asp-action="AddWishlist" asp-controller="Course" class="btn btn-wish w-100"><i class="feather-heart"></i> Add to Wishlist</a>
                 </div>
                 <div class="col-md-6">
                 <a href="javascript:;" class="btn btn-wish w-100"><i class="feather-share-2"></i> Share</a>
                 </div>
                 </div>
-                <a href="checkout.html" class="btn btn-enroll w-100">Enroll Now</a>
+                <a asp-action="Checkout" asp-controller="Home" class="btn btn-enroll w-100">Enroll Now</a>
                 </div>
                 </div>
                 </div>
