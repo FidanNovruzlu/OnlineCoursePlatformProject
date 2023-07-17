@@ -30,7 +30,7 @@ public class CategoryController : Controller
 
 		int allPageCount = _dataContext.Categories.Count();
 
-		PaginationVM<Category> paginationVM = new PaginationVM<Category>()
+		PaginationVM<Category> paginationVM = new()
 		{
 			CurrentPage = page,
 			Categories = categories,

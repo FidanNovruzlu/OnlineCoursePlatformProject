@@ -39,7 +39,7 @@ namespace DreamsWebApp.Controllers
             List<Category> categories = await _context.Categories.Include(c => c.Instructors).ToListAsync();
             List<Master> masters = await _context.Masters.ToListAsync();
             List<Instructor> instructors = await _context.Instructors.Include(c => c.Courses).Include(j => j.Job).ToListAsync();
-            List<Course> courses = await _context.Courses.Include(c => c.Instructor).ToListAsync();
+            List<Course> courses = await _context.Courses.Take(3).Include(c => c.Instructor).ToListAsync();
             List<Student> students = await _context.Students.ToListAsync();
             List<Company> companies = await _context.Companies.ToListAsync();
             List<Knowledge> knowledges = await _context.Knowledges.ToListAsync();
@@ -56,7 +56,7 @@ namespace DreamsWebApp.Controllers
                 Courses = courses,
                 Companies = companies,
                 Knowledges = knowledges,
-                Comments = comments
+                Comments = comments,
             };
 
             return View(homeVM);

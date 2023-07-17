@@ -97,7 +97,7 @@ public class AccountController:Controller
 		AppUser newUser = new()
 		{
 			Name = register.Name,
-            Surname= register.Surname,
+			Surname = register.Surname,
 			UserName = register.UserName,
 			Email = register.Email
 		};
@@ -130,16 +130,17 @@ public class AccountController:Controller
 			Credentials = new NetworkCredential("7L2P4QW@code.edu.az", "pmretojfjscqqjrk")
 		};
 		smtpClient.Send(message);
-       // await _userManager.AddToRoleAsync(newUser, "Student");
-        await _userManager.AddToRoleAsync(newUser, "Admin");
+		await _userManager.AddToRoleAsync(newUser, "Student");
+		//await _userManager.AddToRoleAsync(newUser, "Admin");
 		await _signInManager.SignInAsync(newUser, true);
 		return RedirectToAction(nameof(Login));
 	}
 
 
 
+
 	//Confrimation
-    public async Task<IActionResult> ConfrimUser(string email, string token)
+	public async Task<IActionResult> ConfrimUser(string email, string token)
     {
         AppUser user = await _userManager.FindByEmailAsync(email);
         if (user == null) return NotFound();

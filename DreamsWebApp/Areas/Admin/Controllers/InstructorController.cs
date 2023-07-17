@@ -22,7 +22,7 @@ public class InstructorController : Controller
 
 		int allPageCount = _dataContext.Instructors.Count();
 
-		PaginationVM<Instructor> paginationVM = new PaginationVM<Instructor>()
+		PaginationVM<Instructor> paginationVM = new()
 		{
 			CurrentPage = page,
 			Instructors = instructors,

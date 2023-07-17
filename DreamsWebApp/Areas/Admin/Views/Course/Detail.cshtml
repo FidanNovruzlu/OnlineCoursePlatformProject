@@ -179,7 +179,7 @@
 					{
 			<p class="course-discount-price">Discount Price: @Model.DiscountPrice</p>
 					}
-	<p class="course-rating">Rating: @Model.Rating</p>
+@*	<p class="course-rating">Rating: @Model.Rating</p>*@
 					@if (Model.TrendingCourse == true)
 					{
 			<p class="course-status trending">This course is trending.</p>
@@ -191,7 +191,7 @@
 </div>
 
 			</div>
-			<div class="row">
+		@*	<div class="row">
 				<div class="col-md-12">
 					<h3>Course Sections:</h3>
 					<table class="table table-striped">
@@ -210,7 +210,7 @@
 						</tbody>
 					</table>
 				</div>
-			</div>
+			</div>*@
 			@if (Model.Comments != null && Model.Comments.Any())
 			{
 				<div class="row">

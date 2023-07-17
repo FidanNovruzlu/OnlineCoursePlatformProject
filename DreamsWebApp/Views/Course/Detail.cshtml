@@ -370,21 +370,21 @@
                 <div class="play-icon">
                 <i class="fa-solid fa-play"></i>
                 </div>
-                <img class="" src="~/assets/img/@Model.ImageName" alt="video">
+                <img class="" src="~/assets/img/course/@Model.ImageName" alt="video">
                 </a>
                 <div class="video-details">
                 <div class="course-fee">
-                <h2>FREE</h2>
+                <h2>@Model.Price</h2>
                 <p><span>$@Model.Price</span> 50% off</p>
                 </div>
-                <div class="row gx-2">
+                @*<div class="row gx-2">
                 <div class="col-md-6">
                 <a asp-action="AddWishlist" asp-controller="Course" class="btn btn-wish w-100"><i class="feather-heart"></i> Add to Wishlist</a>
                 </div>
                 <div class="col-md-6">
                 <a href="javascript:;" class="btn btn-wish w-100"><i class="feather-share-2"></i> Share</a>
                 </div>
-                </div>
+                </div>*@
                 <a asp-action="Checkout" asp-controller="Home" class="btn btn-enroll w-100">Enroll Now</a>
                 </div>
                 </div>

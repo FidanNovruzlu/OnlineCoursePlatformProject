@@ -24,7 +24,15 @@
     <div class="container">
         <div class="card wish-card">
             <div class="card-header">
-            <h5>Your Wishlist (@Model.Count items)</h5>
+                    @if (Model.Count == null)
+                    {
+                        <h5>0</h5>
+                    }
+                    else
+                    {
+                        
+                    <h5>Your Wishlist (@Model.Count items)</h5>
+                    }
             </div>
             <div class="card-body">
                 <div class="row">

@@ -31,24 +31,39 @@
                 @* Instructor*@
                             <li class="has-submenu ">
                                 <a href="#">Instructor <i class="fas fa-chevron-down"></i></a>
-                                <ul class="submenu">
-                                    <li><a asp-action="Dashboard" asp-controller="Instructor">Dashboard</a></li>
-                                    <li class="has-submenu">
+                           
+                            <ul class="submenu">
+                                @if(User.IsInRole("Instructor"))
+                                {
+                                    <li><a asp-action = "Dashboard" asp-controller = "Instructor" > Dashboard </a></li>
+                                    <li><a asp-action="Course" asp-controller="Instructor">My Course</a></li>
+                                    <li><a asp-action= "Reviews" asp-controller= "Instructor" > Reviews </a></li>
+                                }
+                                else
+                                {
+                                     <li class="has-submenu">
                                         <a asp-action="List" asp-controller="Instructor">Instructor</a>
                                         <ul class="submenu">
                                             <li><a asp-action="List" asp-controller="Instructor">List</a></li>
                                             <li><a asp-action="Grid" asp-controller="Instructor">Grid</a></li>
                                         </ul>
-                                    </li>
-                                    <li><a asp-action="Course" asp-controller="Instructor">My Course</a></li>
-                                    <li><a asp-action="Reviews" asp-controller="Instructor">Reviews</a></li>
-                                    <li><a asp-action="Index" asp-controller="Instructor">Instructor Profile</a></li>
+@*                                             <li><a asp-action="Course" asp-controller="Instructor">My Course</a></li>
+*@                                    </li>
+                                  }
+                                    
                                 </ul>
                             </li>
                 @* Student*@
                             <li class="has-submenu ">
                                 <a href="#">Student <i class="fas fa-chevron-down"></i></a>
                                 <ul class="submenu first-submenu">
+                                @if (User.IsInRole("Student"))
+                                {
+                                    
+                                    <li><a asp-action="Index" asp-controller="Student">Student Profile</a></li>
+                                }
+                                else
+                                {
                                     <li class="has-submenu ">
                                         <a asp-action="List" asp-controller="Student">Student</a>
                                         <ul class="submenu">
@@ -56,16 +71,17 @@
                                             <li><a asp-action="Grid" asp-controller="Student">Grid</a></li>
                                         </ul>
                                     </li>
-                                    <li><a asp-action="Index" asp-controller="Student">Student Profile</a></li>
-                                </ul>
+                                    
+                                }
+                            </ul>
                             </li>
                             <li class="has-submenu ">
                                 <a href="#">Pages <i class="fas fa-chevron-down"></i></a>
                                 <ul class="submenu"> 
                                     <li><a asp-action="Index" asp-controller="Category">Category</a></li>
-                                    <li><a asp-action="GetCarts" asp-controller="Course">Cart</a></li>
-                                     <li><a asp-action="Checkout" asp-controller="Home">Checkout</a></li>
-                                     <li><a asp-action="GetWishlist" asp-controller="Course">Wishlist</a></li>
+@*                                    <li><a asp-action="GetCarts" asp-controller="Course">Cart</a></li>
+*@@*                                     <li><a asp-action="Checkout" asp-controller="Home">Checkout</a></li>
+*@                                     <li><a asp-action="GetWishlist" asp-controller="Course">Wishlist</a></li>
                                     <li><a asp-action="Login" asp-controller="Account">Login</a></li>
                                     <li><a asp-action="StudentRegister" asp-controller="Account">Register</a></li>
                                     <li><a asp-action="ForgotPassword" asp-controller="Account">Forgot Password</a></li>
@@ -104,6 +120,15 @@
                         }
                         @if (User.IsInRole("Admin"))
                         {
+                                        <ul class="main-nav admin">
+                                <li class="has-submenu">
+                                    <a href="#">Course <i class="fas fa-chevron-down"></i></a>
+                                    <ul class="submenu">
+                                        <li><a asp-action="Index" asp-controller="Course">Course List</a></li>
+                                        <li><a asp-action="Grid" asp-controller="Course">Course Grid</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                             <li class="p-3 text-danger"> @User.Identity.Name</li>
                         }
                         else
@@ -118,8 +143,9 @@
                         }
 
                             <li class="nav-item py-2">
-                                <a asp-action="GetCarts" asp-controller="Course" class="nav-link">
-                                    <span id="boot-icon" class="bi bi-basket-fill"  style="font-size: 25px; color: black;"></span>
+                                <a asp-action="getcarts" asp-controller="course" class="nav-link">
+                                         <img src="~/assets/img/icon/cart.svg" alt="img">
+                                 @*   <span id="boot-icon" class="bi bi-basket-fill"  style="font-size: 25px; color: black;"></span>*@
                                 </a>
                             </li>
                             <li class="nav-item p-2">
@@ -164,6 +190,9 @@
   padding-right:30px;
   padding-left:220px;
 }
-
+.admin{
+     padding-right:260px;
+ /* padding-left:290px;*/
+}
 }
 </style>

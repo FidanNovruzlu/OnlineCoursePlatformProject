@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Cgzv1hI+vXMoSjuVj+8ePVLCtLS0Lvuucn4kM4VG8zk=",
+  "Hash": "DgPWUplwyF9QW3M0zwUNrBetzPtqYJwHmcEybD06e/o=",
   "Source": "DreamsWebApp",
   "BasePath": "_content/DreamsWebApp",
   "Mode": "Default",
@@ -6307,6 +6307,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\fonts\\Feather144f.woff"
     },
     {
+      "Identity": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\0e7b9e81-be12-4e1a-9e92-8b75eccf5d4blead-04.png",
+      "SourceId": "DreamsWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\",
+      "BasePath": "_content/DreamsWebApp",
+      "RelativePath": "assets/img/0e7b9e81-be12-4e1a-9e92-8b75eccf5d4blead-04.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\0e7b9e81-be12-4e1a-9e92-8b75eccf5d4blead-04.png"
+    },
+    {
       "Identity": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\16f7c9d4-5798-448e-adf9-7c176f9392093afe10863d096a6bcc73ccfed69d4f39.jpg",
       "SourceId": "DreamsWebApp",
       "SourceType": "Discovered",
@@ -6426,6 +6443,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\4a2998e1-71e6-48ea-b7f4-94d5bc58254810c1b80e-a8d0-4ac2-8dd0-308af1866a66.jfif"
     },
     {
+      "Identity": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\53a35451-eaf6-445a-82eb-ac192cfa1897lead-02.png",
+      "SourceId": "DreamsWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\",
+      "BasePath": "_content/DreamsWebApp",
+      "RelativePath": "assets/img/53a35451-eaf6-445a-82eb-ac192cfa1897lead-02.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\53a35451-eaf6-445a-82eb-ac192cfa1897lead-02.png"
+    },
+    {
       "Identity": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\59112c94-a6e6-43b2-a8ae-18b2771a485c2411583.jpg",
       "SourceId": "DreamsWebApp",
       "SourceType": "Discovered",
@@ -6511,6 +6545,40 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\7406cdf4-0577-48f4-89a6-c6572ae7de09lead-04.png"
     },
     {
+      "Identity": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\74dd2ec0-dc8b-4dd3-ba54-00c075e0c3d0lead-03.png",
+      "SourceId": "DreamsWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\",
+      "BasePath": "_content/DreamsWebApp",
+      "RelativePath": "assets/img/74dd2ec0-dc8b-4dd3-ba54-00c075e0c3d0lead-03.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\74dd2ec0-dc8b-4dd3-ba54-00c075e0c3d0lead-03.png"
+    },
+    {
+      "Identity": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\75d62d18-852c-428b-bcad-c4a673bb70celead-01.png",
+      "SourceId": "DreamsWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\",
+      "BasePath": "_content/DreamsWebApp",
+      "RelativePath": "assets/img/75d62d18-852c-428b-bcad-c4a673bb70celead-01.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\75d62d18-852c-428b-bcad-c4a673bb70celead-01.png"
+    },
+    {
       "Identity": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\8fe66517-22a5-473e-9b8e-1798a699dc01lead-03.png",
       "SourceId": "DreamsWebApp",
       "SourceType": "Discovered",
@@ -6577,6 +6645,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\9baee544-3dba-4306-b796-7fb28cfb7bc018e2db3a3220fadf3c655a1c0e34d398.jpg"
+    },
+    {
+      "Identity": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\9fb8f0bf-56d6-4568-baf3-cecba4ad2e0elead-05.png",
+      "SourceId": "DreamsWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\",
+      "BasePath": "_content/DreamsWebApp",
+      "RelativePath": "assets/img/9fb8f0bf-56d6-4568-baf3-cecba4ad2e0elead-05.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\9fb8f0bf-56d6-4568-baf3-cecba4ad2e0elead-05.png"
     },
     {
       "Identity": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\a0962666-aa8f-4977-a038-01b64d02361flead-02.png",
@@ -7803,6 +7888,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\course\\course-17.jpg"
     },
     {
+      "Identity": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\course\\e73b632e-2081-4e2a-a686-d2068b73567e10c1b80e-a8d0-4ac2-8dd0-308af1866a66.jfif",
+      "SourceId": "DreamsWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\",
+      "BasePath": "_content/DreamsWebApp",
+      "RelativePath": "assets/img/course/e73b632e-2081-4e2a-a686-d2068b73567e10c1b80e-a8d0-4ac2-8dd0-308af1866a66.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\course\\e73b632e-2081-4e2a-a686-d2068b73567e10c1b80e-a8d0-4ac2-8dd0-308af1866a66.jfif"
+    },
+    {
       "Identity": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\course-bg.png",
       "SourceId": "DreamsWebApp",
       "SourceType": "Discovered",
@@ -7818,6 +7920,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\course-bg.png"
+    },
+    {
+      "Identity": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\d01e18ed-4d4d-40f7-8cc4-cff0973a6fb3lead-06.png",
+      "SourceId": "DreamsWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\",
+      "BasePath": "_content/DreamsWebApp",
+      "RelativePath": "assets/img/d01e18ed-4d4d-40f7-8cc4-cff0973a6fb3lead-06.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\d01e18ed-4d4d-40f7-8cc4-cff0973a6fb3lead-06.png"
     },
     {
       "Identity": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\dacd14a1-c1ff-4e63-8182-25bf570e7b030ee0fa133f8cff513ac34c1f5110df58.jpg",
@@ -8109,6 +8228,40 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\gratuate-icon.svg"
     },
     {
+      "Identity": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\00324c59-dbbd-4d64-9eae-04d2fa9c3e41icon-1.svg",
+      "SourceId": "DreamsWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\",
+      "BasePath": "_content/DreamsWebApp",
+      "RelativePath": "assets/img/icon/00324c59-dbbd-4d64-9eae-04d2fa9c3e41icon-1.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\icon\\00324c59-dbbd-4d64-9eae-04d2fa9c3e41icon-1.svg"
+    },
+    {
+      "Identity": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\17021e37-6002-4f34-82e9-ee8ccb40abbeicon-01.svg",
+      "SourceId": "DreamsWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\",
+      "BasePath": "_content/DreamsWebApp",
+      "RelativePath": "assets/img/icon/17021e37-6002-4f34-82e9-ee8ccb40abbeicon-01.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\icon\\17021e37-6002-4f34-82e9-ee8ccb40abbeicon-01.svg"
+    },
+    {
       "Identity": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\32357b6f-b017-4450-b0e5-c1f05d5a0bd1icon-02.svg",
       "SourceId": "DreamsWebApp",
       "SourceType": "Discovered",
@@ -8124,6 +8277,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\icon\\32357b6f-b017-4450-b0e5-c1f05d5a0bd1icon-02.svg"
+    },
+    {
+      "Identity": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\8cfcca6f-72b1-4b3c-8b55-6db850b5b970icon-19.svg",
+      "SourceId": "DreamsWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\",
+      "BasePath": "_content/DreamsWebApp",
+      "RelativePath": "assets/img/icon/8cfcca6f-72b1-4b3c-8b55-6db850b5b970icon-19.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\icon\\8cfcca6f-72b1-4b3c-8b55-6db850b5b970icon-19.svg"
     },
     {
       "Identity": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\img\\icon\\a9565fc3-8391-4b68-b1a4-6593d44a84c2icon-07.svg",
@@ -11201,6 +11371,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\videos\\bbfae591-d65d-48a5-9f62-b35bf6b2a99fvideo1319964656.mp4"
+    },
+    {
+      "Identity": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\assets\\videos\\fdcaab61-7980-4071-91ae-40d0a3711842video1826745888.mp4",
+      "SourceId": "DreamsWebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\",
+      "BasePath": "_content/DreamsWebApp",
+      "RelativePath": "assets/videos/fdcaab61-7980-4071-91ae-40d0a3711842video1826745888.mp4",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\videos\\fdcaab61-7980-4071-91ae-40d0a3711842video1826745888.mp4"
     },
     {
       "Identity": "D:\\desktop\\programs\\C#\\ASP.NET Core MVC\\DreamsWebApp\\DreamsWebApp\\wwwroot\\cdn-cgi\\l\\email-protection.html",

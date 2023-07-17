@@ -30,7 +30,7 @@ public class CourseController : Controller
     //ALL COURSE
     public async Task< IActionResult> Index(string? search,int? order,int? categoryId,string? instructorId)
     {
-        IQueryable<Course> query =  _dreamsDataContext.Courses.Include(i=>i.Instructor).AsQueryable();
+        IQueryable<Course> query =  _dreamsDataContext.Courses.Take(10).Include(i=>i.Instructor).AsQueryable();
 
         switch (order)
         {
@@ -71,7 +71,7 @@ public class CourseController : Controller
             Order=order,
             CategoryId= categoryId,
             InstructorId=instructorId,
-            Search= search
+            Search= search,
         };
 
         return View(courseVM);
@@ -191,7 +191,7 @@ public class CourseController : Controller
             return View(createCourseVM);
         }
 
-        string newFilename = await createCourseVM.Image.UplaodAsync(_webHostEnvironment.WebRootPath, "assets", "img");
+        string newFilename = await createCourseVM.Image.UplaodAsync(_webHostEnvironment.WebRootPath, "assets", "img","course");
         string newVideoFilename = await createCourseVM.Video.UplaodAsync(_webHostEnvironment.WebRootPath, "assets", "videos");
 
         Course newCourse = new()
